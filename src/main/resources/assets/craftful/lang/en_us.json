@@ -2,7 +2,10 @@
   "item.craftful.tomato": "Tomato",
   "item.craftful.tomato_seeds": "Tomato Seeds",
   "item.craftful.cheese": "Cheese",
+  "item.craftful.pizza_slice": "Slice of Pizza",
 
-  "block.craftful.rack": "Rack"
+  "block.craftful.rack": "Rack",
+  "block.craftful.pizza": "Pizza"
+
 
 }

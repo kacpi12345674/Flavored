@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "minecraft:wheat"
+    },
+    "#": {
+      "item": "craftful:cheese"
+    },
+    "x": {
+      "item": "craftful:tomato"
+    }
+  },
+  "pattern": [
+    "   ",
+    "#x#",
+    "***"
+  ],
+  "result": {
+    "item": "craftful:pizza"
+  }
+}

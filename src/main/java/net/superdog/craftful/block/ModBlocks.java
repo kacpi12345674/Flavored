@@ -15,6 +15,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.superdog.craftful.block.custom.PizzaBlock;
 import net.superdog.craftful.block.custom.RackBlock;
 import net.superdog.craftful.block.custom.TomatoCropBlock;
 
@@ -23,6 +24,8 @@ public class ModBlocks {
     public static final Block RACK = registerBlock("rack",
             new RackBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ItemGroups.FUNCTIONAL);
 
+    public static final Block PIZZA = registerBlock("pizza",
+            new PizzaBlock(FabricBlockSettings.of(Material.CAKE).strength(0.5f, 0.5f)), ItemGroups.FOOD_AND_DRINK);
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(AbstractBlock.Settings.of(Material.PLANT)
                     .noCollision()

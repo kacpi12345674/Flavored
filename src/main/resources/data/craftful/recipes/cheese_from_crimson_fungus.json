@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "pizzamaking:milk_bucket"
+      "item": "minecraft:milk_bucket"
     },
     {
-      "item": "pizzamaking:crimson_fungus"
+      "item": "minecraft:crimson_fungus"
     }
   ],
   "result": {
     "count": 1,
-    "item": "pizzamaking:cheese"
+    "item": "craftful:cheese"
   }
 }

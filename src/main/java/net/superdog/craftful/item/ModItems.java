@@ -24,12 +24,17 @@ public class ModItems {
     public static final Item CHEESE = registerItem("cheese",
             new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE)));
 
+    public static final Item PIZZA_SLICE = registerItem("pizza_slice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA_SLICE)));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Craftful.MOD_ID, name), item);
     }
 
     public static void addItemsToItemGroup() {
+        addToItemGroup(ItemGroups.FOOD_AND_DRINK, PIZZA_SLICE);
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, TOMATO);
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, CHEESE);
         addToItemGroup(ItemGroups.INGREDIENTS, TOMATO_SEEDS);
