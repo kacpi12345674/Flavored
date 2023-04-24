@@ -15,8 +15,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.superdog.craftful.block.custom.RackBlock;
 
 public class ModBlocks {
+
+    public static final Block RACK = registerBlock("rack",
+            new RackBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ItemGroups.FUNCTIONAL);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

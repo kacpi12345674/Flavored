@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "craftful:rack"
+    }
+  },
+  "pattern": [
+    "*",
+    "",
+    ""
+  ],
+  "result": {
+    "item": "glass_bottle",
+    "count": 9
+  }
+}
