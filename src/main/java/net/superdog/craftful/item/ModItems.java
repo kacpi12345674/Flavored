@@ -21,12 +21,17 @@ public class ModItems {
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
             new TomatoSeedItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
 
+    public static final Item CHEESE = registerItem("cheese",
+            new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE)));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Craftful.MOD_ID, name), item);
     }
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, TOMATO);
+        addToItemGroup(ItemGroups.FOOD_AND_DRINK, CHEESE);
         addToItemGroup(ItemGroups.INGREDIENTS, TOMATO_SEEDS);
 
     }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pizzamaking:milk_bucket"
+    },
+    {
+      "item": "pizzamaking:brown_mushroom"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "pizzamaking:cheese"
+  }
+}
