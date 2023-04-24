@@ -6,8 +6,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "craftful:pizza_slice",
-          "count": 4
+          "functions": [
+            {
+              "add": false,
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "craftful:pizza_slice"
+
+
+
+
         }
       ]
     }

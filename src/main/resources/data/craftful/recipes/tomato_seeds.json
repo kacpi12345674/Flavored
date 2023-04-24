@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "pizzamaking:tomato"
+      "item": "craftful:tomato"
     }
   ],
   "result": {
     "count": 1,
-    "item": "pizzamaking:tomato_seeds"
+    "item": "craftful:tomato_seeds"
   }
 }
