@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "craftful",
 	"version": "${version}",
-	"name": "Tutorial Mod",
+	"name": "Craftful",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"superdog"
