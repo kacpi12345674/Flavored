@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"down": "minecraft:block/mud_bricks",
+		"east": "craftful:block/planter_side",
+		"north": "craftful:block/planter_side",
+		"particle": "minecraft:block/mud_bricks",
+		"south": "craftful:block/planter_side",
+		"up": "craftful:block/planter_top",
+		"west": "craftful:block/planter_side"
+	}
+}

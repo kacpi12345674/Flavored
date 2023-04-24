@@ -15,6 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import net.superdog.craftful.block.ModBlocks;
 import net.superdog.craftful.item.ModItems;
 
 
@@ -24,10 +25,7 @@ public class TomatoCropBlock extends SweetBerryBushBlock {
     }
 
     @Override
-    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        BlockPos down = pos.down();
-        return world.getBlockState(down).isOf(Blocks.FARMLAND);
-    }
+    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {BlockPos down = pos.down();BlockState blockState = world.getBlockState(down);return blockState.isOf(Blocks.FARMLAND) || blockState.isOf(ModBlocks.PLANTER);}
 
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
