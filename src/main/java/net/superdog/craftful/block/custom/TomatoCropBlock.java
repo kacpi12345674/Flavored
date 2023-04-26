@@ -27,6 +27,7 @@ public class TomatoCropBlock extends SweetBerryBushBlock {
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {BlockPos down = pos.down();BlockState blockState = world.getBlockState(down);return blockState.isOf(Blocks.FARMLAND) || blockState.isOf(ModBlocks.PLANTER);}
 
+
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
 
@@ -39,12 +40,12 @@ public class TomatoCropBlock extends SweetBerryBushBlock {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         int age = state.get(AGE);
-        boolean isMature = age == 3;
+        boolean isMature = age == 2;
         if (!isMature && player.getStackInHand(hand).isOf(this.getSeedsItem().asItem())) {
             return ActionResult.PASS;
         } else if (isMature) {
             int i = 1 + world.random.nextInt(2);
-            dropStack(world, pos, new ItemStack(this.getSeedsItem(), i + (age == 3 ? 1 : 0)));
+            dropStack(world, pos, new ItemStack(this.getSeedsItem(), i + (age == 2 ? 1 : 0))); // Change this line to check if age == 2 instead of age == 3
             world.setBlockState(pos, state.with(AGE, 1), 2);
             return ActionResult.success(world.isClient);
         } else {
