@@ -36,11 +36,11 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, PIZZA_SLICE);
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, TOMATO);
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, CHEESE);
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, SWEET_BERRY_PIE);
-        addToItemGroup(ItemGroups.INGREDIENTS, TOMATO_SEEDS);
+        addToItemGroup(ModItemGroup.CRAFTFUL, PIZZA_SLICE);
+        addToItemGroup(ModItemGroup.CRAFTFUL, TOMATO);
+        addToItemGroup(ModItemGroup.CRAFTFUL, CHEESE);
+        addToItemGroup(ModItemGroup.CRAFTFUL, SWEET_BERRY_PIE);
+        addToItemGroup(ModItemGroup.CRAFTFUL, TOMATO_SEEDS);
 
     }
 

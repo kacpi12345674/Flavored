@@ -7,6 +7,7 @@ import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.util.Identifier;
 import net.superdog.craftful.block.ModBlocks;
+import net.superdog.craftful.item.ModItemGroup;
 import net.superdog.craftful.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,6 +31,7 @@ public class Craftful implements ModInitializer {
 			}
 		});
 
+		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}

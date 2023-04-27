@@ -7,7 +7,9 @@
 
   "block.craftful.rack": "Rack",
   "block.craftful.pizza": "Pizza",
-  "block.craftful.planter": "Planter"
+  "block.craftful.planter": "Planter",
+
+  "itemgroup.craftful": "Craftful"
 
 
 }
