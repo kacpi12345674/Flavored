@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "craftful:block/limestone_pillar_top",
+    "east": "craftful:block/limestone_pillar_side",
+    "north": "craftful:block/limestone_pillar_side",
+    "particle": "craftful:block/limestone_pillar_side",
+    "south": "craftful:block/limestone_pillar_side",
+    "up": "craftful:block/limestone_pillar_top",
+    "west": "craftful:block/limestone_pillar_side"
+  }
+}
