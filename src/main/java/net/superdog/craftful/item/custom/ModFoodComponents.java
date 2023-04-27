@@ -11,6 +11,8 @@ public class ModFoodComponents {
         public static final FoodComponent PIZZA_SLICE = new FoodComponent.Builder().hunger(7).saturationModifier(1f).build();
 
         public static final FoodComponent SWEET_BERRY_PIE = new FoodComponent.Builder().hunger(8).saturationModifier(0.3F).build();
+
+        public static final FoodComponent GLOW_BERRY_PIE = new FoodComponent.Builder().hunger(8).saturationModifier(0.3F).build();
 }
 
 

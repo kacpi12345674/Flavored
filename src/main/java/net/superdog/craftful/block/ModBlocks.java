@@ -26,11 +26,11 @@ public class ModBlocks {
     public static final Block RACK = registerBlock("rack",
             new RackBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.CRAFTFUL);
 
-    public static final Block PIZZA = registerBlock("pizza",
-            new PizzaBlock(FabricBlockSettings.of(Material.CAKE).strength(0.5f, 0.5f)), ModItemGroup.CRAFTFUL);
-
     public static final Block PLANTER = registerBlock("planter",
             new planterBlock(FabricBlockSettings.of(Material.STONE).strength(1.5F, 3.0F).sounds(BlockSoundGroup.MUD_BRICKS).nonOpaque().requiresTool()), ModItemGroup.CRAFTFUL);
+
+    public static final Block PIZZA = registerBlock("pizza",
+            new PizzaBlock(FabricBlockSettings.of(Material.CAKE).strength(0.5f, 0.5f)), ModItemGroup.CRAFTFUL);
 
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(AbstractBlock.Settings.of(Material.PLANT)

@@ -30,6 +30,8 @@ public class ModItems {
     public static final Item SWEET_BERRY_PIE = registerItem("sweet_berry_pie",
             new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_PIE)));
 
+    public static final Item GLOW_BERRY_PIE = registerItem("glow_berry_pie",
+            new Item(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_PIE)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Craftful.MOD_ID, name), item);
@@ -40,6 +42,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.CRAFTFUL, TOMATO);
         addToItemGroup(ModItemGroup.CRAFTFUL, CHEESE);
         addToItemGroup(ModItemGroup.CRAFTFUL, SWEET_BERRY_PIE);
+        addToItemGroup(ModItemGroup.CRAFTFUL, GLOW_BERRY_PIE);
         addToItemGroup(ModItemGroup.CRAFTFUL, TOMATO_SEEDS);
 
     }
