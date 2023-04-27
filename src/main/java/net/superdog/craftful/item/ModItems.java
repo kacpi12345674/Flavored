@@ -27,6 +27,8 @@ public class ModItems {
     public static final Item PIZZA_SLICE = registerItem("pizza_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA_SLICE)));
 
+    public static final Item SWEET_BERRY_PIE = registerItem("sweet_berry_pie",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_PIE)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -37,6 +39,7 @@ public class ModItems {
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, PIZZA_SLICE);
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, TOMATO);
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, CHEESE);
+        addToItemGroup(ItemGroups.FOOD_AND_DRINK, SWEET_BERRY_PIE);
         addToItemGroup(ItemGroups.INGREDIENTS, TOMATO_SEEDS);
 
     }
