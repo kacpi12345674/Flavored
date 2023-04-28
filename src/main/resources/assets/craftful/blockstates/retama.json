@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "craftful:block/retama_bottom"
+    },
+    "half=upper": {
+      "model": "craftful:block/retama_top"
+    }
+  }
+}

@@ -3,13 +3,10 @@ package net.superdog.craftful.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.sound.BlockSoundGroup;
 import net.superdog.craftful.Craftful;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -39,6 +36,9 @@ public class ModBlocks {
 
     public static final Block PIZZA = registerBlock("pizza",
             new PizzaBlock(FabricBlockSettings.of(Material.CAKE).strength(0.5f, 0.5f)), ModItemGroup.CRAFTFUL);
+
+    public static final Block RETAMA = registerBlock("retama",
+            new TallFlowerBlock(FabricBlockSettings.of(Material.REPLACEABLE_PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)), ModItemGroup.CRAFTFUL);
 
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(AbstractBlock.Settings.of(Material.PLANT)

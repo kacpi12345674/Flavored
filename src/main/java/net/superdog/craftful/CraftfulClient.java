@@ -8,5 +8,6 @@ import net.superdog.craftful.block.ModBlocks;
 public class CraftfulClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TOMATO_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RETAMA, RenderLayer.getCutout());
         }
     }
