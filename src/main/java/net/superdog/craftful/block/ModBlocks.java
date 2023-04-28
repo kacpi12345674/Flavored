@@ -40,6 +40,13 @@ public class ModBlocks {
     public static final Block RETAMA = registerBlock("retama",
             new TallFlowerBlock(FabricBlockSettings.of(Material.REPLACEABLE_PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)), ModItemGroup.CRAFTFUL);
 
+    public static final Block IRIS = registerBlock("iris",
+            new FlowerBlock(StatusEffects.NIGHT_VISION, 5, FabricBlockSettings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)), ModItemGroup.CRAFTFUL);
+
+    public static final Block POTTED_IRIS = registerBlock("potted_iris",
+            new FlowerPotBlock(ModBlocks.IRIS, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), ItemGroups.getSearchGroup());;
+
+
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(AbstractBlock.Settings.of(Material.PLANT)
                     .noCollision()
