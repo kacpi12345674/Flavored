@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "craftful:limestone"
+    },
+    "#": {
+      "item": "minecraft:sand"
+    }
+  },
+  "pattern": [
+    "#*",
+    "*#"
+  ],
+  "result": {
+    "item": "craftful:sandy_limestone"
+  }
+}

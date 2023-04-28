@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "craftful:block/sandy_limestone"
+  }
+}

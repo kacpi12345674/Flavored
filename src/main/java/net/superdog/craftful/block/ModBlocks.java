@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.sound.BlockSoundGroup;
 import net.superdog.craftful.Craftful;
@@ -21,12 +22,14 @@ public class ModBlocks {
     public static final Block LIMESTONE = registerBlock("limestone",
             new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6.0F).requiresTool()), ModItemGroup.CRAFTFUL);
 
+    public static final Block SANDY_LIMESTONE = registerBlock("sandy_limestone",
+            new SandyLimestoneBlock(FabricBlockSettings.of(Material.SOIL).strength(0.5F).sounds(BlockSoundGroup.SAND).requiresTool()), ModItemGroup.CRAFTFUL);
+
     public static final Block LIMESTONE_BRICKS = registerBlock("limestone_bricks",
             new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6.0F).requiresTool()), ModItemGroup.CRAFTFUL);
 
     public static final Block LIMESTONE_PILLAR = registerBlock("limestone_pillar",
             new LimestonePillarBlock(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6.0F).requiresTool()), ModItemGroup.CRAFTFUL);
-
 
     public static final Block RACK = registerBlock("rack",
             new RackBlock(FabricBlockSettings.of(Material.WOOD).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.CRAFTFUL);
