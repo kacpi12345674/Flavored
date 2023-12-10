@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "craftful:limestone"
-  },
-  "result": "craftful:limestone_bricks"
-}

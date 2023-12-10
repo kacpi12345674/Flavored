@@ -1,9 +1,5 @@
 {
   "replace": false,
   "values": [
-    "craftful:planter",
-    "craftful:limestone",
-    "craftful:limestone_bricks",
-    "craftful:limestone_pillar"
   ]
 }

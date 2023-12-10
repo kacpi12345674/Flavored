@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pizzas:block/tomato_stage2"
+  }
+}

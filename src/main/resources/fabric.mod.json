@@ -1,36 +1,36 @@
 {
 	"schemaVersion": 1,
-	"id": "craftful",
-	"version": "${version}",
-	"name": "Craftful",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "pizzas",
+	"version": "`1.0.1 - 1.20.2`}",
+	"name": "Simple Pizzas",
+	"description": "Simple, vanilla like pizzas in Minecraft!",
 	"authors": [
-		"superdog"
+		"CodenamedSuper"
 	],
 	"contact": {
 		"homepage": "",
 		"sources": ""
 	},
 	"license": "MIT",
-	"icon": "assets/craftful/icon.png",
+	"icon": "assets/pizzas/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.superdog.craftful.Craftful"
+			"net.superdog.pizzas.Pizzas"
 		],
 		"client": [
-			"net.superdog.craftful.CraftfulClient"
+			"net.superdog.pizzas.PizzasClient"
 		],
 		"fabric-datagen": [
 			""
 		]
 	},
 	"mixins": [
-		"craftful.mixins.json"
+		"pizzas.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.12",
-		"minecraft": "~1.19.3",
+		"minecraft": ">=1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
