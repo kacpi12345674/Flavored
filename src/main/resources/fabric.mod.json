@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "pizzas",
+	"id": "flavored",
 	"version": "`1.0.1 - 1.20.2`}",
-	"name": "Simple Pizzas",
-	"description": "Simple, vanilla like pizzas in Minecraft!",
+	"name": "TemplateMod",
+	"description": "Food mod.",
 	"authors": [
 		"CodenamedSuper"
 	],
@@ -12,21 +12,21 @@
 		"sources": ""
 	},
 	"license": "MIT",
-	"icon": "assets/pizzas/icon.png",
+	"icon": "assets/flavored/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.superdog.pizzas.Pizzas"
+			"net.superdog.flavored.Flavored"
 		],
 		"client": [
-			"net.superdog.pizzas.PizzasClient"
+			"net.superdog.flavored.FlavoredClient"
 		],
 		"fabric-datagen": [
 			""
 		]
 	},
 	"mixins": [
-		"pizzas.mixins.json"
+		"flavored.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.12",
