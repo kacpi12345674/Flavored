@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "flavored:block/pizza"
+    },
+    "facing=south": {
+      "model": "flavored:block/pizza",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "flavored:block/pizza",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "flavored:block/pizza",
+      "y": 90
+    }
+  }
+}

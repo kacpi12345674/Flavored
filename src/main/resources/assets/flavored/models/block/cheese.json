@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "flavored:block/cheese",
+		"particle": "flavored:block/cheese"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 4, 14],
+			"faces": {
+				"north": {"uv": [1, 6, 7, 8], "texture": "#0"},
+				"east": {"uv": [1, 6, 7, 8], "texture": "#0"},
+				"south": {"uv": [1, 6, 7, 8], "texture": "#0"},
+				"west": {"uv": [1, 6, 7, 8], "texture": "#0"},
+				"up": {"uv": [9, 1, 15, 7], "texture": "#0"},
+				"down": {"uv": [9, 9, 15, 15], "texture": "#0"}
+			}
+		}
+	]
+}

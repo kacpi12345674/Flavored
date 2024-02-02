@@ -1,5 +1,12 @@
 {
-  "itemgroup.flavored.flavored_group": "Flavored"
+  "itemgroup.flavored_group": "Flavored",
+
+  "item.flavored.tomato": "Tomato",
+  "item.flavored.tomato_seeds": "Tomato Seeds",
+  "block.flavored.cheese": "Cheese",
+  "item.flavored.pizza_slice": "Slice of Pizza",
+
+  "block.flavored.pizza": "Pizza"
 
 
 }

@@ -16,10 +16,14 @@ import net.superdog.flavored.block.ModBlocks;
 public class ModItemGroup {
     public static ItemGroup BRASSICAL_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Flavored.MOD_ID, "flavored_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.flavored_group"))
-                    .icon(() -> new ItemStack(Items.APPLE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
 
 
-
+                        entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.TOMATO_SEEDS);
+                        entries.add(ModBlocks.CHEESE);
+                        entries.add(ModBlocks.PIZZA);
+                        entries.add(ModItems.PIZZA_SLICE);
 
 
 

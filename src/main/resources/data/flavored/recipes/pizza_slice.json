@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:pizza"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "flavored:pizza_slice"
+  }
+}
