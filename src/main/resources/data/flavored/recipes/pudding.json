@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "minecraft:wheat"
+    },
+    "#": {
+      "item": "minecraft:sugar"
+    },
+    "x": {
+      "item": "minecraft:egg"
+    },
+    "Y": {
+      "item": "minecraft:cocoa_beans"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "#x#",
+    "***"
+  ],
+  "result": {
+    "item": "flavored:pudding"
+  }
+}

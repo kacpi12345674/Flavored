@@ -14,12 +14,16 @@ import net.minecraft.util.Identifier;
 import net.superdog.flavored.Flavored;
 import net.superdog.flavored.block.custom.CheeseBlock;
 import net.superdog.flavored.block.custom.PizzaBlock;
+import net.superdog.flavored.block.custom.PuddingBlock;
 import net.superdog.flavored.block.custom.TomatoCropBlock;
 
 public class ModBlocks {
 
     public static final Block PIZZA = registerBlock("pizza",
             new PizzaBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
+
+    public static final Block PUDDING = registerBlock("pudding",
+            new PuddingBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.4f, 0.4f)));
 
     public static final Block CHEESE = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));

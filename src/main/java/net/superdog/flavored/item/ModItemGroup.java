@@ -24,6 +24,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CHEESE);
                         entries.add(ModBlocks.PIZZA);
                         entries.add(ModItems.PIZZA_SLICE);
+                        entries.add(ModBlocks.PUDDING);
 
 
 
