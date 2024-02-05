@@ -21,6 +21,7 @@ public class ModItemGroup {
 
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.TOMATO_SEEDS);
+                        entries.add(ModItems.PASTA);
                         entries.add(ModBlocks.CHEESE);
                         entries.add(ModBlocks.PIZZA);
                         entries.add(ModItems.PIZZA_SLICE);
