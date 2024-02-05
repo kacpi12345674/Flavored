@@ -47,7 +47,9 @@ public class Flavored implements ModInitializer {
 					if (source.isBuiltin() && DESERT_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
 						LootPool.Builder poolBuilder = LootPool.builder()
 								.with(ItemEntry.builder(ModItems.TOMATO_SEEDS));
+
 						tableBuilder.pool(poolBuilder);
+
 					}
 					if (source.isBuiltin() && SNOWY_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
 						LootPool.Builder poolBuilder = LootPool.builder()
@@ -89,6 +91,38 @@ public class Flavored implements ModInitializer {
 								.with(ItemEntry.builder(ModItems.TOMATO));
 						tableBuilder.pool(poolBuilder);
 					}
+			if (source.isBuiltin() && JUNGLE_TEMPLE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.GARLIC));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && PLAINS_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.GARLIC));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && DESERT_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.GARLIC));
+
+				tableBuilder.pool(poolBuilder);
+
+			}
+			if (source.isBuiltin() && SNOWY_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.GARLIC));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && TAIGA_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.GARLIC));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && SAVANNA_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.GARLIC));
+				tableBuilder.pool(poolBuilder);
+			}
 				});
 
 		ModItemGroup.registerItemGroups();

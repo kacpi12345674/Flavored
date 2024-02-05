@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:tomato"
+    },    {
+      "item": "flavored:tomato"
+    },
+
+    {
+      "item": "flavored:pasta"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "flavored:spaghetti"
+  }
+}

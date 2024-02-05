@@ -1,6 +1,8 @@
 package net.superdog.flavored.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.StewItem;
 import net.superdog.flavored.Flavored;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -18,11 +20,17 @@ public class ModItems {
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
             new TomatoSeedItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
 
+    public static final Item GARLIC = registerItem("garlic",
+            new AliasedBlockItem(ModBlocks.GARLICS, (new FabricItemSettings()).food(ModFoodComponents.GARLIC)));
+
     public static final Item PASTA = registerItem("pasta",
             new Item(new FabricItemSettings()));
 
     public static final Item PIZZA_SLICE = registerItem("pizza_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA_SLICE)));
+
+    public static final Item SPAGHETTI = registerItem("spaghetti",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.SPAGHETTI)));
 
 
 

@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -12,10 +14,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.superdog.flavored.Flavored;
-import net.superdog.flavored.block.custom.CheeseBlock;
-import net.superdog.flavored.block.custom.PizzaBlock;
-import net.superdog.flavored.block.custom.PuddingBlock;
-import net.superdog.flavored.block.custom.TomatoCropBlock;
+import net.superdog.flavored.block.custom.*;
 
 public class ModBlocks {
 
@@ -27,7 +26,13 @@ public class ModBlocks {
 
     public static final Block CHEESE = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
-
+    public static final Block GARLICS = registerBlock("garlics",
+            new GarlicsBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)
+                    .mapColor(MapColor.PALE_GREEN)
+                    .noCollision().ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)

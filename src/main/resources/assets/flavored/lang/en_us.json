@@ -4,11 +4,16 @@
   "item.flavored.tomato": "Tomato",
   "item.flavored.tomato_seeds": "Tomato Seeds",
 
+  "item.flavored.garlic": "Garlic",
+
+
   "item.flavored.pasta": "Pasta",
 
   "block.flavored.cheese": "Cheese",
   "item.flavored.pizza_slice": "Pizza Slice",
 
   "block.flavored.pizza": "Pizza",
-  "block.flavored.pudding": "Pudding"
+  "block.flavored.pudding": "Pudding",
+
+  "item.flavored.spaghetti": "Spaghetti"
 }

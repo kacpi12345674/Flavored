@@ -122,22 +122,22 @@ public class PizzaBlock extends HorizontalFacingBlock {
         DEFAULT_COMPARATOR_OUTPUT = getComparatorOutput(0);
         BITES_TO_SHAPE = new VoxelShape[]{
                 Stream.of(
-                        Block.createCuboidShape(7, 0, 0, 14, 4, 7),
-                        Block.createCuboidShape(0, 0, 7, 7, 4, 14),
-                        Block.createCuboidShape(7, 0, 7, 14, 4, 14),
-                        Block.createCuboidShape(0, 0, 0, 7, 4, 7)
+                        Block.createCuboidShape(8, 0, 1, 15, 4, 8),
+                        Block.createCuboidShape(1, 0, 8, 8, 4, 15),
+                        Block.createCuboidShape(8, 0, 8, 15, 4, 15),
+                        Block.createCuboidShape(1, 0, 1, 8, 4, 8)
                 ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get(),
                 Stream.of(
-                        Block.createCuboidShape(0, 0, 7, 7, 4, 14),
-                        Block.createCuboidShape(7, 0, 7, 14, 4, 14),
-                        Block.createCuboidShape(0, 0, 0, 7, 4, 7)
+                        Block.createCuboidShape(1, 0, 8, 8, 4, 15),
+                        Block.createCuboidShape(8, 0, 8, 15, 4, 15),
+                        Block.createCuboidShape(1, 0, 1, 8, 4, 8)
                 ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get(),
 
-        VoxelShapes.combineAndSimplify(Block.createCuboidShape(0, 0, 7, 7, 4, 14),
-                Block.createCuboidShape(7, 0, 7, 14, 4, 14), BooleanBiFunction.OR),
+                VoxelShapes.combineAndSimplify(Block.createCuboidShape(1, 0, 8, 8, 4, 15),
+                        Block.createCuboidShape(8, 0, 8, 15, 4, 15), BooleanBiFunction.OR),
 
-                Block.createCuboidShape(7, 0, 7, 14, 4, 14),
-                Block.createCuboidShape(7, 0, 7, 14, 4, 14),
+                Block.createCuboidShape(8, 0, 8, 15, 4, 15),
+                Block.createCuboidShape(8, 0, 8, 15, 4, 15),
                 Block.createCuboidShape(0, 0, 0, 0, 0, 0),
                 Block.createCuboidShape(0, 0, 0, 0, 0, 0)};
     }
