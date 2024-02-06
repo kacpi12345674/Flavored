@@ -25,6 +25,9 @@ public class ModItems {
     public static final Item SPRUCE_CONE = registerItem("spruce_cone",
             new SpruceConeItem(new FabricItemSettings()));
 
+    public static final Item ROSEMARY = registerItem("rosemary",
+            new AliasedBlockItem(ModBlocks.ROSEMARY_BUSH, new FabricItemSettings()));
+
     public static final Item OIL = registerItem("oil",
             new HoneyBottleItem(new FabricItemSettings().food(ModFoodComponents.OIL)));
     public static final Item PASTA = registerItem("pasta",

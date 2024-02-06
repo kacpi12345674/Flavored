@@ -42,6 +42,14 @@ public class ModBlocks {
                     .nonOpaque()
                     .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
 
+    public static final Block ROSEMARY_BUSH = registerBlock("rosemary_bush",
+            new RosemaryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, name), block);

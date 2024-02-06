@@ -123,6 +123,26 @@ public class Flavored implements ModInitializer {
 						.with(ItemEntry.builder(ModItems.GARLIC));
 				tableBuilder.pool(poolBuilder);
 			}
+			if (source.isBuiltin() && SNOWY_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.ROSEMARY));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && TAIGA_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.ROSEMARY));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && SNOWY_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.SPRUCE_CONE));
+				tableBuilder.pool(poolBuilder);
+			}
+			if (source.isBuiltin() && TAIGA_VILLAGE_CHEST_LOOT_TABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModItems.SPRUCE_CONE));
+				tableBuilder.pool(poolBuilder);
+			}
 				});
 
 		ModItemGroup.registerItemGroups();
