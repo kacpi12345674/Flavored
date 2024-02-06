@@ -1,6 +1,11 @@
 {
   "itemgroup.flavored_group": "Flavored",
 
+  "item.flavored.spruce_cone": "Spruce Cone",
+  "item.flavored.oil": "Oil Bottle",
+
+
+
   "item.flavored.tomato": "Tomato",
   "item.flavored.tomato_seeds": "Tomato Seeds",
 
