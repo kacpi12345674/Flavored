@@ -1,6 +1,6 @@
 {
 "parent": "item/generated",
 "textures": {
-"layer0": "flavored:item/cone"
+"layer0": "flavored:item/spruce_cone"
 }
 }

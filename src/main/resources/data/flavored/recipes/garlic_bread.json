@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "minecraft:wheat"
+    },
+    "#": {
+      "item": "flavored:garlic"
+    },
+    "x": {
+      "item": "flavored:rosemary"
+    },
+    "Y": {
+      "item": "flavored:oil"
+    }
+  },
+  "pattern": [
+    "   ",
+    "#xY",
+    "***"
+  ],
+  "result": {
+    "item": "flavored:pizza"
+  }
+}

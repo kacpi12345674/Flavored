@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "flavored:block/garlic_bread"
+    },
+    "bites=1": {
+      "model": "flavored:block/garlic_bread_slice_1"
+    },
+    "bites=2": {
+      "model": "flavored:block/garlic_bread_slice_2"
+    },
+    "bites=3": {
+      "model": "flavored:block/garlic_bread_slice_3"
+    }
+  }
+}

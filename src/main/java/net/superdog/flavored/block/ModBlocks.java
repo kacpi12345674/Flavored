@@ -21,6 +21,9 @@ public class ModBlocks {
     public static final Block PIZZA = registerBlock("pizza",
             new PizzaBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
+    public static final Block GARLIC_BREAD = registerBlock("garlic_bread",
+            new GarlicBreadBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
+
     public static final Block PUDDING = registerBlock("pudding",
             new PuddingBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.4f, 0.4f)));
 
