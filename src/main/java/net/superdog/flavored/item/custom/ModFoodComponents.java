@@ -14,6 +14,9 @@ public class ModFoodComponents {
 
     public static final FoodComponent SPAGHETTI = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
 
+    public static final FoodComponent CARBONARA = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+
+
     public static final FoodComponent OIL = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f).statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 300, 0), 1F).build();
 
 

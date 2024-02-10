@@ -24,5 +24,7 @@
   "block.flavored.pizza": "Pizza",
   "block.flavored.pudding": "Pudding",
 
-  "item.flavored.spaghetti": "Spaghetti"
+  "item.flavored.spaghetti": "Spaghetti",
+  "item.flavored.carbonara": "Carbonara"
+
 }

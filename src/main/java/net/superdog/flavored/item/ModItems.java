@@ -39,6 +39,9 @@ public class ModItems {
     public static final Item SPAGHETTI = registerItem("spaghetti",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SPAGHETTI)));
 
+    public static final Item CARBONARA = registerItem("carbonara",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.CARBONARA)));
+
 
 
 
