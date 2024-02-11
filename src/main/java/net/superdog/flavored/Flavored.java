@@ -6,7 +6,10 @@ import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.condition.SurvivesExplosionLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.ExplosionDecayLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.util.Identifier;
 import net.superdog.flavored.block.ModBlocks;
 import net.superdog.flavored.item.ModItemGroup;
@@ -30,6 +33,9 @@ public class Flavored implements ModInitializer {
 	private static final Identifier SNOWY_VILLAGE_CHEST_LOOT_TABLE_ID = new Identifier("minecraft", "chests/village/village_snowy_house");
 
 	private static final Identifier SPRUCE_LEAVES_ID = Blocks.SPRUCE_LEAVES.getLootTableId();
+
+	private static final Identifier PUMPKIN_ID = Blocks.PUMPKIN.getLootTableId();
+
 
 
 
@@ -153,6 +159,7 @@ public class Flavored implements ModInitializer {
 
 				tableBuilder.pool(poolBuilder);
 			}
+
 				});
 
 		ModItemGroup.registerItemGroups();

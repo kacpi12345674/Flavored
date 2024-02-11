@@ -12,6 +12,9 @@ public class ModFoodComponents {
 
     public static final FoodComponent PIZZA_SLICE = new FoodComponent.Builder().hunger(7).saturationModifier(0.8f).build();
 
+    public static final FoodComponent PUMPKIN_SLICE = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f).build();
+
+
     public static final FoodComponent SPAGHETTI = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
 
     public static final FoodComponent CARBONARA = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();

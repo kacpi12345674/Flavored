@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item GARLIC = registerItem("garlic",
             new AliasedBlockItem(ModBlocks.GARLICS, (new FabricItemSettings()).food(ModFoodComponents.GARLIC)));
 
+    public static final Item PUMPKIN_SLICE = registerItem("pumpkin_slice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_SLICE)));
+
     public static final Item SPRUCE_CONE = registerItem("spruce_cone",
             new SpruceConeItem(new FabricItemSettings()));
 
