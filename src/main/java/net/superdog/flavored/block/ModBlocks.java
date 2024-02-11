@@ -29,6 +29,9 @@ public class ModBlocks {
 
     public static final Block CHEESE = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
+
+    public static final Block CARVED_MELON = registerBlock("carved_melon",
+            new WearableCarvedMelonBlock(FabricBlockSettings.create().mapColor(MapColor.GREEN).strength(1.0F).sounds(BlockSoundGroup.WOOD).allowsSpawning(Blocks::always).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block GARLICS = registerBlock("garlics",
             new GarlicsBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)
                     .mapColor(MapColor.PALE_GREEN)

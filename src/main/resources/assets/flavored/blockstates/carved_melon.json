@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "flavored:block/carved_melon",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "flavored:block/carved_melon"
+    },
+    "facing=south": {
+      "model": "flavored:block/carved_melon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "flavored:block/carved_melon",
+      "y": 270
+    }
+  }
+}

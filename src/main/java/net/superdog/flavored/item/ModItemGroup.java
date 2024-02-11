@@ -23,6 +23,7 @@ public class ModItemGroup {
                         entries.add(ModItems.TOMATO_SEEDS);
                         entries.add(ModItems.GARLIC);
                         entries.add(ModItems.ROSEMARY);
+                        entries.add(ModBlocks.CARVED_MELON);
                         entries.add(ModItems.PASTA);
                         entries.add(ModBlocks.CHEESE);
                         entries.add(ModItems.OIL);
