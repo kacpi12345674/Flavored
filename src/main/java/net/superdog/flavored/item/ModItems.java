@@ -45,6 +45,13 @@ public class ModItems {
     public static final Item CARBONARA = registerItem("carbonara",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.CARBONARA)));
 
+    public static final Item SWEET_BERRY_MUFFIN = registerItem("sweet_berry_muffin",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_MUFFIN)));
+
+    public static final Item GLOW_BERRY_MUFFIN = registerItem("glow_berry_muffin",
+            new Item(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_MUFFIN)));
+
+
 
 
 

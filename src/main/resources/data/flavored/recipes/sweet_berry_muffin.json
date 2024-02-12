@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "minecraft:wheat"
+    },
+    "#": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    "   ",
+    "##",
+    "**"
+  ],
+  "result": {
+    "item": "flavored:sweet_berry_muffin"
+  }
+}

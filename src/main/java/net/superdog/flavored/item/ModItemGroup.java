@@ -30,6 +30,8 @@ public class ModItemGroup {
                         entries.add(ModItems.OIL);
                         entries.add(ModItems.SPAGHETTI);
                         entries.add(ModItems.CARBONARA);
+                        entries.add(ModItems.SWEET_BERRY_MUFFIN);
+                        entries.add(ModItems.GLOW_BERRY_MUFFIN);
                         entries.add(ModBlocks.PIZZA);
                         entries.add(ModItems.PIZZA_SLICE);
                         entries.add(ModBlocks.GARLIC_BREAD);

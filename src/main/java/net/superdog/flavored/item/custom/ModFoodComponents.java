@@ -14,6 +14,11 @@ public class ModFoodComponents {
 
     public static final FoodComponent PUMPKIN_SLICE = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f).build();
 
+    public static final FoodComponent SWEET_BERRY_MUFFIN = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 500, 0), 0.2F).build();
+
+    public static final FoodComponent GLOW_BERRY_MUFFIN = new FoodComponent.Builder().hunger(6).saturationModifier(0.4f).build();
+
+
 
     public static final FoodComponent SPAGHETTI = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
 
