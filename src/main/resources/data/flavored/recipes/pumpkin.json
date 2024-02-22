@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "flavored:pumpkin_slice"
+    }
+  },
+  "pattern": [
+    "***",
+    "***",
+    "***"
+  ],
+  "result": {
+    "item": "minecraft:pumpkin"
+  }
+}

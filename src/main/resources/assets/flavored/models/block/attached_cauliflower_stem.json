@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/stem_fruit",
+  "textures": {
+    "stem": "flavored:block/cauliflower_stem",
+    "upperstem": "flavored:block/attached_cauliflower_stem"
+  }
+}

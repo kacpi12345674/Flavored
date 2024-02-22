@@ -2,10 +2,8 @@ package net.superdog.flavored.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -15,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.superdog.flavored.Flavored;
 import net.superdog.flavored.block.custom.*;
+import net.superdog.flavored.item.ModItems;
 
 public class ModBlocks {
 
@@ -30,6 +29,23 @@ public class ModBlocks {
     public static final Block CHEESE = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
+    public static final Block CAULIFLOWER = registerBlock("cauliflower",
+            new CauliflowerBlock(FabricBlockSettings.create().mapColor(MapColor.WHITE).instrument(Instrument.DIDGERIDOO).strength(1.0F).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block CAULIFLOWER_STEM = registerBlock("cauliflower_stem",
+            new StemBlock((GourdBlock)CAULIFLOWER, () -> {
+                return ModItems.CAULIFLOWER_SEEDS;
+            }, FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.STEM).pistonBehavior(PistonBehavior.DESTROY)));
+
+
+    public static final Block ATTACHED_CAULIFLOWER_STEM = registerBlock("attached_cauliflower_stem",
+            new AttachedStemBlock((GourdBlock)CAULIFLOWER, () -> {
+                return ModItems.CAULIFLOWER_SEEDS;
+            }, FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
+
+
+    public static final Block CARVED_CAULIFLOWER = registerBlock("carved_cauliflower",
+            new WearableCarvedCauliflowerBlock(FabricBlockSettings.create().mapColor(MapColor.WHITE).strength(1.0F).sounds(BlockSoundGroup.WOOD).allowsSpawning(Blocks::always).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block CARVED_MELON = registerBlock("carved_melon",
             new WearableCarvedMelonBlock(FabricBlockSettings.create().mapColor(MapColor.GREEN).strength(1.0F).sounds(BlockSoundGroup.WOOD).allowsSpawning(Blocks::always).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block GARLICS = registerBlock("garlics",

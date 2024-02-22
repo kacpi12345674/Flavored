@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item GARLIC = registerItem("garlic",
             new AliasedBlockItem(ModBlocks.GARLICS, (new FabricItemSettings()).food(ModFoodComponents.GARLIC)));
 
+    public static final Item CAULIFLOWER_CURD = registerItem("cauliflower_curd",
+            new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER_CURD)));
+
     public static final Item PUMPKIN_SLICE = registerItem("pumpkin_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_SLICE)));
 
@@ -41,6 +44,9 @@ public class ModItems {
 
     public static final Item SPAGHETTI = registerItem("spaghetti",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SPAGHETTI)));
+
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_STEM, new FabricItemSettings()));
 
     public static final Item CARBONARA = registerItem("carbonara",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.CARBONARA)));

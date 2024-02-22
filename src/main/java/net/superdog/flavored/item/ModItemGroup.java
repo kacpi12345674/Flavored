@@ -22,6 +22,10 @@ public class ModItemGroup {
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.TOMATO_SEEDS);
                         entries.add(ModItems.GARLIC);
+                        entries.add(ModBlocks.CAULIFLOWER);
+                        entries.add(ModBlocks.CARVED_CAULIFLOWER);
+                        entries.add(ModItems.CAULIFLOWER_CURD);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.ROSEMARY);
                         entries.add(ModItems.PUMPKIN_SLICE);
                         entries.add(ModBlocks.CARVED_MELON);

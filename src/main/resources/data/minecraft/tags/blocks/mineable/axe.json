@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "flavored:carved_melon"
+    "flavored:carved_melon",
+    "flavored:carved_cauliflower",
+    "flavored:cauliflower"
+
   ]
 }

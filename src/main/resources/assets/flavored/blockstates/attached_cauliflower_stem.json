@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "flavored:block/attached_cauliflower_stem",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "flavored:block/attached_cauliflower_stem",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "flavored:block/attached_cauliflower_stem",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "flavored:block/attached_cauliflower_stem"
+    }
+  }
+}
