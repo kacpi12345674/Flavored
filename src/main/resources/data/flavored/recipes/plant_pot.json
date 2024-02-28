@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "minecraft:coarse_dirt"
+    },
+    "#": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#*#",
+    " # "
+  ],
+  "result": {
+    "item": "flavored:plant_pot"
+  }
+}

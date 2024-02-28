@@ -3,7 +3,9 @@
   "package": "net.superdog.flavored.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MelonBlockMixin"
+    "MelonBlockMixin",
+    "CropBlockMixin",
+    "PlantBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

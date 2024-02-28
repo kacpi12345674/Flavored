@@ -18,6 +18,7 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.flavored_group"))
                     .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
 
+                        entries.add(ModBlocks.PLANT_POT);
                         entries.add(ModItems.SPRUCE_CONE);
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.TOMATO_SEEDS);

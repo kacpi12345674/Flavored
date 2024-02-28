@@ -18,6 +18,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
+import net.superdog.flavored.block.ModBlocks;
 import net.superdog.flavored.item.ModItems;
 
 
@@ -28,7 +29,7 @@ public class TomatoCropBlock extends SweetBerryBushBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {BlockPos down = pos.down();BlockState blockState = world.getBlockState(down);
-        return blockState.isOf(Blocks.FARMLAND);
+        return blockState.isOf(Blocks.FARMLAND ) || blockState.isOf(ModBlocks.PLANT_POT);
     }
 
 

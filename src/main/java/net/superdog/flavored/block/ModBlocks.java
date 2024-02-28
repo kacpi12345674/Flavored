@@ -32,6 +32,9 @@ public class ModBlocks {
     public static final Block CAULIFLOWER = registerBlock("cauliflower",
             new CauliflowerBlock(FabricBlockSettings.create().mapColor(MapColor.WHITE).instrument(Instrument.DIDGERIDOO).strength(1.0F).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block PLANT_POT = registerBlock("plant_pot",
+            new PlantPotBlock(FabricBlockSettings.copyOf(Blocks.DECORATED_POT).strength(1.5F, 3.0F).sounds(BlockSoundGroup.STONE).nonOpaque().requiresTool()));
+
     public static final Block CAULIFLOWER_STEM = registerBlock("cauliflower_stem",
             new StemBlock((GourdBlock)CAULIFLOWER, () -> {
                 return ModItems.CAULIFLOWER_SEEDS;
