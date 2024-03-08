@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+
+    "*": {
+      "item": "minecraft:copper_ingot"
+    },
+    "#": {
+      "item": "minecraft:basalt"
+    },
+    "X": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "pattern": [
+    "***",
+    "*X*",
+    "###"
+  ],
+  "result": {
+    "item": "flavored:fermenter"
+  }
+}

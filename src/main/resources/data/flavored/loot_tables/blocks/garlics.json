@@ -12,6 +12,10 @@
         {
           "type": "minecraft:item",
           "name": "flavored:garlic"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:allium"
         }
       ],
       "rolls": 1.0
@@ -37,7 +41,7 @@
               "function": "minecraft:apply_bonus",
               "parameters": {
                 "extra": 3,
-                "probability": 0.5714286
+                "probability": 0.4714286
               }
             }
           ],

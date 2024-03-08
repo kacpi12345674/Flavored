@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "flavored:block/fermenter",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "flavored:block/fermenter"
+    },
+    "facing=south": {
+      "model": "flavored:block/fermenter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "flavored:block/fermenter",
+      "y": 270
+    }
+  }
+}

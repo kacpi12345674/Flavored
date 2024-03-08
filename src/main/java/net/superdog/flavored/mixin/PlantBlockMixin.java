@@ -1,10 +1,9 @@
 package net.superdog.flavored.mixin;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.PlantBlock;
+import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.superdog.flavored.block.ModBlocks;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -22,6 +21,15 @@ public abstract class PlantBlockMixin extends Block {
         Block block = world.getBlockState(pos).getBlock();
         if (block == ModBlocks.PLANT_POT) {
             info.setReturnValue(true);
+
+        }
+    }
+
+    public void  BecomeGarlic(BlockState floor, World world, BlockPos pos) {
+        Block block = world.getBlockState(pos).getBlock();
+        if (block == Blocks.PODZOL && this == Blocks.ALLIUM) {
+
+            world.setBlockState(pos, (BlockState)ModBlocks.GARLICS.getDefaultState(), 11);
 
         }
     }

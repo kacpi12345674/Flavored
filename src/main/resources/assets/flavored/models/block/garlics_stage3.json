@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "crop": "flavored:block/garlics_stage3"
+    "cross": "flavored:block/garlics_stage3"
   }
 }

@@ -19,6 +19,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.PLANT_POT);
+                        entries.add(ModBlocks.FERMENTER);
                         entries.add(ModItems.SPRUCE_CONE);
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.TOMATO_SEEDS);

@@ -1,0 +1,12 @@
+{
+"type": "minecraft:crafting_shapeless",
+"category": "misc",
+"ingredients": [
+{
+"item": "flavored:cauliflower_curd"
+}
+],
+"result": {
+"item": "flavored:cauliflower_seeds"
+}
+}

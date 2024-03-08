@@ -43,13 +43,13 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA_SLICE)));
 
     public static final Item SPAGHETTI = registerItem("spaghetti",
-            new StewItem(new FabricItemSettings().food(ModFoodComponents.SPAGHETTI)));
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.SPAGHETTI).maxCount(1)));
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_STEM, new FabricItemSettings()));
 
     public static final Item CARBONARA = registerItem("carbonara",
-            new StewItem(new FabricItemSettings().food(ModFoodComponents.CARBONARA)));
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.CARBONARA).maxCount(1)));
 
     public static final Item SWEET_BERRY_MUFFIN = registerItem("sweet_berry_muffin",
             new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_MUFFIN)));
