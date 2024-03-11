@@ -72,7 +72,6 @@ public class PizzaBlock extends HorizontalFacingBlock {
     protected static ActionResult tryEat(WorldAccess world, BlockPos pos, BlockState state, PlayerEntity player) {
         player.getInventory().insertStack(ModItems.PIZZA_SLICE.getDefaultStack());
         world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_WOOL_PLACE, SoundCategory.BLOCKS, 1.0F, 1.0F);
-            player.incrementStat(Stats.EAT_CAKE_SLICE);
             int i = (Integer)state.get(BITES);
             if (i < 3) {
                 world.setBlockState(pos, (BlockState)state.with(BITES, i + 1), 3);

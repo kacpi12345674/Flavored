@@ -37,7 +37,7 @@ public class FermenterScreen extends HandledScreen<FermenterScreenHandler> {
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE, x + 80, y + 35, 175, 0, handler.getScaledProgress(), 16);
+            context.drawTexture(TEXTURE, x + 80, y + 35, 176, 0, handler.getScaledProgress(), 16);
         }
     }
 

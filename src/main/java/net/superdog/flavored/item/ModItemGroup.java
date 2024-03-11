@@ -42,6 +42,18 @@ public class ModItemGroup {
                         entries.add(ModItems.PIZZA_SLICE);
                         entries.add(ModBlocks.GARLIC_BREAD);
                         entries.add(ModBlocks.PUDDING);
+                        entries.add(ModItems.CIDER);
+                        entries.add(ModItems.SWEET_BERRY_JUICE);
+                        entries.add(ModItems.GLOW_BERRY_JUICE);
+                        entries.add(ModItems.CHORUS_JUICE);
+                        entries.add(ModItems.HOT_COCOA);
+                        entries.add(ModItems.PUMPKIN_LATTE);
+
+
+
+
+
+
 
 
 

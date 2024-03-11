@@ -42,7 +42,13 @@
   "item.flavored.spaghetti": "Spaghetti",
   "item.flavored.carbonara": "Carbonara",
 
-  "block.flavored.carved_melon": "Carved Melon"
+  "block.flavored.carved_melon": "Carved Melon",
 
+  "item.flavored.chorus_juice": "Chorus Cocktail",
+  "item.flavored.sweet_berry_juice": "Sweet Berry Cocktail",
+  "item.flavored.glow_berry_juice": "Glow Berry Cocktail",
+  "item.flavored.cider": "Cider",
+  "item.flavored.hot_cocoa": "Hot Cocoa",
+  "item.flavored.pumpkin_latte": "Pumpkin Latte"
 
 }

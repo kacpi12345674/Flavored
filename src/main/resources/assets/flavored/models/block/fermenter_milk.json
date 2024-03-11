@@ -6,7 +6,7 @@
     "north": "flavored:block/fermenter_milk",
     "particle": "flavored:block/fermenter",
     "south": "flavored:block/fermenter_milk_side",
-    "up": "flavored:block/fermenter_top",
+    "up": "flavored:block/fermenter_milk_top",
     "west": "flavored:block/fermenter_milk_side"
   }
 }

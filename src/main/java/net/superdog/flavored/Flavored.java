@@ -15,6 +15,7 @@ import net.superdog.flavored.block.ModBlocks;
 import net.superdog.flavored.block.entity.ModBlockEntities;
 import net.superdog.flavored.item.ModItemGroup;
 import net.superdog.flavored.item.ModItems;
+import net.superdog.flavored.recipe.ModRecipes;
 import net.superdog.flavored.screen.ModScreenHandlers;
 import org.apache.http.pool.PoolEntry;
 import org.slf4j.Logger;
@@ -129,6 +130,7 @@ public class Flavored implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntites();
+		ModRecipes.registerRecipes();
 		ModScreenHandlers.registerScreenHandlers();
 
 	}

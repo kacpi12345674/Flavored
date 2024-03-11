@@ -6,7 +6,7 @@
     "north": "flavored:block/fermenter_water",
     "particle": "flavored:block/fermenter",
     "south": "flavored:block/fermenter_water_side",
-    "up": "flavored:block/copper_block",
+    "up": "flavored:block/fermenter_water_top",
     "west": "flavored:block/fermenter_water_side"
   }
 }

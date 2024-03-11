@@ -7,9 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.superdog.flavored.block.ModBlocks;
-import net.superdog.flavored.item.custom.ModFoodComponents;
-import net.superdog.flavored.item.custom.SpruceConeItem;
-import net.superdog.flavored.item.custom.TomatoSeedItem;
+import net.superdog.flavored.item.custom.*;
 
 public class ModItems {
 
@@ -56,6 +54,27 @@ public class ModItems {
 
     public static final Item GLOW_BERRY_MUFFIN = registerItem("glow_berry_muffin",
             new Item(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_MUFFIN)));
+
+    public static final Item GLOW_BERRY_JUICE = registerItem("glow_berry_juice",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_JUICE)));
+
+    public static final Item SWEET_BERRY_JUICE = registerItem("sweet_berry_juice",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_JUICE)));
+
+    public static final Item CHORUS_JUICE = registerItem("chorus_juice",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CHORUS_JUICE)));
+
+    public static final Item HOT_COCOA = registerItem("hot_cocoa",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.HOT_COCOA)));
+
+    public static final Item PUMPKIN_LATTE = registerItem("pumpkin_latte",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_LATTE)));
+
+    public static final Item CIDER = registerItem("cider",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CIDER)));
+
+
+
 
 
 

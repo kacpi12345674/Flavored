@@ -36,6 +36,8 @@ public class FermenterScreenHandler extends ScreenHandler {
         this.addSlot(new Slot(inventory, 0, 56, 35));
         this.addSlot(new Slot(inventory, 1, 116, 35));
         this.addSlot(new Slot(inventory, 2, 29, 35));
+        this.addSlot(new Slot(inventory, 3, 56, 59));
+
 
 
 
@@ -52,7 +54,7 @@ public class FermenterScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);  // Max Progress
-        int progressArrowSize = 25; // This is the width in pixels of your arrow
+        int progressArrowSize = 26; // This is the width in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

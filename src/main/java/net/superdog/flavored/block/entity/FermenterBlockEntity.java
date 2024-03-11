@@ -7,12 +7,14 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.MinecartItem;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -21,16 +23,22 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.superdog.flavored.item.ModItems;
+import net.superdog.flavored.recipe.FermenterRecipe;
 import net.superdog.flavored.screen.FermenterScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
 
     private static final int SUAGR_SLOT = 2;
+
+    private static final int LIQUID_SLOT = 3;
+
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -76,6 +84,16 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
     @Override
     public DefaultedList<ItemStack> getItems() {
         return inventory;
+    }
+
+    public boolean hasWater() {
+
+        return  this.getStack(LIQUID_SLOT).getItem() == Items.WATER_BUCKET;
+    }
+
+    public boolean hasMilk() {
+
+        return  this.getStack(LIQUID_SLOT).getItem() == Items.MILK_BUCKET;
     }
 
     @Override
@@ -126,12 +144,17 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private void craftItem() {
+        Optional<RecipeEntry<FermenterRecipe>> recipe = getCurrentRecipe();
+
         this.removeStack(INPUT_SLOT, 1);
         this.removeStack(SUAGR_SLOT, 1);
+        this.removeStack(LIQUID_SLOT, 1);
+        this.setStack(LIQUID_SLOT, Items.BUCKET.getDefaultStack());
 
-        ItemStack result = new ItemStack(ModItems.OIL);
 
-        this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
+
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
+                getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));
     }
 
     private boolean hasCraftingFinished() {
@@ -143,12 +166,19 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private boolean hasRecipe() {
-        ItemStack result = new ItemStack(ModItems.OIL);
-        boolean hasInput = getStack(INPUT_SLOT).getItem() == ModItems.SPRUCE_CONE;
-        boolean hasSugar = getStack(SUAGR_SLOT).getItem() == Items.SUGAR;
+        Optional<RecipeEntry<FermenterRecipe>> recipe = getCurrentRecipe();
 
+        return recipe.isPresent() && canInsertAmountIntoOutputSlot(recipe.get().value().getResult(null))
+                && canInsertItemIntoOutputSlot(recipe.get().value().getResult(null).getItem());
+    }
 
-        return hasInput && hasSugar && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+    private Optional<RecipeEntry<FermenterRecipe>> getCurrentRecipe() {
+        SimpleInventory inv = new SimpleInventory(this.size());
+        for (int i = 0; i < this.size(); i++) {
+            inv.setStack(i, this.getStack(i));
+        }
+        return getWorld().getRecipeManager().getFirstMatch(FermenterRecipe.Type.INSTANCE, inv, getWorld());
+
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

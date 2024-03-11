@@ -1,0 +1,18 @@
+{
+  "type": "flavored:fermenting",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "item": "flavored:glow_berry_juice",
+    "count": 1
+  }
+}

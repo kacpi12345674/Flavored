@@ -1,18 +1,48 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,liquid=0": {
       "model": "flavored:block/fermenter",
       "y": 90
     },
-    "facing=north": {
+    "facing=north,liquid=0": {
       "model": "flavored:block/fermenter"
     },
-    "facing=south": {
+    "facing=south,liquid=0": {
       "model": "flavored:block/fermenter",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,liquid=0": {
       "model": "flavored:block/fermenter",
+      "y": 270
+    },
+    "facing=east,liquid=1": {
+      "model": "flavored:block/fermenter_water",
+      "y": 90
+    },
+    "facing=north,liquid=1": {
+      "model": "flavored:block/fermenter_water"
+    },
+    "facing=south,liquid=1": {
+      "model": "flavored:block/fermenter_water",
+      "y": 180
+    },
+    "facing=west,liquid=1": {
+      "model": "flavored:block/fermenter_water",
+      "y": 270
+    },
+    "facing=east,liquid=2": {
+      "model": "flavored:block/fermenter_milk",
+      "y": 90
+    },
+    "facing=north,liquid=2": {
+      "model": "flavored:block/fermenter_milk"
+    },
+    "facing=south,liquid=2": {
+      "model": "flavored:block/fermenter_milk",
+      "y": 180
+    },
+    "facing=west,liquid=2": {
+      "model": "flavored:block/fermenter_milk",
       "y": 270
     }
   }
