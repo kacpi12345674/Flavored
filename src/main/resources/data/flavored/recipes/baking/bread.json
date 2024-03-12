@@ -1,0 +1,17 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "flavored:flour"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+
+
+  ],
+  "output": {
+    "item": "minecraft:bread",
+    "count": 1
+  }
+}

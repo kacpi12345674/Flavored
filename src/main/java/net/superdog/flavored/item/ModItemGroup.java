@@ -20,7 +20,11 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.PLANT_POT);
                         entries.add(ModBlocks.FERMENTER);
+                        entries.add(ModBlocks.OVEN);
+                        entries.add(ModItems.FLOUR);
                         entries.add(ModItems.SPRUCE_CONE);
+                        entries.add(ModBlocks.CHEESE);
+                        entries.add(ModItems.OIL);
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.TOMATO_SEEDS);
                         entries.add(ModItems.GARLIC);
@@ -32,8 +36,6 @@ public class ModItemGroup {
                         entries.add(ModItems.PUMPKIN_SLICE);
                         entries.add(ModBlocks.CARVED_MELON);
                         entries.add(ModItems.PASTA);
-                        entries.add(ModBlocks.CHEESE);
-                        entries.add(ModItems.OIL);
                         entries.add(ModItems.SPAGHETTI);
                         entries.add(ModItems.CARBONARA);
                         entries.add(ModItems.SWEET_BERRY_MUFFIN);

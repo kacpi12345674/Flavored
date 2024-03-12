@@ -8,6 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.superdog.flavored.block.ModBlocks;
 import net.superdog.flavored.screen.FermenterScreen;
 import net.superdog.flavored.screen.ModScreenHandlers;
+import net.superdog.flavored.screen.OvenScreen;
 
 public class FlavoredClient implements ClientModInitializer {
     public void onInitializeClient() {
@@ -18,6 +19,8 @@ public class FlavoredClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ATTACHED_CAULIFLOWER_STEM, RenderLayer.getCutout());
 
         HandledScreens.register(ModScreenHandlers.FERMENTER_SCREEN_HANDLER, FermenterScreen::new);
+        HandledScreens.register(ModScreenHandlers.OVEN_SCREEN_HANDLER, OvenScreen::new);
+
 
 
     }

@@ -32,6 +32,7 @@ import net.minecraft.world.World;
 import net.superdog.flavored.block.ModBlocks;
 import net.superdog.flavored.block.entity.FermenterBlockEntity;
 import net.superdog.flavored.block.entity.ModBlockEntities;
+import net.superdog.flavored.block.entity.OvenBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
@@ -96,18 +97,15 @@ public  static  final  IntProperty LIQUID = IntProperty.of("liquid", 0, 2);
             if (f.hasWater()) {
 
                 world.setBlockState(pos, (BlockState)state.with(LIQUID, 1));
-                System.out.println("Water");
 
             }
             else if(f.hasMilk()){
 
                 world.setBlockState(pos, (BlockState)state.with(LIQUID, 2));
-                System.out.println("Milk");
 
             }
             else {
                 world.setBlockState(pos, (BlockState)state.with(LIQUID, 0));
-                System.out.println("Nothing");
 
             }
         }
@@ -140,8 +138,6 @@ public  static  final  IntProperty LIQUID = IntProperty.of("liquid", 0, 2);
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
-
-        super.onStateReplaced(state, world, pos, newState, moved);
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof FermenterBlockEntity) {

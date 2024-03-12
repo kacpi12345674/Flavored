@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "flavored:plant_pot"
+    "flavored:plant_pot",
+    "flavored:fermenter",
+    "flavored:oven"
   ]
 }

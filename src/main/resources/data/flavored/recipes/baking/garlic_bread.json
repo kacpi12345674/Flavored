@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "flavored:flour"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "flavored:rosemary"
+    },
+    {
+      "item": "flavored:garlic"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:garlic_bread",
+    "count": 1
+  }
+}

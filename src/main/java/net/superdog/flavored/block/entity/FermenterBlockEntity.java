@@ -35,7 +35,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
 
-    private static final int SUAGR_SLOT = 2;
+    private static final int FERMENTING_SLOT = 2;
 
     private static final int LIQUID_SLOT = 3;
 
@@ -147,7 +147,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
         Optional<RecipeEntry<FermenterRecipe>> recipe = getCurrentRecipe();
 
         this.removeStack(INPUT_SLOT, 1);
-        this.removeStack(SUAGR_SLOT, 1);
+        this.removeStack(FERMENTING_SLOT, 1);
         this.removeStack(LIQUID_SLOT, 1);
         this.setStack(LIQUID_SLOT, Items.BUCKET.getDefaultStack());
 
@@ -162,7 +162,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private void increaseCraftProgress() {
-        progress += 3;
+        progress += 1;
     }
 
     private boolean hasRecipe() {

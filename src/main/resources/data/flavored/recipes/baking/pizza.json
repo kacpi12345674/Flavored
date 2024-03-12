@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "flavored:flour"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "flavored:tomato"
+    },
+    {
+      "item": "flavored:cheese"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:pizza",
+    "count": 1
+  }
+}

@@ -29,13 +29,30 @@ public class FermenterRecipe implements Recipe<SimpleInventory> {
         if (world.isClient()) {
             return false;
         }
+        // Only fermenting and liquid slot
 
-        if(recipeItems.get(0).test(inventory.getStack(0)) && recipeItems.get(1).test(inventory.getStack(2)) && recipeItems.get(2).test(inventory.getStack(3))) {
-
-
-
-            return  true;
+        if (recipeItems.size() == 2) {
+            if(recipeItems.get(0).test(inventory.getStack(2)) && recipeItems.get(1).test(inventory.getStack(3))) {
+                return  true;
+            }
         }
+        // Only liquid slot
+        else if (recipeItems.size() == 1) {
+            if(recipeItems.get(0).test(inventory.getStack(0))) {
+                return  true;
+            }
+
+            }
+        // Every slot
+            else {
+                if (recipeItems.get(0).test(inventory.getStack(0))
+                        && recipeItems.get(1).test(inventory.getStack(2))
+                        && recipeItems.get(2).test(inventory.getStack(3))) {
+
+
+                    return true;
+                }
+            }
 
         return  false;
     }

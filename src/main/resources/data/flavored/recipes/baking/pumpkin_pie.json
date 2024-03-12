@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "flavored:pumpkin_slice"
+    },
+    {
+      "item": "flavored:pumpkin_slice"
+    }
+
+
+  ],
+  "output": {
+    "item": "minecraft:pumpkin_pie",
+    "count": 1
+  }
+}

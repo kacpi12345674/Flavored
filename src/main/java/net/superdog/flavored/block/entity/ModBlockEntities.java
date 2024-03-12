@@ -15,6 +15,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(Flavored.MOD_ID, "fermenter_be"),
                     FabricBlockEntityTypeBuilder.create(FermenterBlockEntity::new, ModBlocks.FERMENTER).build());
 
+    public  static  final BlockEntityType<OvenBlockEntity> OVEN_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(Flavored.MOD_ID, "oven_be"),
+                    FabricBlockEntityTypeBuilder.create(OvenBlockEntity::new, ModBlocks.OVEN).build());
+
 
 
     public  static  void registerBlockEntites() {

@@ -1,0 +1,12 @@
+{
+  "type": "flavored:fermenting",
+  "ingredients": [
+    {
+      "item": "flavored:spruce_cone"
+    }
+  ],
+  "output": {
+    "item": "flavored:oil",
+    "count": 1
+  }
+}

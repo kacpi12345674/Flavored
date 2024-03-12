@@ -23,6 +23,8 @@
 
   "item.flavored.cauliflower_curd": "Cauliflower Curd",
 
+  "block.flavored.oven": "Oven",
+
 
   "item.flavored.glow_berry_muffin": "Glow Berry Muffin",
   "item.flavored.sweet_berry_muffin": "Sweet Berry Muffin",
@@ -30,6 +32,7 @@
 
   "block.flavored.garlic_bread": "Garlic Bread",
 
+  "item.flavored.flour": "Flour",
 
   "item.flavored.pasta": "Pasta",
 
@@ -44,9 +47,9 @@
 
   "block.flavored.carved_melon": "Carved Melon",
 
-  "item.flavored.chorus_juice": "Chorus Cocktail",
-  "item.flavored.sweet_berry_juice": "Sweet Berry Cocktail",
-  "item.flavored.glow_berry_juice": "Glow Berry Cocktail",
+  "item.flavored.chorus_cocktail": "Chorus Cocktail",
+  "item.flavored.sweet_berry_cocktail": "Sweet Berry Cocktail",
+  "item.flavored.glow_berry_cocktail": "Glow Berry Cocktail",
   "item.flavored.cider": "Cider",
   "item.flavored.hot_cocoa": "Hot Cocoa",
   "item.flavored.pumpkin_latte": "Pumpkin Latte"

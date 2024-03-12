@@ -38,6 +38,10 @@ public class ModBlocks {
     public static final Block FERMENTER = registerBlock("fermenter",
             new FermenterBlock(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
 
+    public static final Block OVEN = registerBlock("oven",
+            new OvenBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+
+
 
     public static final Block CAULIFLOWER_STEM = registerBlock("cauliflower_stem",
             new StemBlock((GourdBlock)CAULIFLOWER, () -> {

@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "flavored:flour"
+    }
+
+
+  ],
+  "output": {
+    "item": "minecraft:cookie",
+    "count": 3
+  }
+}

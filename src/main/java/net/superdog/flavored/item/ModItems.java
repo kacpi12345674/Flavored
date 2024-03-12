@@ -29,6 +29,9 @@ public class ModItems {
     public static final Item SPRUCE_CONE = registerItem("spruce_cone",
             new SpruceConeItem(new FabricItemSettings()));
 
+    public static final Item FLOUR = registerItem("flour",
+            new Item(new FabricItemSettings()));
+
     public static final Item ROSEMARY = registerItem("rosemary",
             new AliasedBlockItem(ModBlocks.ROSEMARY_BUSH, new FabricItemSettings()));
 
@@ -55,13 +58,13 @@ public class ModItems {
     public static final Item GLOW_BERRY_MUFFIN = registerItem("glow_berry_muffin",
             new Item(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_MUFFIN)));
 
-    public static final Item GLOW_BERRY_JUICE = registerItem("glow_berry_juice",
+    public static final Item GLOW_BERRY_JUICE = registerItem("glow_berry_cocktail",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_JUICE)));
 
-    public static final Item SWEET_BERRY_JUICE = registerItem("sweet_berry_juice",
+    public static final Item SWEET_BERRY_JUICE = registerItem("sweet_berry_cocktail",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_JUICE)));
 
-    public static final Item CHORUS_JUICE = registerItem("chorus_juice",
+    public static final Item CHORUS_JUICE = registerItem("chorus_cocktail",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CHORUS_JUICE)));
 
     public static final Item HOT_COCOA = registerItem("hot_cocoa",

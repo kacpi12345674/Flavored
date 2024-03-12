@@ -12,5 +12,11 @@ public class ModRecipes {
                 FermenterRecipe.Serializer.INSTANCE);
         Registry.register(Registries.RECIPE_TYPE, new Identifier(Flavored.MOD_ID, FermenterRecipe.Type.ID),
                FermenterRecipe.Type.INSTANCE );
+
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Flavored.MOD_ID, OvenRecipe.Serializer.ID),
+                OvenRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(Flavored.MOD_ID, OvenRecipe.Type.ID),
+                OvenRecipe.Type.INSTANCE);
+
     }
 }

@@ -3,10 +3,13 @@
 "category": "misc",
 "ingredients": [
 {
-"item": "flavored:pumpkin_slice"
-}
+"item": "minecraft:wheat"
+},
+  {
+    "item": "minecraft:wheat"
+  }
 ],
 "result": {
-"item": "minecraft:pumpkin_seeds"
+"item": "flavored:flour"
 }
 }

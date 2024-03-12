@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "flavored:flour"
+    }
+
+
+  ],
+  "output": {
+    "item": "minecraft:cake",
+    "count": 1
+  }
+}
