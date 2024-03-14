@@ -18,6 +18,7 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.flavored_group"))
                     .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
 
+                        entries.add(ModBlocks.CRATE);
                         entries.add(ModBlocks.PLANT_POT);
                         entries.add(ModBlocks.FERMENTER);
                         entries.add(ModBlocks.OVEN);
@@ -63,7 +64,6 @@ public class ModItemGroup {
                     }).build());
 
     public static void registerItemGroups() {
-        // Example of adding to existing Item Group
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
 
         });

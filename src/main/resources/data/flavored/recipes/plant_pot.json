@@ -4,18 +4,15 @@
   "key": {
 
     "*": {
-      "item": "minecraft:coarse_dirt"
-    },
-    "#": {
-      "item": "minecraft:brick"
+      "item": "tag:wooden_slab"
     }
   },
   "pattern": [
-    "# #",
-    "#*#",
-    " # "
+    "***",
+    "* *",
+    "***"
   ],
   "result": {
-    "item": "flavored:plant_pot"
+    "item": "flavored:crate"
   }
 }

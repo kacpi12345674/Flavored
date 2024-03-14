@@ -1,0 +1,248 @@
+{
+  "variants": {
+    "empty=true": {
+      "model": "flavored:block/crate/crate_empty"
+    },
+    "empty=false,crop=0,amount=1": {
+      "model": "flavored:block/crate/crate_tomato_1"
+    },
+    "empty=false,crop=0,amount=2": {
+      "model": "flavored:block/crate/crate_tomato_2"
+    },
+    "empty=false,crop=0,amount=3": {
+      "model": "flavored:block/crate/crate_tomato_3"
+    },
+    "empty=false,crop=0,amount=4": {
+      "model": "flavored:block/crate/crate_tomato_4"
+    },
+    "empty=false,crop=0,amount=5": {
+      "model": "flavored:block/crate/crate_tomato_5"
+    },
+    "empty=false,crop=0,amount=6": {
+      "model": "flavored:block/crate/crate_tomato_6"
+    },
+    "empty=false,crop=0,amount=7": {
+      "model": "flavored:block/crate/crate_tomato_7"
+    },
+    "empty=false,crop=0,amount=8": {
+      "model": "flavored:block/crate/crate_tomato_full"
+    },
+
+    "empty=false,crop=1,amount=1": {
+      "model": "flavored:block/crate/crate_apple_1"
+    },
+    "empty=false,crop=1,amount=2": {
+      "model": "flavored:block/crate/crate_apple_2"
+    },
+    "empty=false,crop=1,amount=3": {
+      "model": "flavored:block/crate/crate_apple_3"
+    },
+    "empty=false,crop=1,amount=4": {
+      "model": "flavored:block/crate/crate_apple_4"
+    },
+    "empty=false,crop=1,amount=5": {
+      "model": "flavored:block/crate/crate_apple_5"
+    },
+    "empty=false,crop=1,amount=6": {
+      "model": "flavored:block/crate/crate_apple_6"
+    },
+    "empty=false,crop=1,amount=7": {
+      "model": "flavored:block/crate/crate_apple_7"
+    },
+    "empty=false,crop=1,amount=8": {
+      "model": "flavored:block/crate/crate_apple_full"
+    },
+    "empty=false,crop=2,amount=1": {
+      "model": "flavored:block/crate/crate_carrot_1"
+    },
+    "empty=false,crop=2,amount=2": {
+      "model": "flavored:block/crate/crate_carrot_2"
+    },
+    "empty=false,crop=2,amount=3": {
+      "model": "flavored:block/crate/crate_carrot_3"
+    },
+    "empty=false,crop=2,amount=4": {
+      "model": "flavored:block/crate/crate_carrot_4"
+    },
+    "empty=false,crop=2,amount=5": {
+      "model": "flavored:block/crate/crate_carrot_5"
+    },
+    "empty=false,crop=2,amount=6": {
+      "model": "flavored:block/crate/crate_carrot_6"
+    },
+    "empty=false,crop=2,amount=7": {
+      "model": "flavored:block/crate/crate_carrot_7"
+    },
+    "empty=false,crop=2,amount=8": {
+      "model": "flavored:block/crate/crate_carrot_full"
+    },
+    "empty=false,crop=3,amount=1": {
+      "model": "flavored:block/crate/crate_beetroot_1"
+    },
+    "empty=false,crop=3,amount=2": {
+      "model": "flavored:block/crate/crate_beetroot_2"
+    },
+    "empty=false,crop=3,amount=3": {
+      "model": "flavored:block/crate/crate_beetroot_3"
+    },
+    "empty=false,crop=3,amount=4": {
+      "model": "flavored:block/crate/crate_beetroot_4"
+    },
+    "empty=false,crop=3,amount=5": {
+      "model": "flavored:block/crate/crate_beetroot_5"
+    },
+    "empty=false,crop=3,amount=6": {
+      "model": "flavored:block/crate/crate_beetroot_6"
+    },
+    "empty=false,crop=3,amount=7": {
+      "model": "flavored:block/crate/crate_beetroot_7"
+    },
+    "empty=false,crop=3,amount=8": {
+      "model": "flavored:block/crate/crate_beetroot_full"
+    },
+    "empty=false,crop=4,amount=1": {
+      "model": "flavored:block/crate/crate_potato_1"
+    },
+    "empty=false,crop=4,amount=2": {
+      "model": "flavored:block/crate/crate_potato_2"
+    },
+    "empty=false,crop=4,amount=3": {
+      "model": "flavored:block/crate/crate_potato_3"
+    },
+    "empty=false,crop=4,amount=4": {
+      "model": "flavored:block/crate/crate_potato_4"
+    },
+    "empty=false,crop=4,amount=5": {
+      "model": "flavored:block/crate/crate_potato_5"
+    },
+    "empty=false,crop=4,amount=6": {
+      "model": "flavored:block/crate/crate_potato_6"
+    },
+    "empty=false,crop=4,amount=7": {
+      "model": "flavored:block/crate/crate_potato_7"
+    },
+    "empty=false,crop=4,amount=8": {
+      "model": "flavored:block/crate/crate_potato_full"
+    },
+    "empty=false,crop=5,amount=1": {
+      "model": "flavored:block/crate/crate_sweet_berries_1"
+    },
+    "empty=false,crop=5,amount=2": {
+      "model": "flavored:block/crate/crate_sweet_berries_2"
+    },
+    "empty=false,crop=5,amount=3": {
+      "model": "flavored:block/crate/crate_sweet_berries_3"
+    },
+    "empty=false,crop=5,amount=4": {
+      "model": "flavored:block/crate/crate_sweet_berries_4"
+    },
+    "empty=false,crop=5,amount=5": {
+      "model": "flavored:block/crate/crate_sweet_berries_5"
+    },
+    "empty=false,crop=5,amount=6": {
+      "model": "flavored:block/crate/crate_sweet_berries_6"
+    },
+    "empty=false,crop=5,amount=7": {
+      "model": "flavored:block/crate/crate_sweet_berries_7"
+    },
+    "empty=false,crop=5,amount=8": {
+      "model": "flavored:block/crate/crate_sweet_berries_full"
+    },
+    "empty=false,crop=6,amount=1": {
+      "model": "flavored:block/crate/crate_glow_berries_1"
+    },
+    "empty=false,crop=6,amount=2": {
+      "model": "flavored:block/crate/crate_glow_berries_2"
+    },
+    "empty=false,crop=6,amount=3": {
+      "model": "flavored:block/crate/crate_glow_berries_3"
+    },
+    "empty=false,crop=6,amount=4": {
+      "model": "flavored:block/crate/crate_glow_berries_4"
+    },
+    "empty=false,crop=6,amount=5": {
+      "model": "flavored:block/crate/crate_glow_berries_5"
+    },
+    "empty=false,crop=6,amount=6": {
+      "model": "flavored:block/crate/crate_glow_berries_6"
+    },
+    "empty=false,crop=6,amount=7": {
+      "model": "flavored:block/crate/crate_glow_berries_7"
+    },
+    "empty=false,crop=6,amount=8": {
+      "model": "flavored:block/crate/crate_glow_berries_full"
+    },
+    "empty=false,crop=7,amount=1": {
+      "model": "flavored:block/crate/crate_chorus_fruit_1"
+    },
+    "empty=false,crop=7,amount=2": {
+      "model": "flavored:block/crate/crate_chorus_fruit_2"
+    },
+    "empty=false,crop=7,amount=3": {
+      "model": "flavored:block/crate/crate_chorus_fruit_3"
+    },
+    "empty=false,crop=7,amount=4": {
+      "model": "flavored:block/crate/crate_chorus_fruit_4"
+    },
+    "empty=false,crop=7,amount=5": {
+      "model": "flavored:block/crate/crate_chorus_fruit_5"
+    },
+    "empty=false,crop=7,amount=6": {
+      "model": "flavored:block/crate/crate_chorus_fruit_6"
+    },
+    "empty=false,crop=7,amount=7": {
+      "model": "flavored:block/crate/crate_chorus_fruit_7"
+    },
+    "empty=false,crop=7,amount=8": {
+      "model": "flavored:block/crate/crate_chorus_fruit_full"
+    },
+    "empty=false,crop=8,amount=1": {
+      "model": "flavored:block/crate/crate_garlic_1"
+    },
+    "empty=false,crop=8,amount=2": {
+      "model": "flavored:block/crate/crate_garlic_2"
+    },
+    "empty=false,crop=8,amount=3": {
+      "model": "flavored:block/crate/crate_garlic_3"
+    },
+    "empty=false,crop=8,amount=4": {
+      "model": "flavored:block/crate/crate_garlic_4"
+    },
+    "empty=false,crop=8,amount=5": {
+      "model": "flavored:block/crate/crate_garlic_5"
+    },
+    "empty=false,crop=8,amount=6": {
+      "model": "flavored:block/crate/crate_garlic_6"
+    },
+    "empty=false,crop=8,amount=7": {
+      "model": "flavored:block/crate/crate_garlic_7"
+    },
+    "empty=false,crop=8,amount=8": {
+      "model": "flavored:block/crate/crate_garlic_full"
+    },
+    "empty=false,crop=9,amount=1": {
+      "model": "flavored:block/crate/crate_rosemary_1"
+    },
+    "empty=false,crop=9,amount=2": {
+      "model": "flavored:block/crate/crate_rosemary_2"
+    },
+    "empty=false,crop=9,amount=3": {
+      "model": "flavored:block/crate/crate_rosemary_3"
+    },
+    "empty=false,crop=9,amount=4": {
+      "model": "flavored:block/crate/crate_rosemary_4"
+    },
+    "empty=false,crop=9,amount=5": {
+      "model": "flavored:block/crate/crate_rosemary_5"
+    },
+    "empty=false,crop=9,amount=6": {
+      "model": "flavored:block/crate/crate_rosemary_6"
+    },
+    "empty=false,crop=9,amount=7": {
+      "model": "flavored:block/crate/crate_rosemary_7"
+    },
+    "empty=false,crop=9,amount=8": {
+      "model": "flavored:block/crate/crate_rosemary_full"
+    }
+  }
+}

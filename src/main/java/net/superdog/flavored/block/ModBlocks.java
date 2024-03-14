@@ -35,6 +35,8 @@ public class ModBlocks {
     public static final Block PLANT_POT = registerBlock("plant_pot",
             new PlantPotBlock(FabricBlockSettings.copyOf(Blocks.DECORATED_POT).strength(1.5F, 3.0F).sounds(BlockSoundGroup.STONE).nonOpaque().requiresTool()));
 
+    public static final Block CRATE = registerBlock("crate",
+            new CrateBlock(FabricBlockSettings.copyOf(Blocks.COMPOSTER)));
     public static final Block FERMENTER = registerBlock("fermenter",
             new FermenterBlock(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
 
@@ -67,16 +69,16 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
-    public static final Block TOMATO_CROP = registerBlock("tomato_crop",
-            new TomatoCropBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)
+    public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
+            new TomatoCropBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
                     .noCollision()
                     .ticksRandomly()
                     .breakInstantly()
                     .nonOpaque()
                     .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
 
-    public static final Block ROSEMARY_BUSH = registerBlock("rosemary_bush",
-            new RosemaryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)
+    public static final Block ROSEMARY_BUSH = registerBlockWithoutItem("rosemary_bush",
+            new RosemaryBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
                     .noCollision()
                     .ticksRandomly()
                     .breakInstantly()
@@ -92,6 +94,11 @@ public class ModBlocks {
         Item item = Registry.register(Registries.ITEM, new Identifier(Flavored.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
         return item;
+    }
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
+
+        return Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, name), block);
     }
 
     public static void registerModBlocks() {

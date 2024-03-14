@@ -42,7 +42,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 2304;
 
     public FermenterBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.FERMENTER_BLOCK_ENTITY, pos, state);
