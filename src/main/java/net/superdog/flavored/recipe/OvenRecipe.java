@@ -50,27 +50,38 @@ public class OvenRecipe implements Recipe<SimpleInventory> {
 
         for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= 4; j++) {
-                if (j == i) continue;  // Skip combinations with the same number
+                if (j == i) continue;
                 for (int k = 1; k <= 4; k++) {
                     if (k == i || k == j) continue;
                     for (int l = 1; l <= 4; l++) {
                         if (l == i || l == j || l == k) continue;
                         boolean result = false;
+                        int size = 0;
 
-                        if (recipeItems.size() == 4) {
+                        for (int x = 0; x < inventory.size(); x++) {
+                            if (!inventory.getStack(x).isEmpty()) {
+                                size++;
+                            }
+                        }
+
+                        if (recipeItems.size() == 4 && size == 5) {
                             result = recipeItems.get(0).test(inventory.getStack(i))
                                     && recipeItems.get(1).test(inventory.getStack(j))
                                     && recipeItems.get(2).test(inventory.getStack(k))
                                     && recipeItems.get(3).test(inventory.getStack(l));
                         }
-                        else if (recipeItems.size() == 3) {
+                        else if (recipeItems.size() == 3 && size == 4) {
                             result = recipeItems.get(0).test(inventory.getStack(i))
                                     && recipeItems.get(1).test(inventory.getStack(j))
                                     && recipeItems.get(2).test(inventory.getStack(k));
                         }
-                        else if (recipeItems.size() == 2) {
+                        else if (recipeItems.size() == 2 && size == 3) {
                             result = recipeItems.get(0).test(inventory.getStack(i))
                                     && recipeItems.get(1).test(inventory.getStack(j));
+
+                        }
+                        else if (recipeItems.size() == 1 && size == 2) {
+                            result = recipeItems.get(0).test(inventory.getStack(i));
 
                         }
 

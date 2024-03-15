@@ -34,9 +34,6 @@ public class ModBlocks {
 
     public static final Block PLANT_POT = registerBlock("plant_pot",
             new PlantPotBlock(FabricBlockSettings.copyOf(Blocks.DECORATED_POT).strength(1.5F, 3.0F).sounds(BlockSoundGroup.STONE).nonOpaque().requiresTool()));
-
-    public static final Block CRATE = registerBlock("crate",
-            new CrateBlock(FabricBlockSettings.copyOf(Blocks.COMPOSTER)));
     public static final Block FERMENTER = registerBlock("fermenter",
             new FermenterBlock(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
 
@@ -85,9 +82,16 @@ public class ModBlocks {
                     .nonOpaque()
                     .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
 
+    public static Block CRATE = null;
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, name), block);
+    }
+
+    public  static  void  registerCrate() {
+        CRATE = registerBlock("crate",
+                new CrateBlock(FabricBlockSettings.copyOf(Blocks.COMPOSTER)));
     }
 
     private static Item registerBlockItem(String name, Block block) {

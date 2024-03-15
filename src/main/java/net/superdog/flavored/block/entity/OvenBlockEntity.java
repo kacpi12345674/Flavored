@@ -43,7 +43,7 @@ public class OvenBlockEntity extends BlockEntity implements NamedScreenHandlerFa
     private static final int OUTPUT_SLOT = 5;
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 144;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
     private final DefaultedList<ItemStack> inventory =

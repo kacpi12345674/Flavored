@@ -1,0 +1,21 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "flavored:flour"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+
+
+
+  ],
+  "output": {
+    "item": "minecraft:bread",
+    "count": 1
+  }
+}

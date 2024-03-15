@@ -130,6 +130,7 @@ public class Flavored implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntites();
+		ModBlocks.registerCrate();
 		ModRecipes.registerRecipes();
 		ModScreenHandlers.registerScreenHandlers();
 

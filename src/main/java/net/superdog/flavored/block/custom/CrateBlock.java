@@ -25,6 +25,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.superdog.flavored.block.ModBlocks;
 import net.superdog.flavored.block.entity.FermenterBlockEntity;
 import net.superdog.flavored.item.ModItems;
 import org.jetbrains.annotations.NotNull;
@@ -80,15 +81,21 @@ public class CrateBlock extends Block {
         crops.add(ModItems.GARLIC);
         crops.add(ModItems.ROSEMARY);
 
-
-
-
-
-
     }
 
     public  static  final int MAX_AMOUNT = 8;
 
+    protected ItemConvertible getCropItem(BlockState state) {
+        if (!state.get(EMPTY)) {
+            return crops.get(state.get(CROP));
+        }
+        return ModBlocks.CRATE;
+    }
+
+    @Override
+    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+        return new ItemStack(this.getCropItem(state));
+    }
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -96,6 +103,7 @@ public class CrateBlock extends Block {
 
             if (state.get(EMPTY)) {
                 for (int i = 0; i < crops.size(); i++) {
+                    System.out.println(crops.get(i));
                     if (player.getStackInHand(hand).getItem() == crops.get(i)) {
                         world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, i).with(AMOUNT, state.get(AMOUNT)+1));
                         player.getStackInHand(hand).decrement(1);
@@ -125,6 +133,11 @@ public class CrateBlock extends Block {
 
                     }
 
+        DefaultedList<ItemStack> list = DefaultedList.ofSize(state.get(AMOUNT));
+        for(int i = 0; i < list.size(); i++) {
+            list.set(i,crops.get(state.get(CROP)).getDefaultStack());
+        }
+
 
 
 
@@ -135,11 +148,6 @@ public class CrateBlock extends Block {
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
-        DefaultedList<ItemStack> list = DefaultedList.ofSize(state.get(AMOUNT));
-        for(int i = 0; i < list.size(); i++) {
-            list.set(i,crops.get(state.get(CROP)).getDefaultStack());
-        }
-        ItemScatterer.spawn(world, pos, list);
         super.onStateReplaced(state, world, pos, newState, moved);
     }
 
