@@ -33,12 +33,17 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CARVED_CAULIFLOWER);
                         entries.add(ModItems.CAULIFLOWER_CURD);
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.SPINACH);
+                        entries.add(ModItems.SPINACH_SEEDS);
                         entries.add(ModItems.ROSEMARY);
                         entries.add(ModItems.PUMPKIN_SLICE);
                         entries.add(ModBlocks.CARVED_MELON);
                         entries.add(ModItems.PASTA);
+                        entries.add(ModItems.ROASTED_CAULIFLOWER_CURD);
+                        entries.add(ModItems.CAULIFLOWER_SOUP);
                         entries.add(ModItems.SPAGHETTI);
                         entries.add(ModItems.CARBONARA);
+                        entries.add(ModItems.SALAD);
                         entries.add(ModItems.SWEET_BERRY_MUFFIN);
                         entries.add(ModItems.GLOW_BERRY_MUFFIN);
                         entries.add(ModBlocks.PIZZA);
@@ -51,6 +56,8 @@ public class ModItemGroup {
                         entries.add(ModItems.CHORUS_JUICE);
                         entries.add(ModItems.HOT_COCOA);
                         entries.add(ModItems.PUMPKIN_LATTE);
+                        entries.add(ModItems.TEA);
+
 
 
 

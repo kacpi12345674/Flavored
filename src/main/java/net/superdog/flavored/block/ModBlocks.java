@@ -66,6 +66,14 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block SPINACHES = registerBlock("spinaches",
+            new SpinachesBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)
+                    .mapColor(MapColor.GREEN)
+                    .noCollision().ticksRandomly()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
     public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
             new TomatoCropBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
                     .noCollision()

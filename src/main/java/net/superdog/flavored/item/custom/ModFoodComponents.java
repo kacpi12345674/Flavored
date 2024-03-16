@@ -20,11 +20,15 @@ public class ModFoodComponents {
 
     public static final FoodComponent GLOW_BERRY_MUFFIN = new FoodComponent.Builder().hunger(6).saturationModifier(0.4f).build();
 
+    public static final FoodComponent ROASTED_CAULIFLOWER_CURD = new FoodComponent.Builder().hunger(6).saturationModifier(0.4f).build();
+    public static final FoodComponent CAULIFLOWER_SOUP = new FoodComponent.Builder().hunger(7).saturationModifier(0.6f).build();
 
+    public static final FoodComponent SPAGHETTI = new FoodComponent.Builder().hunger(8).saturationModifier(0.6f).build();
 
-    public static final FoodComponent SPAGHETTI = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent CARBONARA = new FoodComponent.Builder().hunger(8).saturationModifier(0.6f).build();
 
-    public static final FoodComponent CARBONARA = new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build();
+    public static final FoodComponent SALAD = new FoodComponent.Builder().hunger(7).saturationModifier(0.5f).build();
+
 
 
     public static final FoodComponent OIL = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f).statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 300, 0), 1F).build();
@@ -42,7 +46,9 @@ public class ModFoodComponents {
 
     public static final FoodComponent  PUMPKIN_LATTE = new FoodComponent.Builder().hunger(5).snack().saturationModifier(0.4f).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 0), 1F).build();
 
+    public static final FoodComponent  TEA = new FoodComponent.Builder().hunger(3).snack().saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 400, 0), 1F).build();
 
+    public static final FoodComponent  SPINACH = new FoodComponent.Builder().hunger(1).snack().saturationModifier(0.1f).build();
 
 
 }

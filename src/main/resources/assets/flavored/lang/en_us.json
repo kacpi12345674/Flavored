@@ -20,6 +20,8 @@
   "block.flavored.carved_cauliflower": "Carved Cauliflower",
   "item.flavored.cauliflower_seeds": "Cauliflower Seeds",
   "block.flavored.fermenter": "Fermenter",
+  "block.flavored.plant_pot": "Plant Pot",
+
 
   "item.flavored.cauliflower_curd": "Cauliflower Curd",
 
@@ -28,6 +30,9 @@
 
   "item.flavored.glow_berry_muffin": "Glow Berry Muffin",
   "item.flavored.sweet_berry_muffin": "Sweet Berry Muffin",
+
+  "item.flavored.cauliflower_soup": "Cauliflower Soup",
+  "item.flavored.roasted_cauliflower_curd": "Rosated Cauliflower Curd",
 
 
   "block.flavored.garlic_bread": "Garlic Bread",
@@ -47,6 +52,8 @@
 
   "item.flavored.spaghetti": "Spaghetti",
   "item.flavored.carbonara": "Carbonara",
+  "item.flavored.salad": "Salad",
+
 
   "block.flavored.carved_melon": "Carved Melon",
 
@@ -55,6 +62,13 @@
   "item.flavored.glow_berry_cocktail": "Glow Berry Cocktail",
   "item.flavored.cider": "Cider",
   "item.flavored.hot_cocoa": "Hot Cocoa",
-  "item.flavored.pumpkin_latte": "Pumpkin Latte"
+  "item.flavored.pumpkin_latte": "Pumpkin Latte",
+  "item.flavored.tea": "Tea",
+
+  "item.flavored.spinach": "Spinach",
+  "item.flavored.spinach_seeds": "Spinach Seeds"
+
+
+
 
 }

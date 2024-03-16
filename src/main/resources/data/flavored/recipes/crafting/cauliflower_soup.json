@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:cauliflower_curd"
+    },
+    {
+      "item": "flavored:cauliflower_curd"
+    },
+    {
+      "item": "flavored:rosemary"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "flavored:cauliflower_soup"
+  }
+}

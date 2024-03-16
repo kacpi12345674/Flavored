@@ -9,6 +9,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.IntProperty;
@@ -106,44 +108,45 @@ public class CrateBlock extends Block {
                     System.out.println(crops.get(i));
                     if (player.getStackInHand(hand).getItem() == crops.get(i)) {
                         world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, i).with(AMOUNT, state.get(AMOUNT)+1));
+                        world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_COMPOSTER_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
                         player.getStackInHand(hand).decrement(1);
 
                         break;
                     }
                 }
 
+                return ActionResult.SUCCESS;
+
             }
             else if (!state.get(EMPTY) && state.get(AMOUNT) < MAX_AMOUNT && player.getStackInHand(hand).getItem() == crops.get(state.get(CROP))) {
 
-                    world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, state.get(CROP)).with(AMOUNT, state.get(AMOUNT) + 1));
-                    player.getStackInHand(hand).decrement(1);
+                world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, state.get(CROP)).with(AMOUNT, state.get(AMOUNT) + 1));
+                world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_COMPOSTER_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                player.getStackInHand(hand).decrement(1);
 
-
+                return ActionResult.SUCCESS;
             }
-                    else if (player.getStackInHand(hand).isEmpty() && !state.get(EMPTY)) {
-                        player.getInventory().insertStack(crops.get(state.get(CROP)).getDefaultStack());
-                        if ((state.get(AMOUNT)-1) == 0) {
-                            world.setBlockState(pos, (BlockState) state.with(EMPTY, true).with(CROP, state.get(CROP)).with(AMOUNT, 0));
+            else if (player.getStackInHand(hand).isEmpty() && !state.get(EMPTY)) {
+                player.getInventory().insertStack(crops.get(state.get(CROP)).getDefaultStack());
+                world.playSound((PlayerEntity)null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.2F, 1.5F);
+                if ((state.get(AMOUNT)-1) == 0) {
+                    world.setBlockState(pos, (BlockState) state.with(EMPTY, true).with(CROP, state.get(CROP)).with(AMOUNT, 0));
 
-                        }
-                        else {
-                            world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, state.get(CROP)).with(AMOUNT, state.get(AMOUNT)-1));
+                }
+                else {
+                    world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, state.get(CROP)).with(AMOUNT, state.get(AMOUNT)-1));
 
-                        }
+                }
 
-                    }
-
-        DefaultedList<ItemStack> list = DefaultedList.ofSize(state.get(AMOUNT));
-        for(int i = 0; i < list.size(); i++) {
-            list.set(i,crops.get(state.get(CROP)).getDefaultStack());
-        }
+                return ActionResult.SUCCESS;
+            }
 
 
 
 
 
 
-            return ActionResult.SUCCESS;
+            return ActionResult.FAIL;
     }
 
     @Override

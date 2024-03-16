@@ -16,18 +16,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "flavored:tomato_crop",
+                  "block": "flavored:spinaches",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "7"
                   }
                 }
               ],
-              "name": "flavored:tomato"
+              "name": "flavored:spinach"
             },
             {
               "type": "minecraft:item",
-              "name": "flavored:tomato_seeds"
+              "name": "flavored:spinach_seeds"
             }
           ]
         }
@@ -38,7 +38,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "flavored:tomato_crop",
+          "block": "flavored:spinaches",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "7"
@@ -59,11 +59,11 @@
               }
             }
           ],
-          "name": "flavored:tomato_seeds"
+          "name": "flavored:spinach_seeds"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "flavored:blocks/tomato_crop"
+  "random_sequence": "flavored:blocks/spinaches"
 }

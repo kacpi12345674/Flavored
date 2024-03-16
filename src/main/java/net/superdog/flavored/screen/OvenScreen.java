@@ -37,11 +37,11 @@ public class OvenScreen extends HandledScreen<OvenScreenHandler> {
 
 
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE, x + 80, y + 19, 176, 14, handler.getScaledProgress(), 16);
+            context.drawTexture(TEXTURE, x + 79, y + 19, 176, 16, handler.getScaledProgress(), 16);
         }
 
         if(handler.hasFuel()) {
-            context.drawTexture(TEXTURE, x + 49, y + 46 + 14 - handler.getScaledFuelProgress(), 176,
+            context.drawTexture(TEXTURE, x + 50, y + 46 + 14 - handler.getScaledFuelProgress(), 176,
                     14 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress());
         }
 

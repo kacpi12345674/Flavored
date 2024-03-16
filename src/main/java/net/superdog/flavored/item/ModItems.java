@@ -40,11 +40,20 @@ public class ModItems {
     public static final Item PASTA = registerItem("pasta",
             new Item(new FabricItemSettings()));
 
+    public static final Item ROASTED_CAULIFLOWER_CURD = registerItem("roasted_cauliflower_curd",
+            new Item(new FabricItemSettings().food(ModFoodComponents.ROASTED_CAULIFLOWER_CURD)));
+
     public static final Item PIZZA_SLICE = registerItem("pizza_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.PIZZA_SLICE)));
 
+    public static final Item CAULIFLOWER_SOUP = registerItem("cauliflower_soup",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER_SOUP).maxCount(1)));
+
     public static final Item SPAGHETTI = registerItem("spaghetti",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SPAGHETTI).maxCount(1)));
+
+    public static final Item SALAD = registerItem("salad",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.SALAD).maxCount(1)));
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_STEM, new FabricItemSettings()));
@@ -70,11 +79,20 @@ public class ModItems {
     public static final Item HOT_COCOA = registerItem("hot_cocoa",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.HOT_COCOA)));
 
+    public static final Item TEA = registerItem("tea",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.TEA)));
+
     public static final Item PUMPKIN_LATTE = registerItem("pumpkin_latte",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_LATTE)));
 
     public static final Item CIDER = registerItem("cider",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CIDER)));
+
+    public static final Item SPINACH = registerItem("spinach",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SPINACH)));
+
+    public static final Item SPINACH_SEEDS = registerItem("spinach_seeds",
+            new AliasedBlockItem(ModBlocks.SPINACHES, new FabricItemSettings()));
 
 
 

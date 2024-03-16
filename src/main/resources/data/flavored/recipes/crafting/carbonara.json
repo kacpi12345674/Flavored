@@ -4,10 +4,13 @@
   "ingredients": [
     {
       "item": "flavored:garlic"
-    },    {
-      "item": "flavored:cheese"
     },
-
+    {
+      "item": "flavored:egg"
+    },
+    {
+      "item": "flavored:cauliflower_curd"
+    },
     {
       "item": "flavored:pasta"
     },

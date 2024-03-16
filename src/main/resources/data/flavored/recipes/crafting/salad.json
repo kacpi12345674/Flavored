@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:spinach"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "flavored:tomato"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "flavored:salad"
+  }
+}
