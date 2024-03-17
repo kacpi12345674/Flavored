@@ -161,6 +161,12 @@ public  static  final  IntProperty LIQUID = IntProperty.of("liquid", 0, 2);
         return ActionResult.SUCCESS;
     }
 
+    @Override
+    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+
+        return state.get(LIQUID);
+    }
+
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {

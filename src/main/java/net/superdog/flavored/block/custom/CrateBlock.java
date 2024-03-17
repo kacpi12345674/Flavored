@@ -161,6 +161,10 @@ public class CrateBlock extends Block {
         super.randomDisplayTick(state, world, pos, random);
     }
 
+    @Override
+    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+        return (int)Math.ceil(state.get(AMOUNT) / 8);
+    }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

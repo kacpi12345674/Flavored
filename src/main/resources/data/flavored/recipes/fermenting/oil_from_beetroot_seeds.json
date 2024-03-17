@@ -2,7 +2,7 @@
   "type": "flavored:fermenting",
   "ingredients": [
     {
-      "item": "flavored:spruce_cone"
+      "item": "minecraft:beetroot_seeds"
     }
   ],
   "output": {

@@ -1,0 +1,12 @@
+{
+  "type": "flavored:fermenting",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    }
+  ],
+  "output": {
+    "item": "flavored:oil",
+    "count": 1
+  }
+}

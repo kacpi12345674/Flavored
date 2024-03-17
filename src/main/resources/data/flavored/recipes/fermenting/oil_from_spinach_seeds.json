@@ -1,0 +1,12 @@
+{
+  "type": "flavored:fermenting",
+  "ingredients": [
+    {
+      "item": "flavored:spinach_seeds"
+    }
+  ],
+  "output": {
+    "item": "flavored:oil",
+    "count": 1
+  }
+}

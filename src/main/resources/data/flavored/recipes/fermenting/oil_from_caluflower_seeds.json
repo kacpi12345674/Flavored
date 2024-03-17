@@ -1,0 +1,12 @@
+{
+  "type": "flavored:fermenting",
+  "ingredients": [
+    {
+      "item": "flavored:cauliflower_seeds"
+    }
+  ],
+  "output": {
+    "item": "flavored:oil",
+    "count": 1
+  }
+}

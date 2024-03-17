@@ -86,6 +86,11 @@ public class OvenBlock extends BlockWithEntity implements BlockEntityProvider {
         return ActionResult.SUCCESS;
     }
 
+    @Override
+    public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
+        return super.getComparatorOutput(state, world, pos);
+    }
+
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
