@@ -114,13 +114,6 @@ public class Flavored implements ModInitializer {
 						.with(ItemEntry.builder(ModItems.SPRUCE_CONE));
 				tableBuilder.pool(poolBuilder);
 			}
-			if (source.isBuiltin() && SPRUCE_LEAVES_ID.equals(id)) {
-				LootPool.Builder poolBuilder = LootPool.builder()
-						.with(ItemEntry.builder(ModItems.SPRUCE_CONE))
-						.conditionally(RandomChanceLootCondition.builder(0.01f));
-
-				tableBuilder.pool(poolBuilder);
-			}
 			if (source.isBuiltin() && SNIFFER_DIGGABLE_ID.equals(id)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 						.with(ItemEntry.builder(ModBlocks.ANCIENT_SAPLING));

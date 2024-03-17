@@ -29,9 +29,6 @@ public class ModItems {
     public static final Item FIG = registerItem("fig",
             new AliasedBlockItem(ModBlocks.FIG, (new FabricItemSettings()).food(ModFoodComponents.FIG)));
 
-    public static final Item SPRUCE_CONE = registerItem("spruce_cone",
-            new SpruceConeItem(new FabricItemSettings()));
-
     public static final Item FLOUR = registerItem("flour",
             new Item(new FabricItemSettings()));
 
