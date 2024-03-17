@@ -18,6 +18,24 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.flavored_group"))
                     .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
 
+                        entries.add(ModBlocks.ANCIENT_LOG);
+                        entries.add(ModBlocks.ANCIENT_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ANCIENT_LOG);
+                        entries.add(ModBlocks.STRIPPED_ANCIENT_WOOD);
+                        entries.add(ModBlocks.ANCIENT_PLANKS);
+                        entries.add(ModBlocks.ANCIENT_STAIRS);
+                        entries.add(ModBlocks.ANCIENT_SLAB);
+                        entries.add(ModBlocks.ANCIENT_FENCE);
+                        entries.add(ModBlocks.ANCIENT_FENCE_GATE);
+                        entries.add(ModBlocks.ANCIENT_BUTTON);
+                        entries.add(ModBlocks.ANCIENT_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ANCIENT_DOOR);
+                        entries.add(ModBlocks.ANCIENT_TRAPDOOR);
+                        entries.add(ModBlocks.ANCIENT_HANGING_SIGN);
+                        entries.add(ModBlocks.ANCIENT_SIGN);
+                        entries.add(ModBlocks.ANCIENT_LEAVES);
+                        entries.add(ModBlocks.FLOWERING_ANCIENT_LEAVES);
+                        entries.add(ModBlocks.ANCIENT_SAPLING);
                         entries.add(ModBlocks.CRATE);
                         entries.add(ModBlocks.PLANT_POT);
                         entries.add(ModBlocks.FERMENTER);
@@ -35,6 +53,7 @@ public class ModItemGroup {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.SPINACH);
                         entries.add(ModItems.SPINACH_SEEDS);
+                        entries.add(ModItems.FIG);
                         entries.add(ModItems.ROSEMARY);
                         entries.add(ModItems.PUMPKIN_SLICE);
                         entries.add(ModBlocks.CARVED_MELON);
@@ -51,9 +70,10 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GARLIC_BREAD);
                         entries.add(ModBlocks.PUDDING);
                         entries.add(ModItems.CIDER);
-                        entries.add(ModItems.SWEET_BERRY_JUICE);
-                        entries.add(ModItems.GLOW_BERRY_JUICE);
-                        entries.add(ModItems.CHORUS_JUICE);
+                        entries.add(ModItems.SWEET_BERRY_COCKTAIL);
+                        entries.add(ModItems.GLOW_BERRY_COCKTAIL);
+                        entries.add(ModItems.CHORUS_COCKTAIL);
+                        entries.add(ModItems.FIG_COCKTAIL);
                         entries.add(ModItems.HOT_COCOA);
                         entries.add(ModItems.PUMPKIN_LATTE);
                         entries.add(ModItems.TEA);

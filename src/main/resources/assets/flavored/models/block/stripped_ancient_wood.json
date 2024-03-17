@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "flavored:block/stripped_ancient_log",
+    "side": "flavored:block/stripped_ancient_log"
+  }
+}

@@ -13,9 +13,64 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.superdog.flavored.Flavored;
 import net.superdog.flavored.block.custom.*;
+import net.superdog.flavored.world.tree.AncientSaplingGenerator;
 import net.superdog.flavored.item.ModItems;
 
 public class ModBlocks {
+
+    public static final Block ANCIENT_LOG = registerBlock("ancient_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+
+    public static final Block STRIPPED_ANCIENT_LOG = registerBlock("stripped_ancient_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final Block ANCIENT_WOOD = registerBlock("ancient_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_ANCIENT_WOOD = registerBlock("stripped_ancient_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final Block ANCIENT_PLANKS = registerBlock("ancient_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block ANCIENT_STAIRS = registerBlock("ancient_stairs",
+            new StairsBlock(ModBlocks.ANCIENT_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+
+    public static final Block ANCIENT_SLAB = registerBlock("ancient_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
+
+    public static final Block ANCIENT_DOOR = registerBlock("ancient_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR), BlockSetType.OAK));
+
+    public static final Block ANCIENT_TRAPDOOR = registerBlock("ancient_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+
+    public static final Block ANCIENT_FENCE = registerBlock("ancient_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+
+    public static final Block ANCIENT_FENCE_GATE = registerBlock("ancient_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
+
+    public static final Block ANCIENT_BUTTON = registerBlock("ancient_button",
+            Blocks.createWoodenButtonBlock(BlockSetType.OAK));
+
+    public static final Block ANCIENT_PRESSURE_PLATE = registerBlock("ancient_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
+
+    public static final Block ANCIENT_SIGN= registerBlock("ancient_sign",
+            new SignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), WoodType.OAK));
+
+    public static final Block ANCIENT_HANGING_SIGN = registerBlock("ancient_hanging_sign",
+            new HangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), WoodType.OAK));
+
+    public static final Block ANCIENT_LEAVES = registerBlock("ancient_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES)));
+
+    public static final Block ANCIENT_SAPLING = registerBlock("ancient_sapling",
+            new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block FLOWERING_ANCIENT_LEAVES = registerBlock("flowering_ancient_leaves",
+            new FloweringAncientLeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES)));
+
 
     public static final Block PIZZA = registerBlock("pizza",
             new PizzaBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
@@ -84,6 +139,14 @@ public class ModBlocks {
 
     public static final Block ROSEMARY_BUSH = registerBlockWithoutItem("rosemary_bush",
             new RosemaryBushBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
+
+    public static final Block FIG = registerBlockWithoutItem("fig",
+            new FigBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
                     .noCollision()
                     .ticksRandomly()
                     .breakInstantly()

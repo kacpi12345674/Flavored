@@ -58,6 +58,7 @@
   "block.flavored.carved_melon": "Carved Melon",
 
   "item.flavored.chorus_cocktail": "Chorus Cocktail",
+  "item.flavored.fig_cocktail": "Fig Cocktail",
   "item.flavored.sweet_berry_cocktail": "Sweet Berry Cocktail",
   "item.flavored.glow_berry_cocktail": "Glow Berry Cocktail",
   "item.flavored.cider": "Cider",
@@ -66,9 +67,29 @@
   "item.flavored.tea": "Tea",
 
   "item.flavored.spinach": "Spinach",
-  "item.flavored.spinach_seeds": "Spinach Seeds"
+  "item.flavored.spinach_seeds": "Spinach Seeds",
+
+  "item.flavored.fig": "Fig",
 
 
+  "block.flavored.ancient_log": "Ancient Log",
+  "block.flavored.ancient_wood": "Ancient Wood",
+  "block.flavored.stripped_ancient_log": "Stripped Ancient Log",
+  "block.flavored.stripped_ancient_wood": "Stripped Ancient Wood",
+  "block.flavored.ancient_button": "Ancient Button",
+  "block.flavored.ancient_planks": "Ancient Planks",
+  "block.flavored.ancient_fence": "Ancient Fence",
+  "block.flavored.ancient_fence_gate": "Ancient Fence Gate",
+  "block.flavored.ancient_slab": "Ancient Slab",
+  "block.flavored.ancient_stairs": "Ancient Stairs",
+  "block.flavored.ancient_hanging_sign": "Ancient Hanging Sign",
+  "block.flavored.ancient_sign": "Ancient Hanging Sign",
+  "block.flavored.ancient_pressure_plate": "Ancient Pressure Plate",
+  "block.flavored.ancient_door": "Ancient Door",
+  "block.flavored.ancient_trapdoor": "Ancient Trapdoor",
+  "block.flavored.ancient_leaves": "Ancient Leaves",
+  "block.flavored.flowering_ancient_leaves": "Flowering Ancient Leaves",
 
+  "block.flavored.ancient_sapling": "Ancient Sapling"
 
 }

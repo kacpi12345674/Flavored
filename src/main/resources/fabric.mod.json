@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "flavored",
 	"version": "0.0.3 - 1.20.2",
-	"name": "TemplateMod",
+	"name": "Flavored",
 	"description": "Food mod.",
 	"authors": [
 		"CodenamedSuper"
@@ -22,7 +22,7 @@
 			"net.superdog.flavored.FlavoredClient"
 		],
 		"fabric-datagen": [
-			""
+			"net.superdog.flavored.FlavoredDataGenerator"
 		]
 	},
 	"mixins": [

@@ -1,0 +1,18 @@
+{
+  "type": "flavored:fermenting",
+  "ingredients": [
+    {
+      "item": "minecraft:fig"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "item": "flavored:fig_cocktail",
+    "count": 4
+  }
+}

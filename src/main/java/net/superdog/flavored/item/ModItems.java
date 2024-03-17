@@ -26,6 +26,9 @@ public class ModItems {
     public static final Item PUMPKIN_SLICE = registerItem("pumpkin_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_SLICE)));
 
+    public static final Item FIG = registerItem("fig",
+            new AliasedBlockItem(ModBlocks.FIG, (new FabricItemSettings()).food(ModFoodComponents.FIG)));
+
     public static final Item SPRUCE_CONE = registerItem("spruce_cone",
             new SpruceConeItem(new FabricItemSettings()));
 
@@ -67,14 +70,17 @@ public class ModItems {
     public static final Item GLOW_BERRY_MUFFIN = registerItem("glow_berry_muffin",
             new Item(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_MUFFIN)));
 
-    public static final Item GLOW_BERRY_JUICE = registerItem("glow_berry_cocktail",
-            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_JUICE)));
+    public static final Item GLOW_BERRY_COCKTAIL = registerItem("glow_berry_cocktail",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.GLOW_BERRY_COCKTAIL)));
 
-    public static final Item SWEET_BERRY_JUICE = registerItem("sweet_berry_cocktail",
-            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_JUICE)));
+    public static final Item SWEET_BERRY_COCKTAIL = registerItem("sweet_berry_cocktail",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.SWEET_BERRY_COCKTAIL)));
 
-    public static final Item CHORUS_JUICE = registerItem("chorus_cocktail",
-            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CHORUS_JUICE)));
+    public static final Item CHORUS_COCKTAIL = registerItem("chorus_cocktail",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CHORUS_COCKTAIL)));
+
+    public static final Item FIG_COCKTAIL = registerItem("fig_cocktail",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.FIG_COCKTAIL)));
 
     public static final Item HOT_COCOA = registerItem("hot_cocoa",
             new DrinkItem(new FabricItemSettings().food(ModFoodComponents.HOT_COCOA)));

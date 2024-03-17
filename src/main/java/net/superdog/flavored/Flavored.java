@@ -17,6 +17,9 @@ import net.superdog.flavored.item.ModItemGroup;
 import net.superdog.flavored.item.ModItems;
 import net.superdog.flavored.recipe.ModRecipes;
 import net.superdog.flavored.screen.ModScreenHandlers;
+import net.superdog.flavored.util.ModFlammableBlocks;
+import net.superdog.flavored.util.ModStrippableBlocks;
+import net.superdog.flavored.world.ModConfiguredFeatures;
 import org.apache.http.pool.PoolEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,6 +48,8 @@ public class Flavored implements ModInitializer {
 	private static final Identifier PUMPKIN_ID = Blocks.PUMPKIN.getLootTableId();
 
 	private static final Identifier SUSPICOUS_SAND_ID = new Identifier("minecraft", "archaeology/desert_pyramid");
+
+	public  static  final  Identifier SNIFFER_DIGGABLE_ID = new Identifier("minecraft", "gameplay/sniffer_digging");
 
 
 
@@ -116,6 +121,11 @@ public class Flavored implements ModInitializer {
 
 				tableBuilder.pool(poolBuilder);
 			}
+			if (source.isBuiltin() && SNIFFER_DIGGABLE_ID.equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.with(ItemEntry.builder(ModBlocks.ANCIENT_SAPLING));
+				tableBuilder.pool(poolBuilder);
+			}
 
 
 
@@ -133,6 +143,9 @@ public class Flavored implements ModInitializer {
 		ModBlocks.registerCrate();
 		ModRecipes.registerRecipes();
 		ModScreenHandlers.registerScreenHandlers();
+		ModStrippableBlocks.registerStrippables();
+		ModFlammableBlocks.registerFlammableBlocks();
+
 
 	}
 }
