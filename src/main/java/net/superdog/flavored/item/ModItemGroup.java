@@ -41,7 +41,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.FERMENTER);
                         entries.add(ModBlocks.OVEN);
                         entries.add(ModItems.FLOUR);
-                        entries.add(ModItems.SPRUCE_CONE);
                         entries.add(ModBlocks.CHEESE);
                         entries.add(ModItems.OIL);
                         entries.add(ModItems.TOMATO);
