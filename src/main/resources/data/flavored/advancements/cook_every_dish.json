@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "flavored:pizza"
+    },
+    "title": "The delicacies of the mud furnace",
+    "description": "Bake your first dish",
+    "background": "minecraft:textures/block/haybale_side",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "player": {},
+        "recipe_id": "flavored:sweet_berry_cocktail",
+        "ingredients": [
+          {}
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      ""
+    ]
+  ]
+}

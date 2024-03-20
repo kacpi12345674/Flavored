@@ -1,0 +1,26 @@
+{
+  "type": "flavored:frying",
+  "ingredients": [
+    {
+      "item": "flavored:oil"
+    },
+    {
+      "item": "flavored:potato"
+    },
+    {
+      "item": "flavored:potato"
+    },
+    {
+      "item": "flavored:milk_bucket"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:mashed_potatoes",
+    "count": 1
+  }
+}

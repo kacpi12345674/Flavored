@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "flavored",
-	"version": "0.0.3 - 1.20.2",
+	"version": "0.0.1 - 1.20.2",
 	"name": "Flavored",
 	"description": "Food mod.",
 	"authors": [
@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.superdog.flavored.Flavored"
+			"net.codenamed.flavored.Flavored"
 		],
 		"client": [
-			"net.superdog.flavored.FlavoredClient"
+			"net.codenamed.flavored.FlavoredClient"
 		],
 		"fabric-datagen": [
-			"net.superdog.flavored.FlavoredDataGenerator"
+			"net.codenamed.flavored.FlavoredDataGenerator"
 		]
 	},
 	"mixins": [

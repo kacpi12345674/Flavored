@@ -1,7 +1,7 @@
 {
   "itemgroup.flavored_group": "Flavored",
 
-  "item.flavored.oil": "Oil Bottle",
+  "item.flavored.oil": "Oil",
 
 
 
@@ -15,11 +15,16 @@
 
   "item.flavored.rosemary": "Rosemary",
 
+  "block.flavored.cornucopia": "Cornucopia",
+
+
   "block.flavored.cauliflower": "Cauliflower",
   "block.flavored.carved_cauliflower": "Carved Cauliflower",
   "item.flavored.cauliflower_seeds": "Cauliflower Seeds",
   "block.flavored.fermenter": "Fermenter",
   "block.flavored.plant_pot": "Plant Pot",
+  "block.flavored.range": "Range",
+
 
 
   "item.flavored.cauliflower_curd": "Cauliflower Curd",
@@ -53,6 +58,8 @@
   "item.flavored.carbonara": "Carbonara",
   "item.flavored.salad": "Salad",
 
+  "entity.minecraft.villager.chef": "Chef",
+
 
   "block.flavored.carved_melon": "Carved Melon",
 
@@ -61,6 +68,7 @@
   "item.flavored.sweet_berry_cocktail": "Sweet Berry Cocktail",
   "item.flavored.glow_berry_cocktail": "Glow Berry Cocktail",
   "item.flavored.cider": "Cider",
+  "item.flavored.malt": "Malt",
   "item.flavored.hot_cocoa": "Hot Cocoa",
   "item.flavored.pumpkin_latte": "Pumpkin Latte",
   "item.flavored.tea": "Tea",
@@ -89,6 +97,13 @@
   "block.flavored.ancient_leaves": "Ancient Leaves",
   "block.flavored.flowering_ancient_leaves": "Flowering Ancient Leaves",
 
-  "block.flavored.ancient_sapling": "Ancient Sapling"
+  "block.flavored.ancient_sapling": "Ancient Sapling",
+
+  "item.flavored.fruit_salad": "Fruit Salad",
+  "item.flavored.mashed_potatoes": "Mashed Potatoes",
+  "item.flavored.grilled_vegetables": "Grilled Vegetables",
+  "item.flavored.alfredo": "Alfredo"
+
+
 
 }

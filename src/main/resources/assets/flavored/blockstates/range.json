@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=east,oil=false,lit=false": {
+      "model": "flavored:block/range",
+      "y": 90
+    },
+    "facing=north,oil=false,lit=false": {
+      "model": "flavored:block/range"
+    },
+    "facing=south,oil=false,lit=false": {
+      "model": "flavored:block/range",
+      "y": 180
+    },
+    "facing=west,oil=false,lit=false": {
+      "model": "flavored:block/range",
+      "y": 270
+    },
+    "facing=east,oil=true,lit=false": {
+      "model": "flavored:block/range_oiled",
+      "y": 90
+    },
+    "facing=north,oil=true,lit=false": {
+      "model": "flavored:block/range_oiled"
+    },
+    "facing=south,oil=true,lit=false": {
+      "model": "flavored:block/range_oiled",
+      "y": 180
+    },
+    "facing=west,oil=true,lit=false": {
+      "model": "flavored:block/range_oiled",
+      "y": 270
+    },
+    "facing=east,oil=true,lit=true": {
+      "model": "flavored:block/range_oiled_on",
+      "y": 90
+    },
+    "facing=north,oil=true,lit=true": {
+      "model": "flavored:block/range_oiled_on"
+    },
+    "facing=south,oil=true,lit=true": {
+      "model": "flavored:block/range_oiled_on",
+      "y": 180
+    },
+    "facing=west,oil=true,lit=true": {
+      "model": "flavored:block/range_oiled_on",
+      "y": 270
+    }
+
+  }
+}

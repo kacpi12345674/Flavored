@@ -1,0 +1,26 @@
+{
+  "type": "flavored:frying",
+  "ingredients": [
+    {
+      "item": "flavored:oil"
+    },
+    {
+      "item": "flavored:pasta"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "flavored:garlic"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:carbonara",
+    "count": 1
+  }
+}
