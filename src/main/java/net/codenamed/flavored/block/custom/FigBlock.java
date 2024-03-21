@@ -72,7 +72,7 @@ public class FigBlock extends PlantBlock implements Fertilizable {
     }
 
     public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
-        return true;
+        return world.getBlockState(pos.down()).isAir();
     }
 
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {

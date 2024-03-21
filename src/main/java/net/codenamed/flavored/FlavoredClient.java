@@ -27,6 +27,12 @@ public class FlavoredClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.ANCIENT_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.ANCIENT_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.FLOWERING_ANCIENT_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.PALM_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.DATES, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.PALM_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FlavoredBlocks.PALM_DOOR, RenderLayer.getCutout());
+
 
 
 

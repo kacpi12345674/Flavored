@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "flavored:block/dates_stage_2"
+  }
+}

@@ -26,12 +26,12 @@ public class FloweringAncientLeavesBlock extends PlantBlock implements Fertiliza
 
     @Override
     public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
-        return world.getBlockState(pos.down()).getBlock() != FlavoredBlocks.FIG;
+        return world.getBlockState(pos.down()).getBlock() == Blocks.AIR;
     }
 
     @Override
     public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
-        return world.getBlockState(pos.down()).getBlock() != FlavoredBlocks.FIG;
+        return world.getBlockState(pos.down()).getBlock() == Blocks.AIR;
     }
 
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {

@@ -18,6 +18,56 @@ import net.codenamed.flavored.world.tree.AncientSaplingGenerator;
 
 public class FlavoredBlocks {
 
+    public static final Block PALM_STEM = registerBlock("palm_stem",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+
+    public static final Block STRIPPED_PALM_STEM = registerBlock("stripped_palm_stem",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final Block PALM_WOOD = registerBlock("palm_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final Block PALM_PLANKS = registerBlock("palm_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block PALM_STAIRS = registerBlock("palm_stairs",
+            new StairsBlock(FlavoredBlocks.PALM_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+
+    public static final Block PALM_SLAB = registerBlock("palm_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
+
+    public static final Block PALM_DOOR = registerBlock("palm_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR), BlockSetType.OAK));
+
+    public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+
+    public static final Block PALM_FENCE = registerBlock("palm_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+
+    public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
+
+    public static final Block PALM_BUTTON = registerBlock("palm_button",
+            Blocks.createWoodenButtonBlock(BlockSetType.OAK));
+
+    public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
+
+    public static final Block PALM_SIGN= registerBlock("palm_sign",
+            new SignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), WoodType.OAK));
+
+    public static final Block PALM_HANGING_SIGN = registerBlock("palm_hanging_sign",
+            new HangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), WoodType.OAK));
+
+    public static final Block PALM_LEAVES = registerBlock("palm_leaves",
+            new PalmLeavesBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES)));
+
+    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
+            new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
     public static final Block ANCIENT_LOG = registerBlock("ancient_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
 
@@ -107,6 +157,7 @@ public class FlavoredBlocks {
 
 
 
+
     public static final Block CAULIFLOWER_STEM = registerBlock("cauliflower_stem",
             new StemBlock((GourdBlock)CAULIFLOWER, () -> {
                 return FlavoredItems.CAULIFLOWER_SEEDS;
@@ -157,6 +208,14 @@ public class FlavoredBlocks {
 
     public static final Block FIG = registerBlockWithoutItem("fig",
             new FigBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
+                    .noCollision()
+                    .ticksRandomly()
+                    .breakInstantly()
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
+
+    public static final Block DATES = registerBlockWithoutItem("dates",
+            new DatesBlock(FabricBlockSettings.copy(Blocks.SWEET_BERRY_BUSH)
                     .noCollision()
                     .ticksRandomly()
                     .breakInstantly()

@@ -17,6 +17,10 @@
 
   "block.flavored.cornucopia": "Cornucopia",
 
+  "item.flavored.dates": "Dates",
+
+
+
 
   "block.flavored.cauliflower": "Cauliflower",
   "block.flavored.carved_cauliflower": "Carved Cauliflower",
@@ -78,6 +82,25 @@
 
   "item.flavored.fig": "Fig",
 
+
+  "block.flavored.palm_stem": "Palm Stem",
+  "block.flavored.palm_wood": "Palm Wood",
+  "block.flavored.stripped_palm_stem": "Stripped Palm Stem",
+  "block.flavored.stripped_palm_wood": "Stripped Palm Wood",
+  "block.flavored.palm_button": "Palm Button",
+  "block.flavored.palm_planks": "Palm Planks",
+  "block.flavored.palm_fence": "Palm Fence",
+  "block.flavored.palm_fence_gate": "Palm Fence Gate",
+  "block.flavored.palm_slab": "Palm Slab",
+  "block.flavored.palm_stairs": "Palm Stairs",
+  "block.flavored.palm_hanging_sign": "Palm Hanging Sign",
+  "block.flavored.palm_sign": "Palm Hanging Sign",
+  "block.flavored.palm_pressure_plate": "Palm Pressure Plate",
+  "block.flavored.palm_door": "Palm Door",
+  "block.flavored.palm_trapdoor": "Palm Trapdoor",
+  "block.flavored.palm_leaves": "Palm Leaves",
+
+  "block.flavored.palm_sapling": "Palm Sapling",
 
   "block.flavored.ancient_log": "Ancient Log",
   "block.flavored.ancient_wood": "Ancient Wood",

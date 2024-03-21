@@ -17,6 +17,23 @@ public class FlavoredItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.flavored_group"))
                     .icon(() -> new ItemStack(FlavoredItems.TOMATO)).entries((displayContext, entries) -> {
 
+                        entries.add(FlavoredBlocks.PALM_STEM);
+                        entries.add(FlavoredBlocks.PALM_WOOD);
+                        entries.add(FlavoredBlocks.STRIPPED_PALM_STEM);
+                        entries.add(FlavoredBlocks.STRIPPED_PALM_WOOD);
+                        entries.add(FlavoredBlocks.PALM_PLANKS);
+                        entries.add(FlavoredBlocks.PALM_STAIRS);
+                        entries.add(FlavoredBlocks.PALM_SLAB);
+                        entries.add(FlavoredBlocks.PALM_FENCE);
+                        entries.add(FlavoredBlocks.PALM_FENCE_GATE);
+                        entries.add(FlavoredBlocks.PALM_BUTTON);
+                        entries.add(FlavoredBlocks.PALM_PRESSURE_PLATE);
+                        entries.add(FlavoredBlocks.PALM_DOOR);
+                        entries.add(FlavoredBlocks.PALM_TRAPDOOR);
+                        entries.add(FlavoredBlocks.PALM_HANGING_SIGN);
+                        entries.add(FlavoredBlocks.PALM_SIGN);
+                        entries.add(FlavoredBlocks.PALM_LEAVES);
+                        entries.add(FlavoredBlocks.PALM_SAPLING);
                         entries.add(FlavoredBlocks.ANCIENT_LOG);
                         entries.add(FlavoredBlocks.ANCIENT_WOOD);
                         entries.add(FlavoredBlocks.STRIPPED_ANCIENT_LOG);
@@ -52,6 +69,7 @@ public class FlavoredItemGroup {
                         entries.add(FlavoredItems.SPINACH);
                         entries.add(FlavoredItems.SPINACH_SEEDS);
                         entries.add(FlavoredItems.FIG);
+                        entries.add(FlavoredItems.DATES);
                         entries.add(FlavoredItems.ROSEMARY);
                         entries.add(FlavoredItems.PUMPKIN_SLICE);
                         entries.add(FlavoredBlocks.CARVED_MELON);

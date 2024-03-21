@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "flavored:block/palm_stem_top",
+    "side": "flavored:block/palm_stem"
+  }
+}

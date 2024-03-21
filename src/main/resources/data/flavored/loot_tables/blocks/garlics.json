@@ -12,10 +12,6 @@
         {
           "type": "minecraft:item",
           "name": "flavored:garlic"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:allium"
         }
       ],
       "rolls": 1.0
@@ -45,7 +41,7 @@
               }
             }
           ],
-          "name": "flavored:garlic"
+          "name": "minecraft:allium"
         }
       ],
       "rolls": 1.0

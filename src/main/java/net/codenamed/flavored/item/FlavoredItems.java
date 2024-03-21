@@ -29,6 +29,9 @@ public class FlavoredItems {
     public static final Item FIG = registerItem("fig",
             new AliasedBlockItem(FlavoredBlocks.FIG, (new FabricItemSettings()).food(ModFoodComponents.FIG)));
 
+    public static final Item DATES = registerItem("dates",
+            new AliasedBlockItem(FlavoredBlocks.FIG, (new FabricItemSettings()).food(ModFoodComponents.DATES)));
+
     public static final Item FLOUR = registerItem("flour",
             new Item(new FabricItemSettings()));
 

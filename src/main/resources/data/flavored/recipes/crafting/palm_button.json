@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "flavored:palm_planks"
+    }
+  ],
+  "result": {
+    "item": "flavored:palm_button"
+  }
+}
