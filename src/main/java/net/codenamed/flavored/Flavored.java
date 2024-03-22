@@ -1,9 +1,12 @@
 package net.codenamed.flavored;
 
+import net.codenamed.flavored.painting.FlavoredPaintings;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.DecoratedPotPatterns;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.util.Identifier;
@@ -24,6 +27,7 @@ import org.slf4j.LoggerFactory;
 public class Flavored implements ModInitializer {
 	public static final String MOD_ID = "flavored";
 	public static final Logger LOGGER = LoggerFactory.getLogger("flavored");
+
 
 
 	private static final Identifier JUNGLE_TEMPLE_CHEST_LOOT_TABLE_ID = new Identifier("minecraft", "chests/jungle_temple");
@@ -120,6 +124,8 @@ public class Flavored implements ModInitializer {
 		FlavoredFlammableBlocks.registerFlammableBlocks();
 		FlavoredVillagers.registerVillagers();
 		FlavoredVillagerTrades.registerCustomTrades();
+		FlavoredPaintings.registerPaintings();
+
 
 
 

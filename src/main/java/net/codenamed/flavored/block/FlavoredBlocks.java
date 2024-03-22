@@ -7,6 +7,7 @@ import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -134,7 +135,7 @@ public class FlavoredBlocks {
     public static final Block CHEESE = registerBlock("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
-    public static final Block CORNUCOPIA = registerBlock("cornucopia",
+    public static final Block PLENTY = registerBlock("plenty",
             new CornucopiaBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
     public static final Block CAULIFLOWER = registerBlock("cauliflower",
@@ -223,6 +224,19 @@ public class FlavoredBlocks {
                     .sounds(BlockSoundGroup.SWEET_BERRY_BUSH)));
 
     public static Block CRATE = null;
+    public static Block TOMATO_CRATE = null;
+    public static Block GARLIC_CRATE = null;
+    public static Block ROSEMARY_CRATE = null;
+    public static Block SWEET_BERRY_CRATE = null;
+    public static Block GLOW_BERRY_CRATE = null;
+    public static Block SPINACH_CRATE = null;
+    public static Block CHORUS_CRATE = null;
+    public static Block FIG_CRATE = null;
+    public static Block BEETROOT_CRATE = null;
+    public static Block POTATO_CRATE = null;
+    public static Block CARROT_CRATE = null;
+
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -231,7 +245,8 @@ public class FlavoredBlocks {
 
     public  static  void  registerCrate() {
         CRATE = registerBlock("crate",
-                new CrateBlock(FabricBlockSettings.copyOf(Blocks.COMPOSTER)));
+                new CrateBlock(true, Items.AIR, FabricBlockSettings.copyOf(Blocks.COMPOSTER)));
+
     }
 
     private static Item registerBlockItem(String name, Block block) {

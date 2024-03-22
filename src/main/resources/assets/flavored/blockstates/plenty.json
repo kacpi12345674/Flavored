@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "flavored:block/cornucopia"
+      "model": "flavored:block/plenty"
     },
     "facing=south": {
-      "model": "flavored:block/cornucopia",
+      "model": "flavored:block/plenty",
       "y": 180
     },
     "facing=west": {
-      "model": "flavored:block/cornucopia",
+      "model": "flavored:block/plenty",
       "y": 270
     },
     "facing=east": {
-      "model": "flavored:block/cornucopia",
+      "model": "flavored:block/plenty",
       "y": 90
     }
   }

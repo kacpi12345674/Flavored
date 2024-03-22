@@ -1,31 +1,33 @@
 {
   "display": {
     "icon": {
-      "item": "flavored:pizza"
+      "item": "flavored:plenty"
     },
-    "title": "The delicacies of the mud furnace",
-    "description": "Bake your first dish",
-    "background": "minecraft:textures/block/haybale_side",
-    "frame": "task",
+    "title": "A Blockwide Chef!",
+    "description": "Cook every dish!",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "background": "flavored:textures/block/crate.png"
   },
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:recipe_crafted",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {},
-        "recipe_id": "flavored:sweet_berry_cocktail",
-        "ingredients": [
-          {}
+        "items": [
+          {
+            "items": [
+              "flavored:tomato"
+            ]
+          }
         ]
       }
     }
   },
-  "requirements": [
-    [
-      ""
+  "rewards": {
+    "loot": [
+      "flavored:blocks/plenty"
     ]
-  ]
+  }
 }
+

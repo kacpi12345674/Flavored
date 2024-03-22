@@ -31,7 +31,8 @@ public class FloweringAncientLeavesBlock extends PlantBlock implements Fertiliza
 
     @Override
     public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
-        return world.getBlockState(pos.down()).getBlock() == Blocks.AIR;
+        int r = random.nextBetween(1, 5);
+        return world.getBlockState(pos.down()).getBlock() == Blocks.AIR && r == 1;
     }
 
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {

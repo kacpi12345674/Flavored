@@ -243,6 +243,54 @@
     },
     "empty=false,crop=9,amount=8": {
       "model": "flavored:block/crate/crate_rosemary_full"
+    },
+    "empty=false,crop=10,amount=1": {
+      "model": "flavored:block/crate/crate_fig_1"
+    },
+    "empty=false,crop=10,amount=2": {
+      "model": "flavored:block/crate/crate_fig_2"
+    },
+    "empty=false,crop=10,amount=3": {
+      "model": "flavored:block/crate/crate_fig_3"
+    },
+    "empty=false,crop=10,amount=4": {
+      "model": "flavored:block/crate/crate_fig_4"
+    },
+    "empty=false,crop=10,amount=5": {
+      "model": "flavored:block/crate/crate_fig_5"
+    },
+    "empty=false,crop=10,amount=6": {
+      "model": "flavored:block/crate/crate_fig_6"
+    },
+    "empty=false,crop=10,amount=7": {
+      "model": "flavored:block/crate/crate_fig_7"
+    },
+    "empty=false,crop=10,amount=8": {
+      "model": "flavored:block/crate/crate_fig_full"
+    },
+    "empty=false,crop=11,amount=1": {
+      "model": "flavored:block/crate/crate_spinach_1"
+    },
+    "empty=false,crop=11,amount=2": {
+      "model": "flavored:block/crate/crate_spinach_2"
+    },
+    "empty=false,crop=11,amount=3": {
+      "model": "flavored:block/crate/crate_spinach_3"
+    },
+    "empty=false,crop=11,amount=4": {
+      "model": "flavored:block/crate/crate_spinach_4"
+    },
+    "empty=false,crop=11,amount=5": {
+      "model": "flavored:block/crate/crate_spinach_5"
+    },
+    "empty=false,crop=11,amount=6": {
+      "model": "flavored:block/crate/crate_spinach_6"
+    },
+    "empty=false,crop=11,amount=7": {
+      "model": "flavored:block/crate/crate_spinach_7"
+    },
+    "empty=false,crop=11,amount=8": {
+      "model": "flavored:block/crate/crate_spinach_full"
     }
   }
 }

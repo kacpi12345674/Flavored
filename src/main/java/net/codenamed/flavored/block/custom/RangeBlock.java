@@ -114,30 +114,6 @@ public class RangeBlock extends BlockWithEntity implements BlockEntityProvider {
 
             }
         }
-        if (player.getStackInHand(hand).isEmpty()) {
-
-            if (b instanceof RangeBlockEntity) {
-                if (!((RangeBlockEntity) b).getStack(6).isEmpty()) {
-                    player.getInventory().insertStack(((RangeBlockEntity) b).getStack(6));
-                    ((RangeBlockEntity) b).getStack(6).decrement(1);
-                    return ActionResult.SUCCESS;
-                }
-            }
-        }
-        if (!player.getStackInHand(hand).isEmpty()) {
-
-            if (b instanceof RangeBlockEntity) {
-                for (int i = 0; i < 4; i++) {
-                if (((RangeBlockEntity) b).getStack(i + 2).isEmpty()) {
-                    ((RangeBlockEntity) b).setStack(i + 2, player.getStackInHand(hand));
-                    player.getStackInHand(hand).decrement(1);
-                    return ActionResult.SUCCESS;
-                }
-                }
-            }
-        }
-
-
 
         if (!world.isClient) {
             NamedScreenHandlerFactory screenHandlerFactory = state.createScreenHandlerFactory(world, pos);

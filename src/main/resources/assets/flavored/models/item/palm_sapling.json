@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "flavored:block/palm_sapling"
+    "layer0": "flavored:item/palm_sapling"
   }
 }

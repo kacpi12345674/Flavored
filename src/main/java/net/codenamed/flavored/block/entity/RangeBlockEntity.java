@@ -116,20 +116,18 @@ public class RangeBlockEntity extends BlockEntity implements NamedScreenHandlerF
     }
 
     public  ItemStack getRenderStack(int index) {
-         if (!this.getStack(index).isEmpty()){
-            return this.getStack(index);
-        }
 
-        else {
-            if (this.getStack(index).isEmpty() && this.getStack(OUTPUT_SLOT).isEmpty()){
+        for (int i = 0; i < this.inventory.size(); i++) {
+            System.out.println(this.getStack(i).getItem());
+        }
+        if (this.getStack(index).isEmpty()){
                 return ItemStack.EMPTY;
 
-            }
-
-            return ItemStack.EMPTY;
+        }
+        else {
+            return this.getStack(index);
 
         }
-
 
 
     }
@@ -281,6 +279,8 @@ public class RangeBlockEntity extends BlockEntity implements NamedScreenHandlerF
 
     @Override
     public NbtCompound toInitialChunkDataNbt() {
-        return createNbt();
+        NbtCompound nbtCompound = new NbtCompound();
+        Inventories.writeNbt(nbtCompound, this.inventory, true);
+        return nbtCompound;
     }
 }

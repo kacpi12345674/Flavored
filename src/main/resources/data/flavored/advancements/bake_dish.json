@@ -13,7 +13,7 @@
   },
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:recipe_crafted",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {},
         "recipe_id": "flavored:sweet_berry_cocktail",

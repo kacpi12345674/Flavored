@@ -34,18 +34,44 @@ public class CrateBlock extends Block {
 
 
     public static final BooleanProperty EMPTY = BooleanProperty.of("empty");
-    public  static  final IntProperty CROP = IntProperty.of("crop", 0, 9);
+    public  static  final IntProperty CROP = IntProperty.of("crop", 0, 11);
     public  static  final IntProperty AMOUNT = IntProperty.of("amount", 0, 8);
 
 
 
     public static final ArrayList<Item> crops = new ArrayList<>();
 
+    public  void registerCrops() {
+
+        crops.add(FlavoredItems.TOMATO);
+        crops.add(Items.APPLE);
+        crops.add(Items.CARROT);
+        crops.add(Items.BEETROOT);
+        crops.add(Items.POTATO);
+        crops.add(Items.SWEET_BERRIES);
+        crops.add(Items.GLOW_BERRIES);
+        crops.add(Items.CHORUS_FRUIT);
+        crops.add(FlavoredItems.GARLIC);
+        crops.add(FlavoredItems.ROSEMARY);
+        crops.add(FlavoredItems.FIG);
+        crops.add(FlavoredItems.SPINACH);
 
 
-    public CrateBlock(Settings settings) {
+    }
+
+    public CrateBlock(boolean empty, Item crop, Settings settings) {
         super(settings);
-        this.setDefaultState((this.stateManager.getDefaultState()).with(EMPTY, true));
+        if (empty) {
+            this.setDefaultState((this.stateManager.getDefaultState()).with(EMPTY, true));
+        }
+        else {
+            for (int i = 0; i < crops.size(); i++ ) {
+                if (crops.get(i) == crop) {
+                    this.setDefaultState((this.stateManager.getDefaultState()).with(EMPTY, false).with(CROP, i).with(AMOUNT, MAX_AMOUNT));
+                }
+            }
+
+        }
         registerCrops();
 
     }
@@ -64,21 +90,6 @@ public class CrateBlock extends Block {
     }
 
 
-
-    public  void registerCrops() {
-
-        crops.add(FlavoredItems.TOMATO);
-        crops.add(Items.APPLE);
-        crops.add(Items.CARROT);
-        crops.add(Items.BEETROOT);
-        crops.add(Items.POTATO);
-        crops.add(Items.SWEET_BERRIES);
-        crops.add(Items.GLOW_BERRIES);
-        crops.add(Items.CHORUS_FRUIT);
-        crops.add(FlavoredItems.GARLIC);
-        crops.add(FlavoredItems.ROSEMARY);
-
-    }
 
     public  static  final int MAX_AMOUNT = 8;
 

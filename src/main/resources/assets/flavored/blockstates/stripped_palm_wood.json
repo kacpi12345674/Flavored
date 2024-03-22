@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "flavored:block/stripped_ancient_wood",
+      "model": "flavored:block/stripped_palm_wood",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "flavored:block/stripped_ancient_wood"
+      "model": "flavored:block/stripped_palm_wood"
     },
     "axis=z": {
-      "model": "flavored:block/stripped_ancient_wood",
+      "model": "flavored:block/stripped_palm_wood",
       "x": 90
     }
   }

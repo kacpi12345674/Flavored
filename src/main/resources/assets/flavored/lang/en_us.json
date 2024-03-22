@@ -15,7 +15,8 @@
 
   "item.flavored.rosemary": "Rosemary",
 
-  "block.flavored.cornucopia": "Cornucopia",
+  "block.flavored.plenty": "Basket of Plenty",
+
 
   "item.flavored.dates": "Dates",
 
@@ -46,6 +47,10 @@
   "block.flavored.garlic_bread": "Garlic Bread",
 
   "item.flavored.flour": "Flour",
+
+  "item.flavored.delicacy_pottery_sherd": "Delicacy Pottery Sherd",
+  "item.flavored.refresh_pottery_sherd": "Refresh Pottery Sherd",
+
 
   "item.flavored.pasta": "Pasta",
 
