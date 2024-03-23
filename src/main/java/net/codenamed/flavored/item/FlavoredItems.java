@@ -39,7 +39,10 @@ public class FlavoredItems {
             new AliasedBlockItem(FlavoredBlocks.ROSEMARY_BUSH, new FabricItemSettings()));
 
     public static final Item OIL = registerItem("oil",
-            new HoneyBottleItem(new FabricItemSettings().food(ModFoodComponents.OIL)));
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.OIL)));
+
+    public static final Item CARAMEL = registerItem("caramel",
+            new DrinkItem(new FabricItemSettings().food(ModFoodComponents.CARAMEL)));
     public static final Item PASTA = registerItem("pasta",
             new Item(new FabricItemSettings()));
 

@@ -72,6 +72,7 @@ public class FlavoredItemGroup {
                         entries.add(FlavoredItems.SPINACH_SEEDS);
                         entries.add(FlavoredItems.FIG);
                         entries.add(FlavoredItems.DATES);
+                        entries.add(FlavoredItems.CARAMEL);
                         entries.add(FlavoredItems.ROSEMARY);
                         entries.add(FlavoredItems.PUMPKIN_SLICE);
                         entries.add(FlavoredBlocks.CARVED_MELON);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "flavored:block/palm_sapling"
+    "cross": "flavored:item/palm_sapling"
   }
 }

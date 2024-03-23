@@ -113,21 +113,34 @@ public class RangeBlockEntity extends BlockEntity implements NamedScreenHandlerF
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
         nbt.putInt("range.progress", progress);
+        nbt.putInt("range.fuelTime", fuelTime);
+        nbt.putInt("range.maxFuelTime", maxFuelTime);
     }
 
     public  ItemStack getRenderStack(int index) {
 
-        for (int i = 0; i < this.inventory.size(); i++) {
-            System.out.println(this.getStack(i).getItem());
-        }
-        if (this.getStack(index).isEmpty()){
-                return ItemStack.EMPTY;
-
+        if (!this.getStack(6).isEmpty()) {
+            return  getStack(6);
         }
         else {
-            return this.getStack(index);
+            if (this.getStack(index).isEmpty()) {
+                return ItemStack.EMPTY;
 
+            } else {
+                return this.getStack(index);
+
+            }
         }
+
+
+    }
+
+    public  ItemStack getRenderStack() {
+
+        if (!this.getStack(6).isEmpty()) {
+            return  getStack(6);
+        }
+        return ItemStack.EMPTY;
 
 
     }
@@ -141,9 +154,16 @@ public class RangeBlockEntity extends BlockEntity implements NamedScreenHandlerF
 
     @Override
     public void readNbt(NbtCompound nbt) {
+        for (int i = 0; i < inventory.size(); i++) {
+            this.inventory.set(i, ItemStack.EMPTY);
+        }
         super.readNbt(nbt);
         Inventories.readNbt(nbt, inventory);
         progress = nbt.getInt("range.progress");
+        progress = nbt.getInt("range.fuelTime");
+        progress = nbt.getInt("range.maxFuelTime");
+
+
     }
 
     @Nullable
@@ -279,8 +299,6 @@ public class RangeBlockEntity extends BlockEntity implements NamedScreenHandlerF
 
     @Override
     public NbtCompound toInitialChunkDataNbt() {
-        NbtCompound nbtCompound = new NbtCompound();
-        Inventories.writeNbt(nbtCompound, this.inventory, true);
-        return nbtCompound;
+        return createNbt();
     }
 }

@@ -53,6 +53,7 @@ public class ModFoodComponents {
 
     public static final FoodComponent OIL = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f).statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 300, 0), 1F).build();
 
+    public static final FoodComponent CARAMEL = new FoodComponent.Builder().hunger(1).saturationModifier(0.2f).statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 100, 0), 1F).build();
 
     public static final FoodComponent SWEET_BERRY_COCKTAIL = new FoodComponent.Builder().hunger(3).snack().saturationModifier(0.2f).statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0), 1F).build();
 

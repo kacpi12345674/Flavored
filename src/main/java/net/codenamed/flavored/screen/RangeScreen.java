@@ -40,7 +40,7 @@ public class RangeScreen extends HandledScreen<RangeScreenHandler> {
         }
 
         if(handler.hasFuel()) {
-            context.drawTexture(TEXTURE, x + 48, y + 38 + 14 - handler.getScaledFuelProgress(), 176,
+            context.drawTexture(TEXTURE, x + 46, y + 38 + 14 - handler.getScaledFuelProgress(), 176,
                     14 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress());
         }
 

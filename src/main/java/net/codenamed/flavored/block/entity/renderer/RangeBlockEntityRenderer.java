@@ -29,6 +29,27 @@ public class RangeBlockEntityRenderer implements BlockEntityRenderer<RangeBlockE
     public void render(RangeBlockEntity entity, float tickDelta,
                        MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
 
+        ItemStack result = entity.getRenderStack();
+
+        if (!result.isEmpty()) {
+            ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
+
+
+            matrices.push();
+            matrices.translate(0.5, 1.02f, 0.5);
+            matrices.scale(0.55f, 0.5f, 0.55f);
+            matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(270));
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(270));
+
+            itemRenderer.renderItem(result, ModelTransformationMode.GUI, getLightLevel(entity.getWorld(), entity.getPos()),
+                    OverlayTexture.DEFAULT_UV, matrices, vertexConsumers, entity.getWorld(), 1);
+
+
+
+            matrices.pop();
+        }
+        else {
+
             for (int i = 0; i < 4; i++) {
 
 
@@ -44,13 +65,13 @@ public class RangeBlockEntityRenderer implements BlockEntityRenderer<RangeBlockE
                     stack = Items.AIR.getDefaultStack();
                 }
 
-                    itemRenderer.renderItem(stack, ModelTransformationMode.GUI, getLightLevel(entity.getWorld(), entity.getPos()),
-                            OverlayTexture.DEFAULT_UV, matrices, vertexConsumers, entity.getWorld(), 1);
-
+                itemRenderer.renderItem(stack, ModelTransformationMode.GUI, getLightLevel(entity.getWorld(), entity.getPos()),
+                        OverlayTexture.DEFAULT_UV, matrices, vertexConsumers, entity.getWorld(), 1);
 
 
                 matrices.pop();
             }
+        }
 
 
 
