@@ -22,7 +22,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.codenamed.flavored.block.entity.FermenterBlockEntity;
-import net.codenamed.flavored.block.entity.FlavoredBlockEntities;
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class FermenterBlock extends BlockWithEntity implements BlockEntityProvider {

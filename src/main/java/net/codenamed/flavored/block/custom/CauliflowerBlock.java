@@ -16,8 +16,8 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Direction.Axis;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import net.codenamed.flavored.block.FlavoredBlocks;
-import net.codenamed.flavored.item.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredItems;
 
 public class CauliflowerBlock extends GourdBlock {
     public CauliflowerBlock(AbstractBlock.Settings settings) {

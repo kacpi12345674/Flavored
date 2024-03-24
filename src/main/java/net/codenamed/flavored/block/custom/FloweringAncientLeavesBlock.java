@@ -7,7 +7,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
-import net.codenamed.flavored.block.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlocks;
 
 public class FloweringAncientLeavesBlock extends PlantBlock implements Fertilizable {
     public FloweringAncientLeavesBlock(Settings settings) {

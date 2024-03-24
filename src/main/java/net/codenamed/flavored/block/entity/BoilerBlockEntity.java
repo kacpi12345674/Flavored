@@ -1,5 +1,6 @@
 package net.codenamed.flavored.block.entity;
 
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;

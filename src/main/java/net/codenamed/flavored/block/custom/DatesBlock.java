@@ -1,7 +1,7 @@
 package net.codenamed.flavored.block.custom;
 
-import net.codenamed.flavored.block.FlavoredBlocks;
-import net.codenamed.flavored.item.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredItems;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;

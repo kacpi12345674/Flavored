@@ -1,5 +1,9 @@
 package net.codenamed.flavored.screen;
 
+import net.codenamed.flavored.registry.FlavoredScreenHandlers;
+import net.codenamed.flavored.slot.FlavoredFermentingSlot;
+import net.codenamed.flavored.slot.FlavoredLiquidSlot;
+import net.codenamed.flavored.slot.FlavoredResultSlot;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -32,9 +36,9 @@ public class FermenterScreenHandler extends ScreenHandler {
         this.blockEntity = ((FermenterBlockEntity) blockEntity);
 
         this.addSlot(new Slot(inventory, 0, 56, 35));
-        this.addSlot(new Slot(inventory, 1, 116, 35));
-        this.addSlot(new Slot(inventory, 2, 29, 35));
-        this.addSlot(new Slot(inventory, 3, 56, 59));
+        this.addSlot(new FlavoredResultSlot(inventory, 1, 116, 35));
+        this.addSlot(new FlavoredFermentingSlot(inventory, 2, 29, 35));
+        this.addSlot(new FlavoredLiquidSlot(inventory, 3, 56, 59));
 
 
 

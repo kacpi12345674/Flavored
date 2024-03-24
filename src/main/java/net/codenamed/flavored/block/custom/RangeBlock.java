@@ -18,9 +18,9 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.codenamed.flavored.block.entity.FlavoredBlockEntities;
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.codenamed.flavored.block.entity.RangeBlockEntity;
-import net.codenamed.flavored.item.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;

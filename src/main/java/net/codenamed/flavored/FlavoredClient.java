@@ -1,17 +1,15 @@
 package net.codenamed.flavored;
 
+import net.codenamed.flavored.registry.FlavoredScreenHandlers;
+import net.codenamed.flavored.screen.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
-import net.codenamed.flavored.block.FlavoredBlocks;
-import net.codenamed.flavored.block.entity.FlavoredBlockEntities;
+import net.codenamed.flavored.registry.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.codenamed.flavored.block.entity.renderer.RangeBlockEntityRenderer;
-import net.codenamed.flavored.screen.FermenterScreen;
-import net.codenamed.flavored.screen.FlavoredScreenHandlers;
-import net.codenamed.flavored.screen.OvenScreen;
-import net.codenamed.flavored.screen.RangeScreen;
 
 public class FlavoredClient implements ClientModInitializer {
     public void onInitializeClient() {
@@ -40,6 +38,8 @@ public class FlavoredClient implements ClientModInitializer {
         HandledScreens.register(FlavoredScreenHandlers.FERMENTER_SCREEN_HANDLER, FermenterScreen::new);
         HandledScreens.register(FlavoredScreenHandlers.OVEN_SCREEN_HANDLER, OvenScreen::new);
         HandledScreens.register(FlavoredScreenHandlers.RANGE_SCREEN_HANDLER, RangeScreen::new);
+        HandledScreens.register(FlavoredScreenHandlers.BOILER_SCREEN_HANDLER, BoilerScreen::new);
+
 
         BlockEntityRendererFactories.register(FlavoredBlockEntities.RANGE_BLOCK_ENTITY, RangeBlockEntityRenderer::new);
 

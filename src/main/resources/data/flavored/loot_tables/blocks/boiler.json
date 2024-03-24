@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "flavored:ancient_button"
+          "name": "flavored:boiler"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "flavored:blocks/ancient_button"
+  "random_sequence": "flavored:blocks/boiler"
 }

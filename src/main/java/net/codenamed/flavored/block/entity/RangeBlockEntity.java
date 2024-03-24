@@ -1,5 +1,6 @@
 package net.codenamed.flavored.block.entity;
 
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -22,7 +23,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.codenamed.flavored.item.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredItems;
 import net.codenamed.flavored.recipe.RangeRecipe;
 import net.codenamed.flavored.screen.RangeScreenHandler;
 import org.jetbrains.annotations.Nullable;

@@ -13,7 +13,7 @@ import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.codenamed.flavored.Flavored;
-import net.codenamed.flavored.block.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlocks;
 
 public class ModConfiguredFeatures {
 

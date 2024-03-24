@@ -13,7 +13,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.codenamed.flavored.block.entity.FlavoredBlockEntities;
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.codenamed.flavored.block.entity.OvenBlockEntity;
 import org.jetbrains.annotations.Nullable;
 

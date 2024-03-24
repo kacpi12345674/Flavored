@@ -13,7 +13,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.codenamed.flavored.block.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlocks;
 
 
 public class TomatoSeedItem extends AliasedBlockItem {

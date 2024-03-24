@@ -19,7 +19,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.codenamed.flavored.block.entity.BoilerBlockEntity;
-import net.codenamed.flavored.block.entity.FlavoredBlockEntities;
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.codenamed.flavored.block.entity.RangeBlockEntity;
 import org.jetbrains.annotations.Nullable;
 

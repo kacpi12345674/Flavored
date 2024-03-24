@@ -1,25 +1,23 @@
 package net.codenamed.flavored;
 
-import net.codenamed.flavored.painting.FlavoredPaintings;
+import net.codenamed.flavored.registry.FlavoredPaintings;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.DecoratedPotPatterns;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.util.Identifier;
-import net.codenamed.flavored.block.FlavoredBlocks;
-import net.codenamed.flavored.block.entity.FlavoredBlockEntities;
-import net.codenamed.flavored.item.FlavoredItems;
-import net.codenamed.flavored.item.FlavoredItemGroup;
-import net.codenamed.flavored.recipe.FlavoredRecipes;
-import net.codenamed.flavored.screen.FlavoredScreenHandlers;
-import net.codenamed.flavored.util.FlavoredFlammableBlocks;
-import net.codenamed.flavored.util.FlavoredStrippableBlocks;
-import net.codenamed.flavored.util.FlavoredVillagerTrades;
-import net.codenamed.flavored.villager.FlavoredVillagers;
+import net.codenamed.flavored.registry.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlockEntities;
+import net.codenamed.flavored.registry.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredItemGroup;
+import net.codenamed.flavored.registry.FlavoredRecipes;
+import net.codenamed.flavored.registry.FlavoredScreenHandlers;
+import net.codenamed.flavored.registry.FlavoredFlammableBlocks;
+import net.codenamed.flavored.registry.FlavoredStrippableBlocks;
+import net.codenamed.flavored.registry.FlavoredVillagerTrades;
+import net.codenamed.flavored.registry.FlavoredVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

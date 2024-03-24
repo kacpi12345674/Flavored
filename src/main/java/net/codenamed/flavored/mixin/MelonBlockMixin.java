@@ -15,7 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import net.codenamed.flavored.block.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlocks;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(MelonBlock.class)

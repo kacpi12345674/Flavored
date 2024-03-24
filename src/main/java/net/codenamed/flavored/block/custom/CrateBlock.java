@@ -24,8 +24,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.codenamed.flavored.block.FlavoredBlocks;
-import net.codenamed.flavored.item.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredItems;
 
 import java.util.*;
 import java.util.stream.Stream;

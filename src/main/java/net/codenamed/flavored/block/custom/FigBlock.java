@@ -15,8 +15,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import net.minecraft.world.event.GameEvent.Emitter;
-import net.codenamed.flavored.block.FlavoredBlocks;
-import net.codenamed.flavored.item.FlavoredItems;
+import net.codenamed.flavored.registry.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredItems;
 
 public class FigBlock extends PlantBlock implements Fertilizable {
     private static final float field_31260 = 0.003F;

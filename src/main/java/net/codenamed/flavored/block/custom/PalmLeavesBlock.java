@@ -1,6 +1,6 @@
 package net.codenamed.flavored.block.custom;
 
-import net.codenamed.flavored.block.FlavoredBlocks;
+import net.codenamed.flavored.registry.FlavoredBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Fertilizable;

@@ -1,6 +1,7 @@
 package net.codenamed.flavored.screen;
 
 
+import net.codenamed.flavored.registry.FlavoredScreenHandlers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;

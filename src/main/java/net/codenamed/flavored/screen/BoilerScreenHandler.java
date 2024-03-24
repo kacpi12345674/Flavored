@@ -2,6 +2,8 @@ package net.codenamed.flavored.screen;
 
 
 import net.codenamed.flavored.registry.FlavoredScreenHandlers;
+import net.codenamed.flavored.slot.FlavoredFuelSlot;
+import net.codenamed.flavored.slot.FlavoredResultSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
@@ -11,34 +13,33 @@ import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
-import net.codenamed.flavored.slot.FlavoredFuelSlot;
-import net.codenamed.flavored.slot.FlavoredResultSlot;
 
-public class OvenScreenHandler extends ScreenHandler {
+public class BoilerScreenHandler extends ScreenHandler {
     private final Inventory inventory;
 
     private final PropertyDelegate propertyDelegate;
 
-    public OvenScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(6), new ArrayPropertyDelegate(6));
+    public BoilerScreenHandler(int syncId, PlayerInventory playerInventory) {
+        this(syncId, playerInventory, new SimpleInventory(7), new ArrayPropertyDelegate(7));
     }
 
 
-    public OvenScreenHandler(int syncId, PlayerInventory playerInventory,
-                                       Inventory inventory, PropertyDelegate delegate) {
-        super(FlavoredScreenHandlers.OVEN_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 6);
+    public BoilerScreenHandler(int syncId, PlayerInventory playerInventory,
+                               Inventory inventory, PropertyDelegate delegate) {
+        super(FlavoredScreenHandlers.BOILER_SCREEN_HANDLER, syncId);
+        checkSize(inventory, 7);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
         //
-        this.addSlot(new FlavoredFuelSlot(inventory, 0, 49, 62));
-        this.addSlot(new Slot(inventory, 1, 40, 10));
-        this.addSlot(new Slot(inventory, 2, 58, 10));
-        this.addSlot(new Slot(inventory, 3, 40, 28));
-        this.addSlot(new Slot(inventory, 4, 58, 28));
-        this.addSlot(new FlavoredResultSlot(inventory, 5, 116, 19));
+        this.addSlot(new FlavoredFuelSlot(inventory, 0, 45, 54));
+        this.addSlot(new Slot(inventory, 1, 19, 54));
+        this.addSlot(new Slot(inventory, 2, 19, 19));
+        this.addSlot(new Slot(inventory, 3, 37, 19));
+        this.addSlot(new Slot(inventory, 4, 55, 19));
+        this.addSlot(new Slot(inventory, 5, 73, 19));
+        this.addSlot(new FlavoredResultSlot(inventory, 6, 127, 20));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
