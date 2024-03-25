@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:glow_berry_crate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:glow_berries",
+    "count": 9
+  }
+}

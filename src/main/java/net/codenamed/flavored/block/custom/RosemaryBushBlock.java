@@ -27,10 +27,7 @@ public class RosemaryBushBlock extends SweetBerryBushBlock {
         super(settings);
     }
 
-    @Override
-    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {BlockPos down = pos.down();BlockState blockState = world.getBlockState(down);
-        return blockState.isOf(Blocks.FARMLAND ) || blockState.isOf(FlavoredBlocks.PLANT_POT);
-    }
+
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
 

@@ -14,14 +14,18 @@
 
   "block.flavored.boiler": "Boiler",
 
+  "item.flavored.glazed_chicken": "Glazed Chicken",
+  "item.flavored.glazed_mutton": "Glazed Mutton",
+  "item.flavored.glazed_beef": "Glazed Beef",
+  "item.flavored.glazed_pork": "Glazed Pork",
+
+  "item.flavored.candied_apple": "Candied Apple",
 
 
   "item.flavored.rosemary": "Rosemary",
 
   "block.flavored.plenty": "Basket of Plenty",
 
-
-  "item.flavored.dates": "Dates",
 
   "item.flavored.caramel": "Caramel",
 
@@ -92,24 +96,6 @@
   "item.flavored.fig": "Fig",
 
 
-  "block.flavored.palm_stem": "Palm Stem",
-  "block.flavored.palm_wood": "Palm Wood",
-  "block.flavored.stripped_palm_stem": "Stripped Palm Stem",
-  "block.flavored.stripped_palm_wood": "Stripped Palm Wood",
-  "block.flavored.palm_button": "Palm Button",
-  "block.flavored.palm_planks": "Palm Planks",
-  "block.flavored.palm_fence": "Palm Fence",
-  "block.flavored.palm_fence_gate": "Palm Fence Gate",
-  "block.flavored.palm_slab": "Palm Slab",
-  "block.flavored.palm_stairs": "Palm Stairs",
-  "block.flavored.palm_hanging_sign": "Palm Hanging Sign",
-  "block.flavored.palm_sign": "Palm Hanging Sign",
-  "block.flavored.palm_pressure_plate": "Palm Pressure Plate",
-  "block.flavored.palm_door": "Palm Door",
-  "block.flavored.palm_trapdoor": "Palm Trapdoor",
-  "block.flavored.palm_leaves": "Palm Leaves",
-
-  "block.flavored.palm_sapling": "Palm Sapling",
 
   "block.flavored.ancient_log": "Ancient Log",
   "block.flavored.ancient_wood": "Ancient Wood",
@@ -130,6 +116,21 @@
   "block.flavored.flowering_ancient_leaves": "Flowering Ancient Leaves",
 
   "block.flavored.ancient_sapling": "Ancient Sapling",
+
+  "block.flavored.fig_crate": "Fig Crate",
+  "block.flavored.apple_crate": "Apple Crate",
+  "block.flavored.carrot_crate": "Carrot Crate",
+  "block.flavored.potato_crate": "Potato Crate",
+  "block.flavored.beetroot_crate": "Beetroot Crate",
+  "block.flavored.tomato_crate": "Tomato Crate",
+  "block.flavored.spinach_crate": "Spinach Crate",
+  "block.flavored.sweet_berry_crate": "Sweet Berry Crate",
+  "block.flavored.glow_berry_crate": "Glow Berry Crate",
+  "block.flavored.chorus_crate": "Chorus Fruit Crate",
+  "block.flavored.garlic_crate": "Garlic Crate",
+  "block.flavored.rosemary_crate": "Rosemary Crate",
+
+
 
   "item.flavored.fruit_salad": "Fruit Salad",
   "item.flavored.mashed_potatoes": "Mashed Potatoes",

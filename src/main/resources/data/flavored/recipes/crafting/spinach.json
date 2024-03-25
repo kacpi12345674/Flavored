@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:spinach_crate"
+    }
+  ],
+  "result": {
+    "item": "flavored:spinach",
+    "count": 9
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "empty=false": {
+      "model": "flavored:block/crate/crate_rosemary_full"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:raw_porkchop"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "flavored:garlic"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:glazed_pork",
+    "count": 1
+  }
+}

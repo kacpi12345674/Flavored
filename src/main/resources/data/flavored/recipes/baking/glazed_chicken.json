@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:raw_chicken"
+    },
+    {
+      "item": "flavored:rosemary"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:glazed_chicken",
+    "count": 1
+  }
+}

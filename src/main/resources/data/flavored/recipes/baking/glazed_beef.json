@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:raw_beef"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:glazed_beef",
+    "count": 1
+  }
+}

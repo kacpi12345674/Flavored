@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "flavored:fig_crate"
+    }
+  ],
+  "result": {
+    "item": "flavored:fig",
+    "count": 9
+  }
+}

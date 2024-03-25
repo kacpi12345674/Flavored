@@ -2,6 +2,7 @@ package net.codenamed.flavored.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.CarvedPumpkinBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -35,11 +36,13 @@ public class CrateBlock extends Block {
 
     public static final BooleanProperty EMPTY = BooleanProperty.of("empty");
     public  static  final IntProperty CROP = IntProperty.of("crop", 0, 11);
-    public  static  final IntProperty AMOUNT = IntProperty.of("amount", 0, 8);
+    public  static  final IntProperty AMOUNT = IntProperty.of("amount", 0, 9);
 
 
 
     public static final ArrayList<Item> crops = new ArrayList<>();
+    public static final ArrayList<Block> full_crates = new ArrayList<>();
+
 
     public  void registerCrops() {
 
@@ -55,6 +58,19 @@ public class CrateBlock extends Block {
         crops.add(FlavoredItems.ROSEMARY);
         crops.add(FlavoredItems.FIG);
         crops.add(FlavoredItems.SPINACH);
+
+        full_crates.add(FlavoredBlocks.TOMATO_CRATE);
+        full_crates.add(FlavoredBlocks.APPLE_CRATE);
+        full_crates.add(FlavoredBlocks.CARROT_CRATE);
+        full_crates.add(FlavoredBlocks.BEETROOT_CRATE);
+        full_crates.add(FlavoredBlocks.POTATO_CRATE);
+        full_crates.add(FlavoredBlocks.SWEET_BERRY_CRATE);
+        full_crates.add(FlavoredBlocks.GLOW_BERRY_CRATE);
+        full_crates.add(FlavoredBlocks.CHORUS_CRATE);
+        full_crates.add(FlavoredBlocks.GARLIC_CRATE);
+        full_crates.add(FlavoredBlocks.ROSEMARY_CRATE);
+        full_crates.add(FlavoredBlocks.FIG_CRATE);
+        full_crates.add(FlavoredBlocks.SPINACH_CRATE);
 
 
     }
@@ -72,7 +88,9 @@ public class CrateBlock extends Block {
             }
 
         }
-        registerCrops();
+        if (empty) {
+            registerCrops();
+        }
 
     }
 
@@ -86,12 +104,17 @@ public class CrateBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        if (state.get(EMPTY)) {
+            return SHAPE;
+        }
+        else {
+            return super.getOutlineShape(state, world, pos, context);
+        }
     }
 
 
 
-    public  static  final int MAX_AMOUNT = 8;
+    public  static  final int MAX_AMOUNT = 9;
 
     protected ItemConvertible getCropItem(BlockState state) {
         if (!state.get(EMPTY)) {
@@ -111,7 +134,6 @@ public class CrateBlock extends Block {
 
             if (state.get(EMPTY)) {
                 for (int i = 0; i < crops.size(); i++) {
-                    System.out.println(crops.get(i));
                     if (player.getStackInHand(hand).getItem() == crops.get(i)) {
                         world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, i).with(AMOUNT, state.get(AMOUNT)+1));
                         world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_COMPOSTER_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
@@ -130,8 +152,19 @@ public class CrateBlock extends Block {
                 world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_COMPOSTER_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
                 player.getStackInHand(hand).decrement(1);
 
+
+
                 return ActionResult.SUCCESS;
             }
+
+
+           if (state.get(AMOUNT) == MAX_AMOUNT) {
+            System.out.println(full_crates.get(state.get(CROP)));
+            world.setBlockState(pos, (BlockState) full_crates.get(state.get(CROP)).getStateWithProperties(state));
+
+           }
+
+
             else if (player.getStackInHand(hand).isEmpty() && !state.get(EMPTY)) {
                 player.getInventory().insertStack(crops.get(state.get(CROP)).getDefaultStack());
                 world.playSound((PlayerEntity)null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.2F, 1.5F);
@@ -141,7 +174,10 @@ public class CrateBlock extends Block {
                 }
                 else {
                     world.setBlockState(pos, (BlockState) state.with(EMPTY, false).with(CROP, state.get(CROP)).with(AMOUNT, state.get(AMOUNT)-1));
+                    if (state.get(AMOUNT) == MAX_AMOUNT-1) {
+                        world.setBlockState(pos, (BlockState) FlavoredBlocks.CRATE.getDefaultState().with(CROP, state.get(CROP)).with(AMOUNT, 7).with(EMPTY, false));
 
+                    }
                 }
 
                 return ActionResult.SUCCESS;
@@ -169,7 +205,7 @@ public class CrateBlock extends Block {
 
     @Override
     public int getComparatorOutput(BlockState state, World world, BlockPos pos) {
-        return (int)Math.ceil(state.get(AMOUNT) / 8);
+        return (int)Math.ceil(state.get(AMOUNT) / 9);
     }
 
     @Override

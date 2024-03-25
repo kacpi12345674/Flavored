@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "flavored:block/stripped_palm_stem",
-    "side": "flavored:block/stripped_palm_stem"
-  }
-}

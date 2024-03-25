@@ -1,6 +1,9 @@
 package net.codenamed.flavored.block.entity;
 
+import net.codenamed.flavored.recipe.OvenRecipe;
 import net.codenamed.flavored.registry.FlavoredBlockEntities;
+import net.codenamed.flavored.screen.BoilerScreenHandler;
+import net.codenamed.flavored.screen.OvenScreenHandler;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -35,8 +38,6 @@ public class BoilerBlockEntity extends BlockEntity implements NamedScreenHandler
 
     private static final int INPUT_SLOT3 = 3;
 
-    private static final int INPUT_SLOT4 = 4;
-
     private static final int OUTPUT_SLOT = 5;
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -44,7 +45,7 @@ public class BoilerBlockEntity extends BlockEntity implements NamedScreenHandler
     private int fuelTime = 0;
     private int maxFuelTime = 0;
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(6, ItemStack.EMPTY);
+            DefaultedList.ofSize(5, ItemStack.EMPTY);
 
     public BoilerBlockEntity(BlockPos pos, BlockState state) {
         super(FlavoredBlockEntities.OVEN_BLOCK_ENTITY, pos, state);
@@ -82,7 +83,7 @@ public class BoilerBlockEntity extends BlockEntity implements NamedScreenHandler
             }
 
             public int size() {
-                return 6;
+                return 5;
             }
         };
     }
@@ -111,6 +112,11 @@ public class BoilerBlockEntity extends BlockEntity implements NamedScreenHandler
         progress = nbt.getInt("boiler.progress");
     }
 
+    @Nullable
+    @Override
+    public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
+        return new BoilerScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+    }
 
     public void tick(World world, BlockPos pos, BlockState state, BoilerBlockEntity entity) {
         if(isConsumingFuel(entity)) {
@@ -170,13 +176,6 @@ public class BoilerBlockEntity extends BlockEntity implements NamedScreenHandler
             this.removeStack(INPUT_SLOT3, 1);
         }
 
-        if (this.getStack(INPUT_SLOT4) == Items.WATER_BUCKET.getDefaultStack() || this.getStack(INPUT_SLOT4) == Items.MILK_BUCKET.getDefaultStack()) {
-            this.removeStack(INPUT_SLOT4, 1);
-            this.setStack(INPUT_SLOT4, Items.BUCKET.getDefaultStack());
-        }
-        else {
-            this.removeStack(INPUT_SLOT4, 1);
-        }
 
 
 
@@ -222,11 +221,5 @@ public class BoilerBlockEntity extends BlockEntity implements NamedScreenHandler
 
     private boolean canInsertAmountIntoOutputSlot(ItemStack result) {
         return this.getStack(OUTPUT_SLOT).getCount() + result.getCount() <= getStack(OUTPUT_SLOT).getMaxCount();
-    }
-
-    @Nullable
-    @Override
-    public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return null;
     }
 }

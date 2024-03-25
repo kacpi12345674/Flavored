@@ -20,26 +20,24 @@ public class BoilerScreenHandler extends ScreenHandler {
     private final PropertyDelegate propertyDelegate;
 
     public BoilerScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(7), new ArrayPropertyDelegate(7));
+        this(syncId, playerInventory, new SimpleInventory(5), new ArrayPropertyDelegate(5));
     }
 
 
     public BoilerScreenHandler(int syncId, PlayerInventory playerInventory,
                                Inventory inventory, PropertyDelegate delegate) {
         super(FlavoredScreenHandlers.BOILER_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 7);
+        checkSize(inventory, 5);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
         //
         this.addSlot(new FlavoredFuelSlot(inventory, 0, 45, 54));
-        this.addSlot(new Slot(inventory, 1, 19, 54));
-        this.addSlot(new Slot(inventory, 2, 19, 19));
-        this.addSlot(new Slot(inventory, 3, 37, 19));
-        this.addSlot(new Slot(inventory, 4, 55, 19));
-        this.addSlot(new Slot(inventory, 5, 73, 19));
-        this.addSlot(new FlavoredResultSlot(inventory, 6, 127, 20));
+        this.addSlot(new Slot(inventory, 1, 27, 19));
+        this.addSlot(new Slot(inventory, 2, 45, 19));
+        this.addSlot(new Slot(inventory, 3, 63, 19));
+        this.addSlot(new FlavoredResultSlot(inventory, 4, 127, 20));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);

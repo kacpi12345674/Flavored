@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "empty=false": {
+      "model": "flavored:block/crate/crate_glow_berry_full"
+    }
+  }
+}

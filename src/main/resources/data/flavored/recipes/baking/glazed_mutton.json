@@ -1,0 +1,23 @@
+{
+  "type": "flavored:baking",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:raw_mutton"
+    },
+    {
+      "item": "flavored:fig"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+
+
+  ],
+  "output": {
+    "item": "flavored:glazed_mutton",
+    "count": 1
+  }
+}

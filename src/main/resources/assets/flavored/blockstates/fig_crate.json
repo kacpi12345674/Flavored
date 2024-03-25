@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "flavored:block/crate/crate_fig_full"
+    }
+  }
+}

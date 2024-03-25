@@ -1,5 +1,6 @@
 package net.codenamed.flavored.block.custom;
 
+import net.codenamed.flavored.block.entity.OvenBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -34,18 +35,14 @@ public class BoilerBlock extends BlockWithEntity implements BlockEntityProvider 
     }
 
     private static VoxelShape SHAPE = Stream.of(
-            Block.createCuboidShape(0, 5, 0, 16, 16, 16),
-            Block.createCuboidShape(1, 3, 1, 15, 5, 15),
-            Block.createCuboidShape(1, 0, 12, 4, 3, 15),
-            Block.createCuboidShape(12, 0, 12, 15, 3, 15),
-            Block.createCuboidShape(1, 0, 2, 4, 3, 5),
-            Block.createCuboidShape(12, 0, 2, 15, 3, 5)
+            Block.createCuboidShape(2, 0, 2, 14, 10, 14)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
@@ -107,7 +104,7 @@ public class BoilerBlock extends BlockWithEntity implements BlockEntityProvider 
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new RangeBlockEntity(pos, state);
+        return new BoilerBlockEntity(pos, state);
     }
 
     @Nullable
