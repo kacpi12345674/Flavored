@@ -1,12 +1,23 @@
 package net.codenamed.flavored;
 
 import net.codenamed.flavored.registry.FlavoredPaintings;
+import net.codenamed.flavored.world.gen.feature.CropFeatureConfig;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.block.Blocks;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.codenamed.flavored.registry.FlavoredBlocks;
 import net.codenamed.flavored.registry.FlavoredBlockEntities;
@@ -18,6 +29,8 @@ import net.codenamed.flavored.registry.FlavoredFlammableBlocks;
 import net.codenamed.flavored.registry.FlavoredStrippableBlocks;
 import net.codenamed.flavored.registry.FlavoredVillagerTrades;
 import net.codenamed.flavored.registry.FlavoredVillagers;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +38,16 @@ import org.slf4j.LoggerFactory;
 public class Flavored implements ModInitializer {
 	public static final String MOD_ID = "flavored";
 	public static final Logger LOGGER = LoggerFactory.getLogger("flavored");
+
+
+	public static final Identifier CAULIFLOWER_FEATURE_ID = new Identifier("flavored", "cauliflower_feature");
+	public static final VegetationPatchFeature  CAULIFLOWER_FEATURE = new VegetationPatchFeature(VegetationPatchFeatureConfig.CODEC);
+
+	public static final RegistryKey<ConfiguredFeature<?, ?>> CAULIFLOWER_FEATURE_CONFIGURED = VegetationConfiguredFeatures.PATCH_PUMPKIN;
+
+	public static RegistryKey<PlacedFeature> CAULIFLOWER_FEATURE_PLACED = VegetationPlacedFeatures.PATCH_PUMPKIN;
+
+	private static final Identifier DATAPACK_ID = new Identifier("minecraft", "src/main/resources/resourcepacks/flavored_resources.zip");
 
 
 
@@ -36,10 +59,6 @@ public class Flavored implements ModInitializer {
 	private static final Identifier SAVANNA_VILLAGE_CHEST_LOOT_TABLE_ID = new Identifier("minecraft", "chests/village/village_savanna_house");
 
 	private static final Identifier SNOWY_VILLAGE_CHEST_LOOT_TABLE_ID = new Identifier("minecraft", "chests/village/village_snowy_house");
-
-	private static final Identifier SPRUCE_LEAVES_ID = Blocks.SPRUCE_LEAVES.getLootTableId();
-
-	private static final Identifier PUMPKIN_ID = Blocks.PUMPKIN.getLootTableId();
 
 	private static final Identifier SUSPICOUS_SAND_ID = new Identifier("minecraft", "archaeology/desert_pyramid");
 
@@ -123,6 +142,10 @@ public class Flavored implements ModInitializer {
 		FlavoredVillagers.registerVillagers();
 		FlavoredVillagerTrades.registerCustomTrades();
 		FlavoredPaintings.registerPaintings();
+
+
+
+
 
 
 

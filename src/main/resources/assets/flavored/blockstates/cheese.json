@@ -1,19 +1,16 @@
 {
   "variants": {
-    "facing=north": {
+    "bites=0": {
       "model": "flavored:block/cheese"
     },
-    "facing=south": {
-      "model": "flavored:block/cheese",
-      "y": 180
+    "bites=1": {
+      "model": "flavored:block/cheese_slice_1"
     },
-    "facing=west": {
-      "model": "flavored:block/cheese",
-      "y": 270
+    "bites=2": {
+      "model": "flavored:block/cheese_slice_2"
     },
-    "facing=east": {
-      "model": "flavored:block/cheese",
-      "y": 90
+    "bites=3": {
+      "model": "flavored:block/cheese_slice_3"
     }
   }
 }

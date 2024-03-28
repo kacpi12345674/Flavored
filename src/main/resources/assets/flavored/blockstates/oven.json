@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,lit=false": {
       "model": "flavored:block/oven",
       "y": 90
     },
-    "facing=north": {
+    "facing=north,lit=false": {
       "model": "flavored:block/oven"
     },
-    "facing=south": {
+    "facing=south,lit=false": {
       "model": "flavored:block/oven",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,lit=false": {
       "model": "flavored:block/oven",
+      "y": 270
+    },
+    "facing=east,lit=oven_on": {
+      "model": "flavored:block/oven",
+      "y": 90
+    },
+    "facing=north,lit=oven_on": {
+      "model": "flavored:block/oven"
+    },
+    "facing=south,lit=oven_on": {
+      "model": "flavored:block/oven",
+      "y": 180
+    },
+    "facing=west,lit=true": {
+      "model": "flavored:block/oven_on",
       "y": 270
     }
 

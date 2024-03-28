@@ -94,13 +94,13 @@ public class FlavoredBlocks {
     public static final Block PLANT_POT = registerBlock("plant_pot",
             new PlantPotBlock(FabricBlockSettings.copyOf(Blocks.DECORATED_POT).strength(1.5F, 3.0F).sounds(BlockSoundGroup.STONE).nonOpaque().requiresTool()));
     public static final Block FERMENTER = registerBlock("fermenter",
-            new FermenterBlock(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
+            new FermenterBlock(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK).ticksRandomly()));
 
     public static final Block OVEN = registerBlock("oven",
-            new OvenBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+            new OvenBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS).luminance(Blocks.createLightLevelFromLitBlockState(13)).ticksRandomly()));
 
     public static final Block RANGE = registerBlock("range",
-            new RangeBlock(FabricBlockSettings.copyOf(Blocks.CAULDRON)));
+            new RangeBlock(FabricBlockSettings.copyOf(Blocks.CAULDRON).luminance(Blocks.createLightLevelFromLitBlockState(13))));
 
     public static final Block BOILER = registerBlock("boiler",
             new BoilerBlock(FabricBlockSettings.copyOf(Blocks.CAULDRON)));

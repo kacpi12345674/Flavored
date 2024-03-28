@@ -41,6 +41,7 @@ public class FlavoredItemGroup {
                         entries.add(FlavoredBlocks.OVEN);
                         entries.add(FlavoredItems.FLOUR);
                         entries.add(FlavoredBlocks.CHEESE);
+                        entries.add(FlavoredItems.CHEESE_SLICE);
                         entries.add(FlavoredItems.OIL);
                         entries.add(FlavoredItems.TOMATO);
                         entries.add(FlavoredItems.TOMATO_SEEDS);

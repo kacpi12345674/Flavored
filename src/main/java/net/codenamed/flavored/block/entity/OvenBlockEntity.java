@@ -1,5 +1,7 @@
 package net.codenamed.flavored.block.entity;
 
+import net.codenamed.flavored.block.custom.FermenterBlock;
+import net.codenamed.flavored.block.custom.OvenBlock;
 import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
@@ -118,13 +120,19 @@ public class OvenBlockEntity extends BlockEntity implements NamedScreenHandlerFa
         return new OvenScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
+
     public void tick(World world, BlockPos pos, BlockState state, OvenBlockEntity entity) {
         if(isConsumingFuel(entity)) {
             entity.fuelTime--;
         }
+        state = (BlockState)state.with(OvenBlock.LIT, isConsumingFuel(entity));
+        world.setBlockState(pos, state);
+
+
 
         if(hasRecipe()) {
             if(hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
+
                 entity.consumeFuel();
             }
             if(isConsumingFuel(entity)) {

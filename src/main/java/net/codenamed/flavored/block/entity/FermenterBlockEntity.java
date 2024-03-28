@@ -1,5 +1,6 @@
 package net.codenamed.flavored.block.entity;
 
+import net.codenamed.flavored.block.custom.FermenterBlock;
 import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -40,7 +41,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 2304;
+    private int maxProgress = 768;
 
     public FermenterBlockEntity(BlockPos pos, BlockState state) {
         super(FlavoredBlockEntities.FERMENTER_BLOCK_ENTITY, pos, state);
@@ -118,6 +119,18 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
         if(world.isClient()) {
             return;
         }
+        if(getStack(LIQUID_SLOT).getItem() == Items.WATER_BUCKET) {
+            state = (BlockState)state.with(FermenterBlock.LIQUID, 1);
+
+        }
+        else if (getStack(LIQUID_SLOT).getItem() == Items.MILK_BUCKET) {
+            state = (BlockState)state.with(FermenterBlock.LIQUID, 2);
+        }
+        else {
+            state = (BlockState)state.with(FermenterBlock.LIQUID, 0);
+
+        }
+        world.setBlockState(pos, state);
 
         if(isOutputSlotEmptyOrReceivable()) {
             if(this.hasRecipe()) {

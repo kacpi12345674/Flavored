@@ -9,6 +9,9 @@ import net.minecraft.util.Identifier;
 public class FlavoredPaintings {
     public static final PaintingVariant PLENTY = registerPainting("plenty", new PaintingVariant(32, 16));
 
+    public static final PaintingVariant CARVED = registerPainting("carved", new PaintingVariant(16, 32));
+
+
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registries.PAINTING_VARIANT, new Identifier(Flavored.MOD_ID, name), paintingVariant);
     }

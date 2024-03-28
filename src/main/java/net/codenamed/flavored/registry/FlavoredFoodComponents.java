@@ -17,6 +17,9 @@ public class FlavoredFoodComponents {
 
     public static final FoodComponent PIZZA_SLICE = new FoodComponent.Builder().hunger(7).saturationModifier(0.6f).build();
 
+    public static final FoodComponent CHEESE_SLICE = new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).build();
+
+
     public static final FoodComponent CANDIED_APPLE = new FoodComponent.Builder().hunger(7).saturationModifier(0.5f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 0), 1F).build();
 
     public static final FoodComponent PUMPKIN_SLICE = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f).build();

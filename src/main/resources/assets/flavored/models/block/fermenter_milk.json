@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "down": "minecraft:block/basalt_side",
+    "down": "flavored:block/fermenter_bottom",
     "east": "flavored:block/fermenter_milk_side",
     "north": "flavored:block/fermenter_milk",
     "particle": "flavored:block/fermenter",

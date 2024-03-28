@@ -48,6 +48,9 @@ public class FlavoredItems {
     public static final Item PIZZA_SLICE = registerItem("pizza_slice",
             new Item(new FabricItemSettings().food(FlavoredFoodComponents.PIZZA_SLICE)));
 
+    public static final Item CHEESE_SLICE = registerItem("cheese_slice",
+            new Item(new FabricItemSettings().food(FlavoredFoodComponents.CHEESE_SLICE)));
+
     public static final Item CAULIFLOWER_SOUP = registerItem("cauliflower_soup",
             new StewItem(new FabricItemSettings().food(FlavoredFoodComponents.CAULIFLOWER_SOUP).maxCount(1)));
 

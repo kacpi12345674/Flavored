@@ -5,9 +5,13 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
@@ -23,6 +27,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.codenamed.flavored.block.entity.FermenterBlockEntity;
 import net.codenamed.flavored.registry.FlavoredBlockEntities;
+import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
 public class FermenterBlock extends BlockWithEntity implements BlockEntityProvider {
@@ -54,15 +59,16 @@ public  static  final  IntProperty LIQUID = IntProperty.of("liquid", 0, 2);
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
 
+
+
         BlockEntity b = world.getBlockEntity(pos);
-        changeState(b, world, state, pos);
 
         if (state.get(LIQUID) == 1 || state.get(LIQUID) == 2) {
             double d = (double)pos.getX() + 0.5;
-            double e = (double)pos.getY();
+            double e = (double)pos.getY() + 1;
             double f = (double)pos.getZ() + 0.5;
             if (random.nextDouble() < 0.1) {
-                world.playSound(d, e, f, SoundEvents.BLOCK_BREWING_STAND_BREW, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+                world.playSound(d, e, f, SoundEvents.BLOCK_BREWING_STAND_BREW, SoundCategory.BLOCKS, 0.1F, 1.5F, false);
             }
 
             Direction direction = (Direction)state.get(FACING);
@@ -78,24 +84,37 @@ public  static  final  IntProperty LIQUID = IntProperty.of("liquid", 0, 2);
         super.randomDisplayTick(state, world, pos, random);
     }
 
-    public  void changeState(BlockEntity blockEntity, World world, BlockState state, BlockPos pos) {
-        if (blockEntity instanceof FermenterBlockEntity f) {
-            if (f.hasWater()) {
 
-                world.setBlockState(pos, (BlockState)state.with(LIQUID, 1));
+    protected boolean canBeFilledByDripstone(Fluid fluid) {
+        return true;
+    }
 
+    protected void fillFromDripstone(BlockState state, World world, BlockPos pos, Fluid fluid) {
+        BlockEntity b = world.getBlockEntity(pos);
+
+        if (fluid == Fluids.WATER && b instanceof FermenterBlockEntity) {
+
+            if (((FermenterBlockEntity) b).getStack(3).getItem() == Items.BUCKET) {
+
+                world.setBlockState(pos, (BlockState) state.with(LIQUID, 1));
             }
-            else if(f.hasMilk()){
 
-                world.setBlockState(pos, (BlockState)state.with(LIQUID, 2));
+        }
 
+    }
+
+    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        BlockPos blockPos = PointedDripstoneBlock.getDripPos(world, pos);
+        if (blockPos != null) {
+            Fluid fluid = PointedDripstoneBlock.getDripFluid(world, blockPos);
+            if (fluid != Fluids.EMPTY && this.canBeFilledByDripstone(fluid)) {
+                this.fillFromDripstone(state, world, pos, fluid);
             }
-            else {
-                world.setBlockState(pos, (BlockState)state.with(LIQUID, 0));
 
-            }
         }
     }
+
+
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
@@ -156,6 +175,7 @@ public  static  final  IntProperty LIQUID = IntProperty.of("liquid", 0, 2);
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+
         return validateTicker(type, FlavoredBlockEntities.FERMENTER_BLOCK_ENTITY,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }

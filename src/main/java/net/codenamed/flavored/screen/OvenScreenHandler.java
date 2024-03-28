@@ -63,8 +63,11 @@ public class OvenScreenHandler extends ScreenHandler {
     }
 
     public int getScaledFuelProgress() {
+
         int fuelProgress = this.propertyDelegate.get(2);
         int maxFuelProgress = this.propertyDelegate.get(3);
+        System.out.println(fuelProgress);
+        System.out.println(maxFuelProgress);
         int fuelProgressSize = 14;
 
         return maxFuelProgress != 0 ? (int)(((float)fuelProgress / (float)maxFuelProgress) * fuelProgressSize) : 0;
