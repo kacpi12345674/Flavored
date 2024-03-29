@@ -30,8 +30,10 @@ public class FlavoredItemGroup {
                         entries.add(FlavoredBlocks.ANCIENT_PRESSURE_PLATE);
                         entries.add(FlavoredBlocks.ANCIENT_DOOR);
                         entries.add(FlavoredBlocks.ANCIENT_TRAPDOOR);
-                        entries.add(FlavoredBlocks.ANCIENT_HANGING_SIGN);
-                        entries.add(FlavoredBlocks.ANCIENT_SIGN);
+                        entries.add(FlavoredItems.HANGING_ANCIENT_SIGN);
+                        entries.add(FlavoredItems.ANCIENT_SIGN);
+                        entries.add(FlavoredItems.ANCIENT_BOAT);
+                        entries.add(FlavoredItems.ANCIENT_CHEST_BOAT);
                         entries.add(FlavoredBlocks.ANCIENT_LEAVES);
                         entries.add(FlavoredBlocks.FLOWERING_ANCIENT_LEAVES);
                         entries.add(FlavoredBlocks.ANCIENT_SAPLING);

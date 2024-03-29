@@ -1,4 +1,6 @@
 {
+  "parent": "minecraft:husbandry/root",
+
   "display": {
     "icon": {
       "item": "flavored:plenty"
@@ -7,8 +9,7 @@
     "description": "Cook every dish!",
     "frame": "challenge",
     "show_toast": true,
-    "announce_to_chat": true,
-    "background": "flavored:textures/block/crate.png"
+    "announce_to_chat": true
   },
   "criteria": {
     "requirement": {
@@ -17,7 +18,6 @@
         "items": [
           {
             "items": [
-              "flavored:tomato"
             ]
           }
         ]

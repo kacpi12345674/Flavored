@@ -1,10 +1,17 @@
 package net.codenamed.flavored.registry;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -57,11 +64,22 @@ public class FlavoredBlocks {
     public static final Block ANCIENT_PRESSURE_PLATE = registerBlock("ancient_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
 
-    public static final Block ANCIENT_SIGN= registerBlock("ancient_sign",
-            new SignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), WoodType.OAK));
+    public static final Identifier ANCIENT_SIGN_TEXTURE = new Identifier(Flavored.MOD_ID, "entity/signs/ancient");
+    public static final Identifier ANCIENT_HANGING_SIGN_TEXTURE = new Identifier(Flavored.MOD_ID, "entity/signs/hanging/ancient");
+    public static final Identifier ANCIENT_HANGING_GUI_SIGN_TEXTURE = new Identifier(Flavored.MOD_ID, "textures/gui/hanging_signs/ancient");
 
-    public static final Block ANCIENT_HANGING_SIGN = registerBlock("ancient_hanging_sign",
-            new HangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), WoodType.OAK));
+    public static final Block STANDING_ANCIENT_SIGN = Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, "ancient_standing_sign"),
+            new TerraformSignBlock(ANCIENT_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_ANCIENT_SIGN = Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, "ancient_wall_sign"),
+            new TerraformWallSignBlock(ANCIENT_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+    public static final Block HANGING_ANCIENT_SIGN = Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, "ancient_hanging_sign"),
+            new TerraformHangingSignBlock(ANCIENT_HANGING_SIGN_TEXTURE, ANCIENT_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_ANCIENT_SIGN = Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, "ancient_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(ANCIENT_HANGING_SIGN_TEXTURE, ANCIENT_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+
+    public static final BlockFamily ANCIENT_FAMILY = BlockFamilies.register(FlavoredBlocks.ANCIENT_PLANKS)
+            .sign(FlavoredBlocks.STANDING_ANCIENT_SIGN, FlavoredBlocks.WALL_ANCIENT_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
 
     public static final Block ANCIENT_LEAVES = registerBlock("ancient_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES)));
@@ -70,19 +88,19 @@ public class FlavoredBlocks {
             new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     public static final Block FLOWERING_ANCIENT_LEAVES = registerBlock("flowering_ancient_leaves",
-            new FloweringAncientLeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES)));
+            new FloweringAncientLeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES).ticksRandomly()));
 
 
-    public static final Block PIZZA = registerBlock("pizza",
+    public static final Block PIZZA = registerPlaceableItem("pizza",
             new PizzaBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
-    public static final Block GARLIC_BREAD = registerBlock("garlic_bread",
+    public static final Block GARLIC_BREAD = registerPlaceableItem("garlic_bread",
             new GarlicBreadBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
-    public static final Block PUDDING = registerBlock("pudding",
+    public static final Block PUDDING = registerPlaceableItem("pudding",
             new PuddingBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.4f, 0.4f)));
 
-    public static final Block CHEESE = registerBlock("cheese",
+    public static final Block CHEESE = registerPlaceableItem("cheese",
             new CheeseBlock(FabricBlockSettings.copyOf(Blocks.CAKE).strength(0.5f, 0.5f)));
 
     public static final Block PLENTY = registerBlock("plenty",
@@ -119,6 +137,7 @@ public class FlavoredBlocks {
             new AttachedStemBlock((GourdBlock)CAULIFLOWER, () -> {
                 return FlavoredItems.CAULIFLOWER_SEEDS;
             }, FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
+
 
 
     public static final Block CARVED_CAULIFLOWER = registerBlock("carved_cauliflower",
@@ -213,6 +232,11 @@ public class FlavoredBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, name), block);
     }
 
+    private static Block registerPlaceableItem(String name, Block block) {
+        registerPlaceableBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(Flavored.MOD_ID, name), block);
+    }
+
     public  static  void  registerCrate() {
 
 
@@ -223,6 +247,12 @@ public class FlavoredBlocks {
 
 
 
+    }
+
+    private static Item registerPlaceableBlockItem(String name, Block block) {
+        Item item = Registry.register(Registries.ITEM, new Identifier(Flavored.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings().maxCount(1)));
+        return item;
     }
 
     private static Item registerBlockItem(String name, Block block) {

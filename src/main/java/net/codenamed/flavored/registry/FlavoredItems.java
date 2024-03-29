@@ -1,5 +1,6 @@
 package net.codenamed.flavored.registry;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.codenamed.flavored.Flavored;
@@ -66,6 +67,12 @@ public class FlavoredItems {
     public static final Item CARBONARA = registerItem("carbonara",
             new StewItem(new FabricItemSettings().food(FlavoredFoodComponents.CARBONARA).maxCount(1)));
 
+
+    public static final Item ANCIENT_SIGN = registerItem("ancient_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), FlavoredBlocks.STANDING_ANCIENT_SIGN, FlavoredBlocks.WALL_ANCIENT_SIGN));
+    public static final Item HANGING_ANCIENT_SIGN = registerItem("ancient_hanging_sign",
+            new HangingSignItem(FlavoredBlocks.HANGING_ANCIENT_SIGN, FlavoredBlocks.WALL_HANGING_ANCIENT_SIGN, new FabricItemSettings().maxCount(16)));
+
     public static final Item MASHED_POTATOES = registerItem("mashed_potatoes",
             new StewItem(new FabricItemSettings().food(FlavoredFoodComponents.MASHED_POTATOES).maxCount(1)));
 
@@ -94,7 +101,8 @@ public class FlavoredItems {
     public static final Item CANDIED_APPLE = registerItem("candied_apple",
             new Item(new FabricItemSettings().food(FlavoredFoodComponents.CANDIED_APPLE)));
 
-
+    public static final Item ANCIENT_BOAT = TerraformBoatItemHelper.registerBoatItem(FlavoredBoats.ANCIENT_BOAT_ID, FlavoredBoats.ANCIENT_BOAT_KEY, false);
+    public static final Item ANCIENT_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(FlavoredBoats.ANCIENT_CHEST_BOAT_ID, FlavoredBoats.ANCIENT_BOAT_KEY, true);
 
 
     public static final Item SWEET_BERRY_MUFFIN = registerItem("sweet_berry_muffin",
@@ -143,6 +151,7 @@ public class FlavoredItems {
 
     public static final Item SPINACH_SEEDS = registerItem("spinach_seeds",
             new AliasedBlockItem(FlavoredBlocks.SPINACHES, new FabricItemSettings()));
+
 
 
 

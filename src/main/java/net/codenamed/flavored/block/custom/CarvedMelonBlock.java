@@ -42,7 +42,7 @@ public class CarvedMelonBlock extends HorizontalFacingBlock {
             return ActionResult.SUCCESS;
         }
         else if (player.getStackInHand(hand).isEmpty() && state.get(MELONED)) {
-            player.getInventory().insertStack(1, Items.MELON_SLICE.getDefaultStack());
+            player.getInventory().insertStack(Items.MELON_SLICE.getDefaultStack());
             world.setBlockState(pos, state.with(MELONED, false));
             world.playSound((PlayerEntity)null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.2F, 1.5F);
 

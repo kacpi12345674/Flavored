@@ -1,0 +1,41 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "flavored:block/cheese"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 8],
+			"to": [8, 4, 14],
+			"faces": {
+				"north": {"uv": [4, 13, 7, 15], "texture": "#1"},
+				"east": {"uv": [11, 10.5, 14.5, 12.5], "texture": "#missing"},
+				"south": {"uv": [1, 6, 4, 8], "texture": "#1"},
+				"west": {"uv": [4, 6, 7, 8], "texture": "#1"},
+				"up": {"uv": [9, 4, 12, 7], "texture": "#1"},
+				"down": {"uv": [9, 9, 12, 12], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 0, 8],
+			"to": [14, 4, 14],
+			"faces": {
+				"north": {"uv": [1, 13, 4, 15], "texture": "#1"},
+				"east": {"uv": [1, 6, 4, 8], "texture": "#1"},
+				"south": {"uv": [4, 6, 7, 8], "texture": "#1"},
+				"west": {"uv": [11, 10.5, 14.5, 12.5], "texture": "#missing"},
+				"up": {"uv": [12, 4, 15, 7], "texture": "#1"},
+				"down": {"uv": [12, 9, 15, 12], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

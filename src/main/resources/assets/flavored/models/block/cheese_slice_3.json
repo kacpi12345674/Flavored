@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "flavored:block/cheese",
+		"particle": "flavored:block/pizza"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 8],
+			"to": [14, 4, 14],
+			"faces": {
+				"north": {"uv": [1, 13, 4, 15], "texture": "#1"},
+				"east": {"uv": [1, 6, 4, 8], "texture": "#1"},
+				"south": {"uv": [4, 6, 7, 8], "texture": "#1"},
+				"west": {"uv": [4, 13, 7, 15], "texture": "#1"},
+				"up": {"uv": [12, 4, 15, 7], "texture": "#1"},
+				"down": {"uv": [12, 9, 15, 12], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

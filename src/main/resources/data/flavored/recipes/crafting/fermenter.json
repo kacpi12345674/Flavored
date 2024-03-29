@@ -7,15 +7,12 @@
       "item": "minecraft:copper_ingot"
     },
     "#": {
-      "item": "minecraft:basalt"
-    },
-    "X": {
-      "item": "minecraft:bucket"
+      "tag": "minecraft:planks"
     }
   },
   "pattern": [
+    "###",
     "***",
-    "*X*",
     "###"
   ],
   "result": {

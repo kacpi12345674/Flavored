@@ -1,5 +1,6 @@
 package net.codenamed.flavored.block.custom;
 
+import net.codenamed.flavored.block.entity.OvenBlockEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CarvedPumpkinBlock;
@@ -17,6 +18,8 @@ import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Property;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ItemScatterer;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -27,6 +30,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.codenamed.flavored.registry.FlavoredBlocks;
 import net.codenamed.flavored.registry.FlavoredItems;
+import net.minecraft.world.WorldAccess;
 
 import java.util.*;
 import java.util.stream.Stream;
@@ -191,8 +195,19 @@ public class CrateBlock extends Block {
             return ActionResult.FAIL;
     }
 
+
+    @Override
+    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(crops.get(state.get(CROP)), state.get(AMOUNT)));
+
+        super.onBreak(world, pos, state, player);
+    }
+
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+
+
+
         super.onStateReplaced(state, world, pos, newState, moved);
     }
 

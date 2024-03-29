@@ -4,12 +4,15 @@
   "key": {
 
     "*": {
-      "item": "tag:wooden_slab"
+      "item": "minecraft:bricks"
+    },
+    "#": {
+      "item": "minecraft:dirt"
     }
   },
   "pattern": [
-    "***",
     "* *",
+    "*#*",
     "***"
   ],
   "result": {

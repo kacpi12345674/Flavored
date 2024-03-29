@@ -2,7 +2,7 @@
   "type": "flavored:fermenting",
   "ingredients": [
     {
-      "item": "minecraft_torchflower_seeds"
+      "item": "minecraft:torchflower_seeds"
     }
   ],
   "output": {

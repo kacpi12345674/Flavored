@@ -98,7 +98,8 @@
 
   "item.flavored.fig": "Fig",
 
-
+  "item.flavored.ancient_boat": "Ancient Boat",
+  "item.flavored.ancient_chest_boat": "Ancient Chest Boat",
 
   "block.flavored.ancient_log": "Ancient Log",
   "block.flavored.ancient_wood": "Ancient Wood",
@@ -110,8 +111,12 @@
   "block.flavored.ancient_fence_gate": "Ancient Fence Gate",
   "block.flavored.ancient_slab": "Ancient Slab",
   "block.flavored.ancient_stairs": "Ancient Stairs",
+
+  "block.flavored.ancient_standing_sign": "Ancient Standing Sign",
+  "block.flavored.ancient_wall_sign": "Ancient Wall Sign",
+
   "block.flavored.ancient_hanging_sign": "Ancient Hanging Sign",
-  "block.flavored.ancient_sign": "Ancient Hanging Sign",
+  "block.flavored.ancient_wall_hanging_sign": "Ancient Wall Hanging Sign",
   "block.flavored.ancient_pressure_plate": "Ancient Pressure Plate",
   "block.flavored.ancient_door": "Ancient Door",
   "block.flavored.ancient_trapdoor": "Ancient Trapdoor",

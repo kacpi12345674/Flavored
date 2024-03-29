@@ -1,15 +1,20 @@
 package net.codenamed.flavored;
 
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
+import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
+import net.codenamed.flavored.registry.FlavoredBoats;
 import net.codenamed.flavored.registry.FlavoredScreenHandlers;
 import net.codenamed.flavored.screen.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.codenamed.flavored.registry.FlavoredBlocks;
 import net.codenamed.flavored.registry.FlavoredBlockEntities;
 import net.codenamed.flavored.block.entity.renderer.RangeBlockEntityRenderer;
+import net.minecraft.client.util.SpriteIdentifier;
 
 public class FlavoredClient implements ClientModInitializer {
     public void onInitializeClient() {
@@ -38,6 +43,12 @@ public class FlavoredClient implements ClientModInitializer {
 
 
         BlockEntityRendererFactories.register(FlavoredBlockEntities.RANGE_BLOCK_ENTITY, RangeBlockEntityRenderer::new);
+
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, FlavoredBlocks.ANCIENT_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, FlavoredBlocks.ANCIENT_HANGING_SIGN_TEXTURE));
+
+        TerraformBoatClientHelper.registerModelLayers(FlavoredBoats.ANCIENT_BOAT_ID, false);
+
 
     }
     }

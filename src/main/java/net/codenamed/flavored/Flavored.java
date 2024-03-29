@@ -1,6 +1,6 @@
 package net.codenamed.flavored;
 
-import net.codenamed.flavored.registry.FlavoredPaintings;
+import net.codenamed.flavored.registry.*;
 import net.codenamed.flavored.world.gen.feature.CropFeatureConfig;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,16 +19,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.codenamed.flavored.registry.FlavoredBlocks;
-import net.codenamed.flavored.registry.FlavoredBlockEntities;
-import net.codenamed.flavored.registry.FlavoredItems;
-import net.codenamed.flavored.registry.FlavoredItemGroup;
-import net.codenamed.flavored.registry.FlavoredRecipes;
-import net.codenamed.flavored.registry.FlavoredScreenHandlers;
-import net.codenamed.flavored.registry.FlavoredFlammableBlocks;
-import net.codenamed.flavored.registry.FlavoredStrippableBlocks;
-import net.codenamed.flavored.registry.FlavoredVillagerTrades;
-import net.codenamed.flavored.registry.FlavoredVillagers;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
 import org.slf4j.Logger;
@@ -142,6 +132,7 @@ public class Flavored implements ModInitializer {
 		FlavoredVillagers.registerVillagers();
 		FlavoredVillagerTrades.registerCustomTrades();
 		FlavoredPaintings.registerPaintings();
+		FlavoredBoats.registerBoats();
 
 
 

@@ -25,12 +25,5 @@ public abstract class PlantBlockMixin extends Block {
         }
     }
 
-    public void  BecomeGarlic(BlockState floor, World world, BlockPos pos) {
-        Block block = world.getBlockState(pos).getBlock();
-        if (block == Blocks.PODZOL && this == Blocks.ALLIUM) {
 
-            world.setBlockState(pos, (BlockState) FlavoredBlocks.GARLICS.getDefaultState(), 11);
-
-        }
-    }
 }

@@ -1,35 +1,35 @@
-package net.codenamed.flavored.world;
+package net.codenamed.flavored.registry;
 
 
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DataPool;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.BlockStateProviderType;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.codenamed.flavored.Flavored;
 import net.codenamed.flavored.registry.FlavoredBlocks;
 
-public class ModConfiguredFeatures {
+import java.util.ArrayList;
+import java.util.List;
+
+public class FlavoredConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_KEY = registerKey("ancient");
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
-        register(context, ANCIENT_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(FlavoredBlocks.ANCIENT_LOG),
-                new StraightTrunkPlacer(5, 4, 3),
-
-                BlockStateProvider.of(FlavoredBlocks.FLOWERING_ANCIENT_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
-
-
-                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

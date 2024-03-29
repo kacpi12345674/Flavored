@@ -1,34 +1,27 @@
 {
+  "parent": "minecraft:husbandry/plant_seed",
+
   "display": {
     "icon": {
       "item": "flavored:tomato"
     },
-    "title": "A fresh harvest",
-    "description": "Get your first crop and start cooking!",
-    "background": "minecraft:textures/block/hay_block_side",
+    "title": "Fresh fruit!",
+    "description": "Obtain your first crops and get cooking!",
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": true
+    "announce_to_chat": true
   },
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {},
         "items": [
           {
-            "items": [
-              "minecraft:carrot"
-            ]
+              "tag": "flavored:crops"
+
           }
         ]
       }
     }
-  },
-  "requirements": [
-    [
-      ""
-    ]
-  ]
+  }
 }

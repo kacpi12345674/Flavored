@@ -2,7 +2,7 @@
   "type": "flavored:fermenting",
   "ingredients": [
     {
-      "item": "minecraft:fig"
+      "item": "flavored:fig"
     },
     {
       "item": "minecraft:sugar"

@@ -1,6 +1,6 @@
 {
   "variants": {
-    "empty=false": {
+    "": {
       "model": "flavored:block/flowering_ancient_leaves"
     }
   }
