@@ -1,0 +1,150 @@
+{
+  "itemgroup.flavored_group": "Flavored",
+
+  "item.flavored.oil": "Óleo",
+
+
+
+  "item.flavored.tomato": "Tomate",
+  "item.flavored.tomato_seeds": "Sementes de tomate",
+
+  "item.flavored.garlic": "Alho",
+
+  "item.flavored.pumpkin_slice": "Fatia de abóbora",
+
+  "item.flavored.cheese_slice": "Fatia de queijo",
+
+
+  "block.flavored.boiler": "Caldeira",
+
+  "item.flavored.glazed_chicken": "Frango glaceado",
+  "item.flavored.glazed_mutton": "Carne de carneiro glaceada",
+  "item.flavored.glazed_beef": "Bife glaceado",
+  "item.flavored.glazed_pork": "Carne de porco glaceada",
+
+  "item.flavored.candied_apple": "Maçã cristalizada",
+
+
+  "item.flavored.rosemary": "Alecrim",
+
+  "block.flavored.plenty": "Cornucópia",
+
+
+  "item.flavored.caramel": "Caramelo",
+
+
+
+  "block.flavored.cauliflower": "Couve-flor",
+  "block.flavored.carved_cauliflower": "Couve-flor esculpida",
+  "item.flavored.cauliflower_seeds": "Sementes de couve-flor",
+  "block.flavored.fermenter": "Fermentador",
+  "block.flavored.plant_pot": "Vaso de plantas",
+  "block.flavored.range": "Fogareiro",
+
+
+
+  "item.flavored.cauliflower_curd": "Floretas de couve-flor",
+
+  "block.flavored.oven": "Forno",
+
+
+  "item.flavored.glow_berry_muffin": "Queque de bagas brilhantes",
+  "item.flavored.sweet_berry_muffin": "Queque de bagas doces",
+
+  "item.flavored.cauliflower_soup": "Sopa de couve-flor",
+  "item.flavored.roasted_cauliflower_curd": "Floretas de couve-flor assadas",
+
+
+  "block.flavored.garlic_bread": "Pão de alho",
+
+  "item.flavored.flour": "Farinha",
+
+  "item.flavored.delicacy_pottery_sherd": "Fragmento de cerâmica de delicacia",
+  "item.flavored.refresh_pottery_sherd": "Fragmento de cerâmica de refresco",
+
+
+  "item.flavored.pasta": "Massa",
+
+  "block.flavored.cheese": "Queijo",
+  "item.flavored.pizza_slice": "Fatia de pizza",
+
+  "block.flavored.pizza": "Pizza",
+  "block.flavored.pudding": "Pudim",
+
+  "block.flavored.crate": "Caixote",
+
+
+  "item.flavored.spaghetti": "Esparguete",
+  "item.flavored.carbonara": "Carbonara",
+  "item.flavored.salad": "Salada",
+
+  "entity.minecraft.villager.chef": "Chef",
+
+
+  "block.flavored.carved_melon": "Melancia esculpida",
+
+  "item.flavored.chorus_cocktail": "Cocktail de coro",
+  "item.flavored.fig_cocktail": "Cocktail de coro",
+  "item.flavored.sweet_berry_cocktail": "Cocktail de bagas doces",
+  "item.flavored.glow_berry_cocktail": "Cocktail de bagas brilhantes",
+  "item.flavored.cider": "Cidra",
+  "item.flavored.malt": "Malte",
+  "item.flavored.hot_cocoa": "Chocolate quente",
+  "item.flavored.pumpkin_latte": "Latte de abóbora",
+  "item.flavored.tea": "Chá",
+
+  "item.flavored.spinach": "Espinafre",
+  "item.flavored.spinach_seeds": "Sementes de espinafre",
+
+  "item.flavored.fig": "Figo",
+
+  "item.flavored.ancient_boat": "Barco ancestral",
+  "item.flavored.ancient_chest_boat": "Barco ancestral com baú",
+
+  "block.flavored.ancient_log": "Tronco ancestral",
+  "block.flavored.ancient_wood": "Madeira ancestral",
+  "block.flavored.stripped_ancient_log": "Tronco ancestral descascado",
+  "block.flavored.stripped_ancient_wood": "Madeira ancestral descascada",
+  "block.flavored.ancient_button": "Botão ancestral",
+  "block.flavored.ancient_planks": "Tábuas ancestrais",
+  "block.flavored.ancient_fence": "Cerca ancestral",
+  "block.flavored.ancient_fence_gate": "Portão ancestral",
+  "block.flavored.ancient_slab": "Degrau ancestral",
+  "block.flavored.ancient_stairs": "Escadas ancestrais",
+
+  "block.flavored.ancient_standing_sign": "Tabuleta ancestral",
+  "block.flavored.ancient_wall_sign": "Tabuleta ancestral de parede",
+
+  "block.flavored.ancient_hanging_sign": "Tabuleta pendurada ancestral",
+  "block.flavored.ancient_wall_hanging_sign": "Tabuleta pendurada ancestral de parede",
+  "block.flavored.ancient_pressure_plate": "Placa de pressão ancestral",
+  "block.flavored.ancient_door": "Porta ancestral",
+  "block.flavored.ancient_trapdoor": "Alçapão ancestral",
+  "block.flavored.ancient_leaves": "Folhas ancestrais",
+  "block.flavored.flowering_ancient_leaves": "Folhas ancestrais floridas",
+
+  "block.flavored.ancient_sapling": "Rebento ancestral",
+
+  "block.flavored.fig_crate": "Caixote de figos",
+  "block.flavored.apple_crate": "Caixote de maçãs",
+  "block.flavored.carrot_crate": "Caixote de cenouras",
+  "block.flavored.potato_crate": "Caixote de batatas",
+  "block.flavored.beetroot_crate": "Caixote de beterrabas",
+  "block.flavored.tomato_crate": "Caixote de tomates",
+  "block.flavored.spinach_crate": "Caixote de espinafres",
+  "block.flavored.sweet_berry_crate": "Caixote de bagas doces",
+  "block.flavored.glow_berry_crate": "Caixote de bagas brilhantes",
+  "block.flavored.chorus_crate": "Caixote de coros",
+  "block.flavored.garlic_crate": "Caixote de alhos",
+  "block.flavored.rosemary_crate": "Caixote de alecrins",
+
+
+
+  "item.flavored.fruit_salad": "Salada de frutas",
+  "item.flavored.mashed_potatoes": "Puré de batata",
+  "item.flavored.grilled_vegetables": "Vegetais grelhados",
+  "item.flavored.alfredo": "Alfredo"
+
+
+
+}
