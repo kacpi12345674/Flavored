@@ -1,0 +1,151 @@
+{
+  "itemgroup.flavored_group": "Flavored",
+
+  "item.flavored.oil": "שמן",
+
+
+
+  "item.flavored.tomato": "עגבניה",
+  "item.flavored.tomato_seeds": "זרעי עגבניה",
+
+  "item.flavored.garlic": "שום",
+
+  "item.flavored.pumpkin_slice": "פרוסת דלעת",
+
+  "item.flavored.cheese_slice": "פרוסת גבינה",
+
+
+  "block.flavored.boiler": "מרתיח",
+
+  "item.flavored.glazed_chicken": "עוף מְזוֹגָג",
+  "item.flavored.glazed_mutton": "כבש מזוגג",
+  "item.flavored.glazed_beef": "בקר מזוגג",
+  "item.flavored.glazed_pork": "חזיר מזוגג",
+
+  "item.flavored.candied_apple": "תפוח מסוכר",
+
+
+  "item.flavored.rosemary": "רוסמרין",
+
+  "block.flavored.plenty": "סלסלת כל טוב",
+
+
+
+  "item.flavored.caramel": "קרמל",
+
+
+
+  "block.flavored.cauliflower": "כרובית",
+  "block.flavored.carved_cauliflower": "כרובית חרוטה",
+  "item.flavored.cauliflower_seeds": "זרעי כרובית",
+  "block.flavored.fermenter": "מתסיס",
+  "block.flavored.plant_pot": "אגרטל",
+  "block.flavored.range": "כריים",
+
+
+
+  "item.flavored.cauliflower_curd": "פרחון כרובית",
+
+  "block.flavored.oven": "תנור",
+
+
+  "item.flavored.glow_berry_muffin": "מאפין ברי זוהר",
+  "item.flavored.sweet_berry_muffin": "מאפין ברי מתוק",
+
+  "item.flavored.cauliflower_soup": "מרק כרובית",
+  "item.flavored.roasted_cauliflower_curd": "פרחון כרובית צלויה",
+
+
+  "block.flavored.garlic_bread": "לחם שום",
+
+  "item.flavored.flour": "קמח",
+
+  "item.flavored.delicacy_pottery_sherd": "שבר חרס המטעם",
+  "item.flavored.refresh_pottery_sherd": "שבר חרס הרעננות",
+
+
+  "item.flavored.pasta": "פסטה",
+
+  "block.flavored.cheese": "גבינה",
+  "item.flavored.pizza_slice": "פרוסת פיצה",
+
+  "block.flavored.pizza": "פיצה",
+  "block.flavored.pudding": "פודינג",
+
+  "block.flavored.crate": "אַרְגָז",
+
+
+  "item.flavored.spaghetti": "ספגטי",
+  "item.flavored.carbonara": "קרבונרה",
+  "item.flavored.salad": "סלט",
+
+  "entity.minecraft.villager.chef": "שף",
+
+
+  "block.flavored.carved_melon": "מלון חרוט",
+
+  "item.flavored.chorus_cocktail": "קוקטייל פרי צ'ורוס",
+  "item.flavored.fig_cocktail": "קוקטייל תאנים",
+  "item.flavored.sweet_berry_cocktail": "קוקטייל ברי מתוק",
+  "item.flavored.glow_berry_cocktail": "קוקטייל ברי זוהר",
+  "item.flavored.cider": "סיידר",
+  "item.flavored.malt": "לתת",
+  "item.flavored.hot_cocoa": "שוקו",
+  "item.flavored.pumpkin_latte": "לאטה דלעת",
+  "item.flavored.tea": "תה",
+
+  "item.flavored.spinach": "תרד",
+  "item.flavored.spinach_seeds": "זרעי תרד",
+
+  "item.flavored.fig": "תאנה",
+
+  "item.flavored.ancient_boat": "סירה עתיקה",
+  "item.flavored.ancient_chest_boat": "סירת תיבה עתיקה",
+
+  "block.flavored.ancient_log": "בול עצ עתיק",
+  "block.flavored.ancient_wood": "עץ עתיק",
+  "block.flavored.stripped_ancient_log": "בול עץ עתיק חשוף",
+  "block.flavored.stripped_ancient_wood": "עץ עתיק חשוף",
+  "block.flavored.ancient_button": "כפתור עתיק",
+  "block.flavored.ancient_planks": "קרשים עתיקים",
+  "block.flavored.ancient_fence": "גדר עתיקה",
+  "block.flavored.ancient_fence_gate": "שער גדר עתיק",
+  "block.flavored.ancient_slab": "לוח עתיק",
+  "block.flavored.ancient_stairs": "מדרגות עתיקות",
+
+  "block.flavored.ancient_standing_sign": "שלט עומד עתיק",
+  "block.flavored.ancient_wall_sign": "שלט קיר עתיק",
+
+  "block.flavored.ancient_hanging_sign": "שלט תלוי עתיק",
+  "block.flavored.ancient_wall_hanging_sign": "שלט קיר תלוי עתיק",
+  "block.flavored.ancient_pressure_plate": "לוחית לחץ עתיקה",
+  "block.flavored.ancient_door": "דלת עתיקה",
+  "block.flavored.ancient_trapdoor": "דלת סתרים עתיקה",
+  "block.flavored.ancient_leaves": "עלים עתיקים",
+  "block.flavored.flowering_ancient_leaves": "עלים פורחים עתיקים",
+
+  "block.flavored.ancient_sapling": "שתיל עתיק",
+
+  "block.flavored.fig_crate": "Fig Crate",
+  "block.flavored.apple_crate": "Apple Crate",
+  "block.flavored.carrot_crate": "Carrot Crate",
+  "block.flavored.potato_crate": "Potato Crate",
+  "block.flavored.beetroot_crate": "Beetroot Crate",
+  "block.flavored.tomato_crate": "Tomato Crate",
+  "block.flavored.spinach_crate": "Spinach Crate",
+  "block.flavored.sweet_berry_crate": "Sweet Berry Crate",
+  "block.flavored.glow_berry_crate": "Glow Berry Crate",
+  "block.flavored.chorus_crate": "Chorus Fruit Crate",
+  "block.flavored.garlic_crate": "Garlic Crate",
+  "block.flavored.rosemary_crate": "Rosemary Crate",
+
+
+
+  "item.flavored.fruit_salad": "Fruit Salad",
+  "item.flavored.mashed_potatoes": "Mashed Potatoes",
+  "item.flavored.grilled_vegetables": "Grilled Vegetables",
+  "item.flavored.alfredo": "Alfredo"
+
+
+
+}
