@@ -1,0 +1,145 @@
+{
+  "itemgroup.flavored_group": "Flavored",
+
+  "item.flavored.oil": "Aceite",
+
+
+
+  "item.flavored.tomato": "Tomate",
+  "item.flavored.tomato_seeds": "Semillas de tomate",
+
+  "item.flavored.garlic": "Ajo",
+
+  "item.flavored.pumpkin_slice": "Rodaja de calabaza",
+
+  "item.flavored.cheese_slice": "Lamina de queso",
+
+
+  "block.flavored.boiler": "Hervidor",
+
+  "item.flavored.glazed_chicken": "Pollo glaseado",
+  "item.flavored.glazed_mutton": "Cordero glaseado",
+  "item.flavored.glazed_beef": "Filete glaseado",
+  "item.flavored.glazed_pork": "Chuleta de cerdo glaseada",
+
+  "item.flavored.candied_apple": "Manzana de caramelo",
+
+
+  "item.flavored.rosemary": "Romero",
+
+  "block.flavored.plenty": "Cesta abundante",
+
+
+  "item.flavored.caramel": "Caramelo",
+
+
+
+  "block.flavored.cauliflower": "Coliflor",
+  "block.flavored.carved_cauliflower": "Coliflor tallada",
+  "item.flavored.cauliflower_seeds": "Semillas de coliflor",
+  "block.flavored.fermenter": "Fermenter",
+  "block.flavored.plant_pot": "Macetero",
+  "block.flavored.range": "Estufa",
+
+
+
+  "item.flavored.cauliflower_curd": "Florete de coliflor",
+
+  "block.flavored.oven": "Fogón",
+
+
+  "item.flavored.glow_berry_muffin": "Muffin de bayas dulces",
+  "item.flavored.sweet_berry_muffin": "Muffin de bayas luminosas",
+
+  "item.flavored.cauliflower_soup": "Sopa de coliflor",
+  "item.flavored.roasted_cauliflower_curd": "Florete de coliflor asado",
+
+
+  "block.flavored.garlic_bread": "Pan de ajo",
+
+  "item.flavored.flour": "Harina",
+
+  "item.flavored.delicacy_pottery_sherd": "Fragmento de cerámica de delicadeza",
+  "item.flavored.refresh_pottery_sherd": "Fragmento de cerámica de refrescar",
+
+
+  "item.flavored.pasta": "Pasta",
+
+  "block.flavored.cheese": "Queso",
+  "item.flavored.pizza_slice": "Porción de pizza",
+
+  "block.flavored.pizza": "Pizza",
+  "block.flavored.pudding": "Pudín",
+
+  "block.flavored.crate": "Cajón",
+
+
+  "item.flavored.spaghetti": "Spaghetti",
+  "item.flavored.carbonara": "Carbonara",
+  "item.flavored.salad": "Ensalada",
+
+  "entity.minecraft.villager.chef": "Chef",
+
+
+  "block.flavored.carved_melon": "Sandía tallada",
+
+  "item.flavored.chorus_cocktail": "Cóctel chorus",
+  "item.flavored.fig_cocktail": "Cóctel de higo",
+  "item.flavored.sweet_berry_cocktail": "Cóctel de bayas dulces",
+  "item.flavored.glow_berry_cocktail": "Cóctel de bayas luminosas",
+  "item.flavored.cider": "Sidra",
+  "item.flavored.malt": "Malta",
+  "item.flavored.hot_cocoa": "Chocolate caliente",
+  "item.flavored.pumpkin_latte": "Latte de calabaza",
+  "item.flavored.tea": "Té",
+
+  "item.flavored.spinach": "Espinaca",
+  "item.flavored.spinach_seeds": "Semillas de espinaca",
+
+  "item.flavored.fig": "Higo",
+
+
+
+  "block.flavored.ancient_log": "Tronco ancestral",
+  "block.flavored.ancient_wood": "Leño ancestral",
+  "block.flavored.stripped_ancient_log": "Tronco ancestral sin corteza",
+  "block.flavored.stripped_ancient_wood": "Leño ancestral sin corteza",
+  "block.flavored.ancient_button": "Botón ancestral",
+  "block.flavored.ancient_planks": "Tablones ancestrales",
+  "block.flavored.ancient_fence": "Valla ancestral",
+  "block.flavored.ancient_fence_gate": "Puerta de valla ancestral",
+  "block.flavored.ancient_slab": "Losa ancestral",
+  "block.flavored.ancient_stairs": "Escaleras encestrales",
+  "block.flavored.ancient_hanging_sign": "Cartel colgante ancestral",
+  "block.flavored.ancient_sign": "Cartel ancestral",
+  "block.flavored.ancient_pressure_plate": "Placa de presión ancestral",
+  "block.flavored.ancient_door": "Puerta ancestral",
+  "block.flavored.ancient_trapdoor": "Trampilla ancestral",
+  "block.flavored.ancient_leaves": "Hojas ancestrales",
+  "block.flavored.flowering_ancient_leaves": "Hojas ancestrales florecidas",
+
+  "block.flavored.ancient_sapling": "Brote ancestral",
+
+  "block.flavored.fig_crate": "Cajón de higos",
+  "block.flavored.apple_crate": "Cajón de manzanas",
+  "block.flavored.carrot_crate": "Cajón de zanahorias",
+  "block.flavored.potato_crate": "Cajón de patatas",
+  "block.flavored.beetroot_crate": "Cajón de remolachas",
+  "block.flavored.tomato_crate": "Cajón de tomates",
+  "block.flavored.spinach_crate": "Cajón de espinacas",
+  "block.flavored.sweet_berry_crate": "Cajón de bayas dulces",
+  "block.flavored.glow_berry_crate": "Cajón de bayas luminosas",
+  "block.flavored.chorus_crate": "Cajón de fruta chorus",
+  "block.flavored.garlic_crate": "Cajón de ajos",
+  "block.flavored.rosemary_crate": "Cajón de romero",
+
+
+
+  "item.flavored.fruit_salad": "Macedonia de frutas",
+  "item.flavored.mashed_potatoes": "Puré de papata",
+  "item.flavored.grilled_vegetables": "Vegetales asados",
+  "item.flavored.alfredo": "Alfredo"
+
+
+
+}
