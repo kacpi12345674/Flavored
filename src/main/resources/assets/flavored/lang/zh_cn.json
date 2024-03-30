@@ -1,12 +1,150 @@
 {
-  "itemgroup.flavored_group": "简单比萨（Simple Pizzas）",
+  "itemgroup.flavored_group": "五味俱全 ~Flavored~",
+
+  "item.flavored.oil": "油",
+
+
 
   "item.flavored.tomato": "番茄",
   "item.flavored.tomato_seeds": "番茄种子",
-  "block.flavored.cheese": "奶酪",
-  "item.flavored.pizza_slice": "比萨片",
 
-  "block.flavored.pizza": "比萨"
+  "item.flavored.garlic": "大蒜",
+
+  "item.flavored.pumpkin_slice": "南瓜片",
+
+  "item.flavored.cheese_slice": "奶酪片",
+
+
+  "block.flavored.boiler": "锅炉",
+
+  "item.flavored.glazed_chicken": "酱汁鸡肉",
+  "item.flavored.glazed_mutton": "酱汁羊肉",
+  "item.flavored.glazed_beef": "酱汁牛肉",
+  "item.flavored.glazed_pork": "酱汁猪肉",
+
+  "item.flavored.candied_apple": "苹果糖",
+
+
+  "item.flavored.rosemary": "迷迭香",
+
+  "block.flavored.plenty": "Basket of Plenty",
+
+
+  "item.flavored.caramel": "焦糖",
+
+
+
+  "block.flavored.cauliflower": "花椰菜",
+  "block.flavored.carved_cauliflower": "雕刻过的花椰菜",
+  "item.flavored.cauliflower_seeds": "花椰菜种子",
+  "block.flavored.fermenter": "发酵器",
+  "block.flavored.plant_pot": "种植盆",
+  "block.flavored.range": "炉灶",
+
+
+
+  "item.flavored.cauliflower_curd": "花椰菜菜花",
+
+  "block.flavored.oven": "烤炉",
+
+
+  "item.flavored.glow_berry_muffin": "发光浆果松饼",
+  "item.flavored.sweet_berry_muffin": "甜浆果松饼",
+
+  "item.flavored.cauliflower_soup": "菜花浓汤",
+  "item.flavored.roasted_cauliflower_curd": "烤菜花",
+
+
+  "block.flavored.garlic_bread": "蒜香面包",
+
+  "item.flavored.flour": "面粉",
+
+  "item.flavored.delicacy_pottery_sherd": "Delicacy 纹样陶片",
+  "item.flavored.refresh_pottery_sherd": "Refresh 纹样陶片",
+
+
+  "item.flavored.pasta": "意面面条",
+
+  "block.flavored.cheese": "奶酪",
+  "item.flavored.pizza_slice": "披萨片",
+
+  "block.flavored.pizza": "披萨",
+  "block.flavored.pudding": "布丁",
+
+  "block.flavored.crate": "板条箱",
+
+
+  "item.flavored.spaghetti": "番茄肉酱意大利面",
+  "item.flavored.carbonara": "培根蛋酱意大利面",
+  "item.flavored.salad": "沙拉",
+
+  "entity.minecraft.villager.chef": "厨师",
+
+
+  "block.flavored.carved_melon": "雕刻过的西瓜",
+
+  "item.flavored.chorus_cocktail": "紫颂果鸡尾酒",
+  "item.flavored.fig_cocktail": "无花果鸡尾酒",
+  "item.flavored.sweet_berry_cocktail": "甜浆果鸡尾酒",
+  "item.flavored.glow_berry_cocktail": "发光浆果鸡尾酒",
+  "item.flavored.cider": "果酒",
+  "item.flavored.malt": "麦芽酒",
+  "item.flavored.hot_cocoa": "热可可",
+  "item.flavored.pumpkin_latte": "南瓜拿铁",
+  "item.flavored.tea": "茶",
+
+  "item.flavored.spinach": "菠菜",
+  "item.flavored.spinach_seeds": "菠菜种子",
+
+  "item.flavored.fig": "无花果",
+
+  "item.flavored.ancient_boat": "远古木船",
+  "item.flavored.ancient_chest_boat": "远古木运输船",
+
+  "block.flavored.ancient_log": "远古木原木",
+  "block.flavored.ancient_wood": "远古木",
+  "block.flavored.stripped_ancient_log": "去皮远古木原木",
+  "block.flavored.stripped_ancient_wood": "去皮远古木",
+  "block.flavored.ancient_button": "远古木按钮",
+  "block.flavored.ancient_planks": "远古木木板",
+  "block.flavored.ancient_fence": "远古木栅栏",
+  "block.flavored.ancient_fence_gate": "远古木栅栏门",
+  "block.flavored.ancient_slab": "远古木台阶",
+  "block.flavored.ancient_stairs": "远古木楼梯",
+
+  "block.flavored.ancient_standing_sign": "站立的远古木告示牌",
+  "block.flavored.ancient_wall_sign": "墙上的远古木告示牌",
+
+  "block.flavored.ancient_hanging_sign": "悬挂式远古木告示牌",
+  "block.flavored.ancient_wall_hanging_sign": "墙上的悬挂式远古木告示牌",
+  "block.flavored.ancient_pressure_plate": "远古木压力板",
+  "block.flavored.ancient_door": "远古木门",
+  "block.flavored.ancient_trapdoor": "远古木活板门",
+  "block.flavored.ancient_leaves": "远古树树叶",
+  "block.flavored.flowering_ancient_leaves": "盛开的远古树树叶",
+
+  "block.flavored.ancient_sapling": "远古树树苗",
+
+  "block.flavored.fig_crate": "箱装无花果",
+  "block.flavored.apple_crate": "箱装苹果",
+  "block.flavored.carrot_crate": "箱装胡萝卜",
+  "block.flavored.potato_crate": "箱装马铃薯",
+  "block.flavored.beetroot_crate": "箱装甜菜根",
+  "block.flavored.tomato_crate": "箱装番茄",
+  "block.flavored.spinach_crate": "箱装菠菜",
+  "block.flavored.sweet_berry_crate": "箱装甜浆果",
+  "block.flavored.glow_berry_crate": "箱装发光浆果",
+  "block.flavored.chorus_crate": "箱装紫颂果",
+  "block.flavored.garlic_crate": "箱装大蒜",
+  "block.flavored.rosemary_crate": "箱装迷迭香",
+
+
+
+  "item.flavored.fruit_salad": "水果沙拉",
+  "item.flavored.mashed_potatoes": "土豆泥",
+  "item.flavored.grilled_vegetables": "烤蔬菜",
+  "item.flavored.alfredo": "阿尔弗雷德白酱"
+
 
 
 }
