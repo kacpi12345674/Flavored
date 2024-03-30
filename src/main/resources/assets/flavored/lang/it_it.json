@@ -1,0 +1,150 @@
+{
+  "itemgroup.flavored_group": "Flavored",
+
+  "item.flavored.oil": "Olio",
+
+
+
+  "item.flavored.tomato": "Pomodoro",
+  "item.flavored.tomato_seeds": "Semi di Pomodoro",
+
+  "item.flavored.garlic": "Aglio",
+
+  "item.flavored.pumpkin_slice": "Fetta di Zucca",
+
+  "item.flavored.cheese_slice": "Fetta di Formaggio",
+
+
+  "block.flavored.boiler": "Bollitore",
+
+  "item.flavored.glazed_chicken": "Pollo Glassato",
+  "item.flavored.glazed_mutton": "Carne di Pecora Glassata",
+  "item.flavored.glazed_beef": "Manzo Glassato",
+  "item.flavored.glazed_pork": "Maiale Glassato",
+
+  "item.flavored.candied_apple": "Mela Caramellata",
+
+
+  "item.flavored.rosemary": "Rosmarino",
+
+  "block.flavored.plenty": "Cesto Dell'Abbondanza",
+
+
+  "item.flavored.caramel": "Caramello",
+
+
+
+  "block.flavored.cauliflower": "Cavolfiore",
+  "block.flavored.carved_cauliflower": "Cavolfiore Intagliato",
+  "item.flavored.cauliflower_seeds": "Semi Di Cavolfiore",
+  "block.flavored.fermenter": "Fermentatore",
+  "block.flavored.plant_pot": "Vaso Per Piante",
+  "block.flavored.range": "Fornello",
+
+
+
+  "item.flavored.cauliflower_curd": "Fiore di Cavolfiore",
+
+  "block.flavored.oven": "Forno",
+
+
+  "item.flavored.glow_berry_muffin": "Muffin di Bacche Luminose",
+  "item.flavored.sweet_berry_muffin": "Muffin di Bacche Dolci",
+
+  "item.flavored.cauliflower_soup": "Zuppa di Cavolfiore",
+  "item.flavored.roasted_cauliflower_curd": "Fiore di Cavolfiore Grigliato",
+
+
+  "block.flavored.garlic_bread": "Pane All'Aglio",
+
+  "item.flavored.flour": "Farina",
+
+  "item.flavored.delicacy_pottery_sherd": "Frammento di Ceramica Delicatezza",
+  "item.flavored.refresh_pottery_sherd": "Frammento di Ceramica Rinfrescante",
+
+
+  "item.flavored.pasta": "Pasta",
+
+  "block.flavored.cheese": "Formaggio",
+  "item.flavored.pizza_slice": "Fetta di Pizza",
+
+  "block.flavored.pizza": "Pizza",
+  "block.flavored.pudding": "Budino",
+
+  "block.flavored.crate": "Cassa",
+
+
+  "item.flavored.spaghetti": "Spaghetti",
+  "item.flavored.carbonara": "Carbonara",
+  "item.flavored.salad": "Insalata",
+
+  "entity.minecraft.villager.chef": "Chef",
+
+
+  "block.flavored.carved_melon": "Anguria Intagliata",
+
+  "item.flavored.chorus_cocktail": "Cocktail di Frutto Chorus",
+  "item.flavored.fig_cocktail": "Cocktail di Fico",
+  "item.flavored.sweet_berry_cocktail": "Cocktail di Bacche Dolci",
+  "item.flavored.glow_berry_cocktail": "Cocktail di Bacche Luminose",
+  "item.flavored.cider": "Sidro",
+  "item.flavored.malt": "Malto",
+  "item.flavored.hot_cocoa": "Cioccolata Calda",
+  "item.flavored.pumpkin_latte": "Cappuccino di Zucca",
+  "item.flavored.tea": "Tè",
+
+  "item.flavored.spinach": "Spinaci",
+  "item.flavored.spinach_seeds": "Semi di Spinaci",
+
+  "item.flavored.fig": "Fico",
+
+  "item.flavored.ancient_boat": "Barca di Legno Antica",
+  "item.flavored.ancient_chest_boat": "Barca di Legno Antica con Baule",
+
+  "block.flavored.ancient_log": "Tronco Antico",
+  "block.flavored.ancient_wood": "Legno Antico",
+  "block.flavored.stripped_ancient_log": "Tronco Antico Scortecciato",
+  "block.flavored.stripped_ancient_wood": "Legno Antico Scortecciato",
+  "block.flavored.ancient_button": "Pulsante di Legno Antico",
+  "block.flavored.ancient_planks": "Assi di Legno Antico",
+  "block.flavored.ancient_fence": "Staccionata di Legno Antico",
+  "block.flavored.ancient_fence_gate": "Cancelletto di Legno Antico",
+  "block.flavored.ancient_slab": "Lastra di Legno Antico",
+  "block.flavored.ancient_stairs": "Scalini di Legno Antico",
+
+  "block.flavored.ancient_standing_sign": "Cartello di Legno Antico",
+  "block.flavored.ancient_wall_sign": "Cartello di Legno Antico",
+
+  "block.flavored.ancient_hanging_sign": "Insegna di Legno Antico",
+  "block.flavored.ancient_wall_hanging_sign": "Insegna di Legno Antico",
+  "block.flavored.ancient_pressure_plate": "Pedana a Pressione di Legno Antico",
+  "block.flavored.ancient_door": "Porta di Legno Antico",
+  "block.flavored.ancient_trapdoor": "Botola di Legno Antico",
+  "block.flavored.ancient_leaves": "Foglie Antiche",
+  "block.flavored.flowering_ancient_leaves": "Foglie Antiche Fiorite",
+
+  "block.flavored.ancient_sapling": "Arbusto Antico",
+
+  "block.flavored.fig_crate": "Cassa di Fichi",
+  "block.flavored.apple_crate": "Cassa di Mele",
+  "block.flavored.carrot_crate": "Cassa di Carote",
+  "block.flavored.potato_crate": "Cassa di Patate",
+  "block.flavored.beetroot_crate": "Cassa di Barbabietole",
+  "block.flavored.tomato_crate": "Cassa di Pomodori",
+  "block.flavored.spinach_crate": "Cassa di Spinaci",
+  "block.flavored.sweet_berry_crate": "Cassa di Bacche Dolci",
+  "block.flavored.glow_berry_crate": "Cassa di Bacche Luminose",
+  "block.flavored.chorus_crate": "Cassa di Frutto Chorus",
+  "block.flavored.garlic_crate": "Cassa di Aglio",
+  "block.flavored.rosemary_crate": "Cassa di Rosmarino",
+
+
+
+  "item.flavored.fruit_salad": "Insalata di Frutta",
+  "item.flavored.mashed_potatoes": "Purè di Patate",
+  "item.flavored.grilled_vegetables": "Verdure Grigliate",
+  "item.flavored.alfredo": "Alfredo"
+
+
+
+}
